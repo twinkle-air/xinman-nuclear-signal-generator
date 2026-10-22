@@ -1,0 +1,65 @@
+{
+  "release_id": 420826991,
+  "release_url": "https://github.com/twinkle-air/xinman-nuclear-signal-generator/releases/tag/v0.10.3-open-source-2026-10-22",
+  "tag": "v0.10.3-open-source-2026-10-22",
+  "assets": [
+    {
+      "asset_name": "fc92600cbbbd-NucSignalStudio-V0.10.3.exe",
+      "id": 666116597,
+      "bytes": 66835419,
+      "sha256": "fc92600cbbbd2f42cc24dc23096890ee2718599541f12d9eaa5c25b19b8cfb2c",
+      "server_digest": "sha256:fc92600cbbbd2f42cc24dc23096890ee2718599541f12d9eaa5c25b19b8cfb2c",
+      "download_url": "https://github.com/twinkle-air/xinman-nuclear-signal-generator/releases/download/v0.10.3-open-source-2026-10-22/fc92600cbbbd-NucSignalStudio-V0.10.3.exe"
+    },
+    {
+      "asset_name": "ce2d0367e947-single-channel-bench-v0.8.0.zip",
+      "id": 666116593,
+      "bytes": 61772883,
+      "sha256": "ce2d0367e9475f92f213e921b6de4c6067adf7f66492e799b2dd561334a848bf",
+      "server_digest": "sha256:ce2d0367e9475f92f213e921b6de4c6067adf7f66492e799b2dd561334a848bf",
+      "download_url": "https://github.com/twinkle-air/xinman-nuclear-signal-generator/releases/download/v0.10.3-open-source-2026-10-22/ce2d0367e947-single-channel-bench-v0.8.0.zip"
+    },
+    {
+      "asset_name": "a754a30f6795-NucSignalStudio-V0.8.0.exe",
+      "id": 666117180,
+      "bytes": 60438009,
+      "sha256": "a754a30f6795df63305504984c06c478642c31f3a0460e529aa654e89e309de6",
+      "server_digest": "sha256:a754a30f6795df63305504984c06c478642c31f3a0460e529aa654e89e309de6",
+      "download_url": "https://github.com/twinkle-air/xinman-nuclear-signal-generator/releases/download/v0.10.3-open-source-2026-10-22/a754a30f6795-NucSignalStudio-V0.8.0.exe"
+    },
+    {
+      "asset_name": "ef67a9bb1775-NucSignalStudio-V0.9.1-N3.exe",
+      "id": 666117227,
+      "bytes": 60501814,
+      "sha256": "ef67a9bb177557697d1fbeb0464d7ba92e08eb6e4caf962c0144ffa3cc7a043b",
+      "server_digest": "sha256:ef67a9bb177557697d1fbeb0464d7ba92e08eb6e4caf962c0144ffa3cc7a043b",
+      "download_url": "https://github.com/twinkle-air/xinman-nuclear-signal-generator/releases/download/v0.10.3-open-source-2026-10-22/ef67a9bb1775-NucSignalStudio-V0.9.1-N3.exe"
+    },
+    {
+      "asset_name": "3eeb1f8cda47-NucSignalStudio-V0.10.0-N4.exe",
+      "id": 666118046,
+      "bytes": 66833901,
+      "sha256": "3eeb1f8cda47110533cf0bc413f98397c6a37493dd078b7580764e7357464cc0",
+      "server_digest": "sha256:3eeb1f8cda47110533cf0bc413f98397c6a37493dd078b7580764e7357464cc0",
+      "download_url": "https://github.com/twinkle-air/xinman-nuclear-signal-generator/releases/download/v0.10.3-open-source-2026-10-22/3eeb1f8cda47-NucSignalStudio-V0.10.0-N4.exe"
+    },
+    {
+      "asset_name": "dc5494d87afe-NucSignalStudio-V0.9.0-N3.exe",
+      "id": 666118135,
+      "bytes": 60449725,
+      "sha256": "dc5494d87afefe7ed2c379fea1009f145c0432dd078b9d02ecfbe588ebe7de19",
+      "server_digest": "sha256:dc5494d87afefe7ed2c379fea1009f145c0432dd078b9d02ecfbe588ebe7de19",
+      "download_url": "https://github.com/twinkle-air/xinman-nuclear-signal-generator/releases/download/v0.10.3-open-source-2026-10-22/dc5494d87afe-NucSignalStudio-V0.9.0-N3.exe"
+    },
+    {
+      "asset_name": "e8149a3a9f19-NucSignalStudio-V0.8.2.exe",
+      "id": 666118735,
+      "bytes": 60441818,
+      "sha256": "e8149a3a9f19d854b6905656cf4235108c95956114d661d6f17ffcdc56f331dc",
+      "server_digest": "sha256:e8149a3a9f19d854b6905656cf4235108c95956114d661d6f17ffcdc56f331dc",
+      "download_url": "https://github.com/twinkle-air/xinman-nuclear-signal-generator/releases/download/v0.10.3-open-source-2026-10-22/e8149a3a9f19-NucSignalStudio-V0.8.2.exe"
+    }
+  ],
+  "unique_asset_count": 7,
+  "source_path_count": 8
+}
