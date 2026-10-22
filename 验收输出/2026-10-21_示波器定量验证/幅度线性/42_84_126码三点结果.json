@@ -1,0 +1,78 @@
+{
+  "source126": {
+    "original_path": "F:/scope_csv_103_13.csv",
+    "sha256_from_successful_read": "95e2779d92a0ff24b87bcc84be644c773d5bf345f4c73caf7a25826c66d0a4cc",
+    "samples": 4000,
+    "dt_s": 2e-07,
+    "sample_rate_hz": 5000000,
+    "raw_archived": false,
+    "archive_note": "首个工具调用已实际读取并计算；随后归档时F盘原件已不存在，本JSON仅整理实际读取结果，不重构原始CSV"
+  },
+  "confirmed126_config": {
+    "state": "RUN",
+    "baseline": 96,
+    "amplitude": 126,
+    "period_us": 256,
+    "tau_us": 24,
+    "random": 0,
+    "spectrum": 0,
+    "uniform_noise": 0,
+    "pileup": 0,
+    "clips_in_screenshot": 0
+  },
+  "pulses126": [
+    {
+      "minimum_index": 721,
+      "baseline_v": 0.82,
+      "minimum_v": -2.32,
+      "amplitude_v": 3.14,
+      "tau_us": 24.062390825359525
+    },
+    {
+      "minimum_index": 2000,
+      "baseline_v": 0.82,
+      "minimum_v": -2.32,
+      "amplitude_v": 3.14,
+      "tau_us": 23.967395230545204
+    },
+    {
+      "minimum_index": 3280,
+      "baseline_v": 0.82,
+      "minimum_v": -2.32,
+      "amplitude_v": 3.14,
+      "tau_us": 23.88736824692031
+    }
+  ],
+  "comparison": [
+    {
+      "code": 42,
+      "mean_peak_amplitude_v": 1.06,
+      "relative_to84_proportion_error_percent": 0.952380952380949
+    },
+    {
+      "code": 84,
+      "mean_peak_amplitude_v": 2.1,
+      "relative_to84_proportion_error_percent": 0.0
+    },
+    {
+      "code": 126,
+      "mean_peak_amplitude_v": 3.14,
+      "relative_to84_proportion_error_percent": -0.31746031746032743
+    }
+  ],
+  "local_affine_fit": {
+    "slope_v_per_code": 0.024761904761904766,
+    "intercept_v": 0.02000000000000021,
+    "measured_code_range": [
+      42,
+      126
+    ]
+  },
+  "limits": [
+    "各码仅一帧3个脉冲，基线中位数减最低点法受噪声和20mV量化影响",
+    "局部比例检查不是绝对电压准确度或全量程线性验收",
+    "126码只有上位机截图，无示波器输入范围元数据，数字削顶0不单独证明模拟端无饱和",
+    "84码配置按采集指示，缺该帧活动参数截图",
+    "126码原件未完成归档，证据保管仍需补齐"
+  ]
+}

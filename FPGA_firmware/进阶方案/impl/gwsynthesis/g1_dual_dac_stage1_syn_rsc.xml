@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="g1_dual_dac_stage1" Register="37" Alu="27" Lut="15" T_Register="138(37)" T_Alu="42(27)" T_Lut="495(15)">
+    <SubModule name="core" Register="18" Alu="15" Lut="16" T_Register="101(18)" T_Alu="15(15)" T_Lut="480(16)">
+        <SubModule name="ch1" Register="42" Lut="207" T_Register="42(42)" T_Lut="207(207)"/>
+        <SubModule name="ch2" Register="41" Lut="257" T_Register="41(41)" T_Lut="257(257)"/>
+    </SubModule>
+</Module>

@@ -1,0 +1,59 @@
+{
+  "window_title": "核信号工作台 · PC 上位机",
+  "channels": 2,
+  "samples_per_channel": 10000,
+  "source": "Cs-137",
+  "app_version": "0.10.3",
+  "device_modes": [
+    "模拟",
+    "单通道台架",
+    "USB CDC",
+    "ST-Link VCP"
+  ],
+  "tutorial_available": true,
+  "tutorial_sections": [
+    "快速开始",
+    "信号与参数",
+    "文件导入",
+    "核素模板",
+    "单通道台架",
+    "硬件连接",
+    "报告与验收",
+    "故障排查"
+  ],
+  "manual_port_entry": true,
+  "csv_export": "导出双通道 CSV",
+  "background_transfer": true,
+  "builtin_nuclides": [
+    "Am-241",
+    "Cs-137",
+    "Co-60",
+    "K-40",
+    "Na-22",
+    "Ba-133",
+    "Eu-152",
+    "I-131",
+    "Tc-99m"
+  ],
+  "fwhm_direct_control": true,
+  "plot_interactive": true,
+  "plot_view_range": [
+    0.0,
+    199.98000000000002,
+    -0.1646624861983348,
+    1.262412394187233
+  ],
+  "plot_colors": [
+    "#d62828",
+    "#0057b8"
+  ],
+  "workflow_steps": [
+    "选择信号源",
+    "设置参数",
+    "连接设备",
+    "下发配置",
+    "启动输出"
+  ],
+  "bench_panel_available": true,
+  "n4_tools_available": true
+}

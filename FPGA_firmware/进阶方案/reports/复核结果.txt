@@ -1,0 +1,3 @@
+基础方案: 12 port placements match; RTL simulation PASS
+进阶方案: 35 port placements match; RTL simulation PASS
+资料原理图/使用手册/器件手册与用户桌面资料SHA256一致。

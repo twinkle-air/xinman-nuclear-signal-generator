@@ -1,0 +1,31 @@
+{
+  "group": 3,
+  "file": "scope_csv_104_22.csv",
+  "sha256": "9d844ae1a168aad42d613826ad0a042644fdbc39c958dfc283f5a2a093d442b4",
+  "samples": 4000,
+  "dt_s": 4e-06,
+  "duration_s": 0.015996,
+  "time_column_constant": true,
+  "baseline_code": 96,
+  "amplitude_code": 84,
+  "period_us_set": 10000,
+  "tau_us": 144.27,
+  "noise": 0,
+  "random": false,
+  "spectrum": false,
+  "pileup": false,
+  "pulses": [
+    {
+      "edge_index": 2000,
+      "baseline_V": 0.8,
+      "peak_V": -1.2,
+      "fwhm_us": 97.99999999999913,
+      "leading_half_crossing_s": 0.007998
+    }
+  ],
+  "mean_fwhm_us": 97.99999999999913,
+  "edge_intervals_us": [],
+  "period_verified": false,
+  "scope": "Photo CH2 DC500mV/div,1ms/div,250kSa/s,4K",
+  "limit": "Width from raw sampled half-crossing interpolation. If one pulse only, period10000us remains readback only, not measured."
+}

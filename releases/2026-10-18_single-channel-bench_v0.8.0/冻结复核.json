@@ -1,0 +1,17 @@
+{
+  "frozen_at": "2026-10-18T17:07:07.144909+08:00",
+  "copied_files": 223,
+  "source_copy_sha256_match": true,
+  "pc_python_syntax_compile_count": 27,
+  "pc_python_syntax_compile": "PASS",
+  "hardware_rebuilt": false,
+  "serial_opened": false,
+  "reliability_30min": "PENDING",
+  "power_cycles_3": "PENDING",
+  "artifacts_sha256": {
+    "核信号工作台.exe": "a754a30f6795df63305504984c06c478642c31f3a0460e529aa654e89e309de6",
+    "stm32_firmware/build-bench/nucsignal_f405.hex": "95764de7faf4679cc1b37e110561f3727498b9bf3ee2423ee7d5d8704a1bdcf5",
+    "stm32_firmware/build-bench/nucsignal_f405.elf": "e60df177923ce7de183822d9eca087fec4ef26e0dff466e8f4755d4027fd3f0b",
+    "FPGA_firmware/基础方案/通信联调_时序诊断/impl/pnr/g1_dac_spi.fs": "f46645abf73bcf55fefeac054c5eb1c726883387f6c2b96c971479873f43a3b6"
+  }
+}

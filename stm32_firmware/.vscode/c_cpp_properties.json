@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "name": "STM32",
+            "compileCommands": "${workspaceFolder}/build-debug/compile_commands.json",
+            "intelliSenseMode": "windows-msvc-x64",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++14"
+        }
+    ],
+    "version": 4
+}

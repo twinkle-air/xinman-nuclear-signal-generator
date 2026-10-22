@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="g1_dac_spi" Register="1323" Alu="258" Lut="1897" MULT9X9="4" MULTALU36X18="1" MULTADDALU18X18="2" Bsram="3" Ssram="32" T_Register="1323(1323)" T_Alu="258(258)" T_Lut="1897(1897)" T_MULT9X9="4(4)" T_MULTALU36X18="1(1)" T_MULTADDALU18X18="2(2)" T_Bsram="3(3)" T_Ssram="32(32)"/>

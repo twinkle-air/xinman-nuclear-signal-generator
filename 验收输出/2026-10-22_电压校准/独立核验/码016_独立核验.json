@@ -1,0 +1,31 @@
+{
+  "file": "scope_csv_104_9.csv",
+  "sha256": "d109dfbe221684b440695ba567ddfaa3edce6482c592e6c1f2d3e018943603bc",
+  "role": "held-out validation; excluded from nine calibration nodes",
+  "dac_code": 16,
+  "amplitude_code": 0,
+  "noise": 0,
+  "random": false,
+  "spectrum": false,
+  "period_us": 2000,
+  "tau_us": 24,
+  "samples": 4000,
+  "dt_s": 2e-07,
+  "time_column_constant": true,
+  "mean_V": 2.79959,
+  "std_ac_V": 0.012273218811705438,
+  "min_V": 2.76,
+  "max_V": 2.84,
+  "levels_V": [
+    2.76,
+    2.8,
+    2.84
+  ],
+  "first_half_mean_V": 2.7988999999999997,
+  "second_half_mean_V": 2.80028,
+  "prediction_V": 2.8058400000000003,
+  "measured_minus_prediction_V": -0.006250000000000533,
+  "relative_to_predicted_voltage_pct": -0.22274969349644075,
+  "scope_photo": "CH2 DC 1 V/div; 50 us/div; 5 MSa/s; 4K; STOP capture; flat trace within display, no visible clipping",
+  "limit": "Instrument-referenced local interpolation check only; scope uncertainty and independent traceability unavailable; does not validate dynamic amplitude or other codes"
+}

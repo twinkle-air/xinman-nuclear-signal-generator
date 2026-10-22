@@ -1,0 +1,17 @@
+{
+ "Device" : "GW2A-18C",
+ "Files" : [
+  {
+   "Path" : "C:/Users/Twinkle/Desktop/\u65b0\u6f2b\u676f/FPGA_firmware/\u57fa\u7840\u65b9\u6848/\u901a\u4fe1\u8054\u8c03_\u65f6\u5e8f\u8bca\u65ad/rtl/g1_dac_spi.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "C:/Users/Twinkle/Desktop/\u65b0\u6f2b\u676f/FPGA_firmware/\u57fa\u7840\u65b9\u6848/\u901a\u4fe1\u8054\u8c03_\u65f6\u5e8f\u8bca\u65ad/impl/temp/rtl_parser.result",
+ "Top" : "",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

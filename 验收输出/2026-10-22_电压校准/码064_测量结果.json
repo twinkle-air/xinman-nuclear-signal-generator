@@ -1,0 +1,29 @@
+{
+  "file": "scope_csv_104_2.csv",
+  "sha256": "b1886da8548b476fa626310c19b5e8a8394201d7d73415548dacd52a78488bbd",
+  "samples": 4000,
+  "time_column_constant": true,
+  "dt_s": 2e-07,
+  "duration_s": 0.0007997999999999999,
+  "dac_code": 64,
+  "amplitude_code": 0,
+  "period_us": 2000,
+  "tau_us": 24,
+  "noise": 0,
+  "random": false,
+  "spectrum": false,
+  "mean_V": 1.6372000000000002,
+  "std_ac_V": 0.01268700122172292,
+  "min_V": 1.6,
+  "max_V": 1.68,
+  "levels_V": [
+    1.6,
+    1.64,
+    1.68
+  ],
+  "first_half_mean_V": 1.6373000000000004,
+  "second_half_mean_V": 1.6371000000000004,
+  "delta_from_code32_V": -0.7755499999999997,
+  "measurement_reference": "Hantek DSO2D15 CH2; DC X1 1 V/div per prior setup photo; no independent calibrated reference",
+  "clipping_assessment": "No scope capture photo supplied for this code; cannot independently exclude scope clipping from CSV alone"
+}

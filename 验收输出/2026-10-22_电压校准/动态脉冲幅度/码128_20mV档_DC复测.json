@@ -1,0 +1,19 @@
+{
+  "file": "scope_csv_104_17.csv",
+  "sha256": "24fe36c6ccf6e7208d2e4ea4431277f135703b5a50c980d3d71c86f696b2a066",
+  "samples": 4000,
+  "dt_s": 2e-07,
+  "time_column_constant": true,
+  "mean_V": 0.0029848,
+  "median_V": 0.0032,
+  "std_ac_V": 0.0007800057435685972,
+  "min_V": 0.0008,
+  "max_V": 0.0056,
+  "first_half_mean_V": 0.0030128000000000004,
+  "second_half_mean_V": 0.0029568000000000003,
+  "difference_from_previous_same_scale_DC_V": 0.00017920000000000002,
+  "DC_minus_recent_GND_V": 0.0023426000000000002,
+  "scope": "Photo: CH2 DC, X1, invert off, 20mV/div, 50us/div, 5MSa/s, 4K",
+  "generator_conditions": "128 baseline, amplitude0, period256us per continued procedure; no new activity screenshot",
+  "limit": "Same-scale repeatability only; no cross-scale calibration acceptance"
+}

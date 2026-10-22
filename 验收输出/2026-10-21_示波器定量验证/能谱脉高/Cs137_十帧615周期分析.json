@@ -1,0 +1,352 @@
+{
+  "confirmed_config": {
+    "source": "Cs-137",
+    "baseline": 96,
+    "amplitude": 84,
+    "period_us": 256,
+    "tau_us": 24,
+    "random": 0,
+    "spectrum": 1,
+    "uniform_noise": 0,
+    "fixed_pileup": 0,
+    "clips_in_screenshot": 0,
+    "firmware": "F405-N4.0.0",
+    "pc": "0.10.3",
+    "generation_in_screenshot": 7
+  },
+  "records": [
+    {
+      "file": "scope_csv_103_1.csv",
+      "metadata": {
+        "file": "scope_csv_103_1.csv",
+        "sha256": "186a277041131c8cacee0f22f8923cbf0467e1ce45f2681b49ccb4e1d2421ae4",
+        "samples": 4000,
+        "dt_s": 4e-06,
+        "sample_rate_hz": 250000.0,
+        "interpretation": "重复正数时间列按采样间隔解释（请核对示波器采样率）",
+        "time_scale": 1.0,
+        "voltage_scale": 1.0,
+        "probe": 1.0
+      },
+      "cycles": 61,
+      "phase_sample": 40,
+      "mean_amplitude_v": 0.5381704100394347,
+      "median_residual_rms_v": 0.010010842634059209
+    },
+    {
+      "file": "scope_csv_103_2.csv",
+      "metadata": {
+        "file": "scope_csv_103_2.csv",
+        "sha256": "a83cbdc3a83648d74ecd97f1506d956e3bab7ec0f2b1d1d0817f47ef1bb45f9f",
+        "samples": 4000,
+        "dt_s": 4e-06,
+        "sample_rate_hz": 250000.0,
+        "interpretation": "重复正数时间列按采样间隔解释（请核对示波器采样率）",
+        "time_scale": 1.0,
+        "voltage_scale": 1.0,
+        "probe": 1.0
+      },
+      "cycles": 62,
+      "phase_sample": 8,
+      "mean_amplitude_v": 0.5784277112214554,
+      "median_residual_rms_v": 0.009157492542566908
+    },
+    {
+      "file": "scope_csv_103_3.csv",
+      "metadata": {
+        "file": "scope_csv_103_3.csv",
+        "sha256": "16062eeeb35b9c5c6570b4e5cf58951cfc352abfbb5996e97c81bd95a370a834",
+        "samples": 4000,
+        "dt_s": 4e-06,
+        "sample_rate_hz": 250000.0,
+        "interpretation": "重复正数时间列按采样间隔解释（请核对示波器采样率）",
+        "time_scale": 1.0,
+        "voltage_scale": 1.0,
+        "probe": 1.0
+      },
+      "cycles": 61,
+      "phase_sample": 49,
+      "mean_amplitude_v": 0.4327607911754719,
+      "median_residual_rms_v": 0.009183078123705392
+    },
+    {
+      "file": "scope_csv_103_4.csv",
+      "metadata": {
+        "file": "scope_csv_103_4.csv",
+        "sha256": "5e33fdcff87be1a3d1c5ed7b8ff03258b52504b9c22aa749582be51d7f097dbb",
+        "samples": 4000,
+        "dt_s": 4e-06,
+        "sample_rate_hz": 250000.0,
+        "interpretation": "重复正数时间列按采样间隔解释（请核对示波器采样率）",
+        "time_scale": 1.0,
+        "voltage_scale": 1.0,
+        "probe": 1.0
+      },
+      "cycles": 61,
+      "phase_sample": 33,
+      "mean_amplitude_v": 0.5097104771849429,
+      "median_residual_rms_v": 0.009440798082356162
+    },
+    {
+      "file": "scope_csv_103_5.csv",
+      "metadata": {
+        "file": "scope_csv_103_5.csv",
+        "sha256": "f2fe613a98067bf9d47631b2f4da7012177382e0134d173af297ffd7119c7be2",
+        "samples": 4000,
+        "dt_s": 4e-06,
+        "sample_rate_hz": 250000.0,
+        "interpretation": "重复正数时间列按采样间隔解释（请核对示波器采样率）",
+        "time_scale": 1.0,
+        "voltage_scale": 1.0,
+        "probe": 1.0
+      },
+      "cycles": 61,
+      "phase_sample": 51,
+      "mean_amplitude_v": 0.5276431135741046,
+      "median_residual_rms_v": 0.009006927039120169
+    },
+    {
+      "file": "scope_csv_103_6.csv",
+      "metadata": {
+        "file": "scope_csv_103_6.csv",
+        "sha256": "336e258466d87bc9622859f388eb6a7ee3076779884111a32a4f1c1279e42215",
+        "samples": 4000,
+        "dt_s": 4e-06,
+        "sample_rate_hz": 250000.0,
+        "interpretation": "重复正数时间列按采样间隔解释（请核对示波器采样率）",
+        "time_scale": 1.0,
+        "voltage_scale": 1.0,
+        "probe": 1.0
+      },
+      "cycles": 62,
+      "phase_sample": 27,
+      "mean_amplitude_v": 0.4246310497771994,
+      "median_residual_rms_v": 0.008806426894294067
+    },
+    {
+      "file": "scope_csv_103_7.csv",
+      "metadata": {
+        "file": "scope_csv_103_7.csv",
+        "sha256": "b76d5a2aca35c6d6f168e610e468652c728f919ef1e884bcc2fcecf158026e2b",
+        "samples": 4000,
+        "dt_s": 4e-06,
+        "sample_rate_hz": 250000.0,
+        "interpretation": "重复正数时间列按采样间隔解释（请核对示波器采样率）",
+        "time_scale": 1.0,
+        "voltage_scale": 1.0,
+        "probe": 1.0
+      },
+      "cycles": 62,
+      "phase_sample": 25,
+      "mean_amplitude_v": 0.499262726283173,
+      "median_residual_rms_v": 0.009455074013210836
+    },
+    {
+      "file": "scope_csv_103_8.csv",
+      "metadata": {
+        "file": "scope_csv_103_8.csv",
+        "sha256": "9415af863d0230ba9b611ad36be159d29b1f695e275828e219580dd4099fc05e",
+        "samples": 4000,
+        "dt_s": 4e-06,
+        "sample_rate_hz": 250000.0,
+        "interpretation": "重复正数时间列按采样间隔解释（请核对示波器采样率）",
+        "time_scale": 1.0,
+        "voltage_scale": 1.0,
+        "probe": 1.0
+      },
+      "cycles": 61,
+      "phase_sample": 38,
+      "mean_amplitude_v": 0.5266388925229265,
+      "median_residual_rms_v": 0.009241529054055743
+    },
+    {
+      "file": "scope_csv_103_9.csv",
+      "metadata": {
+        "file": "scope_csv_103_9.csv",
+        "sha256": "5185c5c0989e74c9af1bce4c5e84bded34301fa6a1487b79daf43d501dc22bda",
+        "samples": 4000,
+        "dt_s": 4e-06,
+        "sample_rate_hz": 250000.0,
+        "interpretation": "重复正数时间列按采样间隔解释（请核对示波器采样率）",
+        "time_scale": 1.0,
+        "voltage_scale": 1.0,
+        "probe": 1.0
+      },
+      "cycles": 62,
+      "phase_sample": 16,
+      "mean_amplitude_v": 0.47737785025100776,
+      "median_residual_rms_v": 0.011863553047364826
+    },
+    {
+      "file": "scope_csv_103_10.csv",
+      "metadata": {
+        "file": "scope_csv_103_10.csv",
+        "sha256": "d8a46ee5f9a22049d2d6bd561981356a53326b61bd2ffc9ca2095d87c6982020",
+        "samples": 4000,
+        "dt_s": 4e-06,
+        "sample_rate_hz": 250000.0,
+        "interpretation": "重复正数时间列按采样间隔解释（请核对示波器采样率）",
+        "time_scale": 1.0,
+        "voltage_scale": 1.0,
+        "probe": 1.0
+      },
+      "cycles": 62,
+      "phase_sample": 20,
+      "mean_amplitude_v": 0.5430873097409948,
+      "median_residual_rms_v": 0.009559962801998253
+    }
+  ],
+  "identical_file_hashes_found": false,
+  "total_complete_cycles": 615,
+  "method": "fixed period 256us, assumed tau24us OLS; per-cycle baseline; first two edge samples excluded; negative fitted amplitudes retained; no amplitude threshold censor",
+  "template": {
+    "type": "current local builtin idealized Cs-137 model, not measured radioactive-source spectrum",
+    "full_scale_x": 2000.0,
+    "quantile_table_hex": "0000010102020303040404050506060707080809090a0a0a0b0b0c0c0d0d0e0e0f0f1010111112121314141515161617171818191a1a1b1b1c1d1d1e1e1f2020212222232424252626272828292a2b2c2c2d2e2f30313233343537383a3c4d4e4e4f4f4f4f5050505050505051515151515151515151515152525252525252525252525252525252535353535353535353535353535353535353535354545454545454545454545454545454545454545454545555555555555555555555555555555555555555555556565656565656565656565656565656565656575757575757575757575757575757585858585858585858585959595959595a5a5a5b5c",
+    "quantile_table_sha256": "3fb284bfca782e74c6dbbbc890acb111d391dc83615cd5c73e3d6aff3f5f5d7b",
+    "expected_code_pmf": [
+      [
+        0,
+        0.015625
+      ],
+      [
+        1,
+        0.02734375
+      ],
+      [
+        2,
+        0.0234375
+      ],
+      [
+        3,
+        0.02734375
+      ],
+      [
+        4,
+        0.0234375
+      ],
+      [
+        5,
+        0.0234375
+      ],
+      [
+        6,
+        0.01953125
+      ],
+      [
+        7,
+        0.0234375
+      ],
+      [
+        8,
+        0.01953125
+      ],
+      [
+        9,
+        0.01953125
+      ],
+      [
+        10,
+        0.01953125
+      ],
+      [
+        11,
+        0.01953125
+      ],
+      [
+        12,
+        0.015625
+      ],
+      [
+        13,
+        0.01953125
+      ],
+      [
+        14,
+        0.01953125
+      ],
+      [
+        15,
+        0.01171875
+      ],
+      [
+        16,
+        0.01171875
+      ],
+      [
+        17,
+        0.01171875
+      ],
+      [
+        18,
+        0.0078125
+      ],
+      [
+        19,
+        0.00390625
+      ],
+      [
+        20,
+        0.00390625
+      ],
+      [
+        25,
+        0.00390625
+      ],
+      [
+        26,
+        0.05078125
+      ],
+      [
+        27,
+        0.1875
+      ],
+      [
+        28,
+        0.25
+      ],
+      [
+        29,
+        0.12109375
+      ],
+      [
+        30,
+        0.01953125
+      ]
+    ],
+    "expected_normalized_mean": 0.2445126488095238,
+    "fraction_0p28_to_0p40": 0.6328125
+  },
+  "measured_amplitude_v": {
+    "mean": 0.5057611656671337,
+    "std": 0.24159905670368992,
+    "min": -0.012594066188094938,
+    "max": 0.7594739500944645,
+    "negative_fit_count": 4
+  },
+  "normalization_sensitivity": [
+    {
+      "scale": "same_acquisition_reference",
+      "reference_v": 1.9141027402892028,
+      "mean_normalized_amplitude": 0.26422884990526574,
+      "fraction_0p28_to_0p40": 0.6390243902439025
+    },
+    {
+      "scale": "prior_high_rate_reference_sensitivity_only",
+      "reference_v": 2.0533333333333332,
+      "mean_normalized_amplitude": 0.24631225600672094,
+      "fraction_0p28_to_0p40": 0.6276422764227643
+    }
+  ],
+  "same_reference_versus_prior_highrate_percent_difference": -6.780710700201153,
+  "limits": [
+    "ten unique raw files exclude exact duplicate saves, but do not prove independent event histories",
+    "screenshot generation7 confirms final state only; cannot reconstruct every capture history",
+    "current UI source Cs-137 does not alone prove no imported or adjusted source; comparison assumes current builtin",
+    "4us sampling phase and unknown clock offset can bias heights and broaden peaks",
+    "fixed tau24us fit does not independently verify tau",
+    "prior 5MSa/s reference has different period2000us; sensitivity comparison only, no posthoc energy recalibration",
+    "no full scale voltage/energy calibration, formal confidence test, peak accuracy or resolution pass claimed",
+    "negative estimates near zero are measurement/fit effects, not physical negative pulse amplitudes"
+  ]
+}

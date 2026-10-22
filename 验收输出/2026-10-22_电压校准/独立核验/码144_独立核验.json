@@ -1,0 +1,31 @@
+{
+  "file": "scope_csv_104_10.csv",
+  "sha256": "991aa4e1377e48a7475a44c7741ae94b47ff2a499905cdc7cff6840384ff1a86",
+  "role": "held-out validation; excluded from nine calibration nodes",
+  "dac_code": 144,
+  "amplitude_code": 0,
+  "noise": 0,
+  "random": false,
+  "spectrum": false,
+  "period_us": 2000,
+  "tau_us": 24,
+  "samples": 4000,
+  "dt_s": 2e-07,
+  "time_column_constant": true,
+  "mean_V": -0.33043,
+  "std_ac_V": 0.017743029617289144,
+  "min_V": -0.36,
+  "max_V": -0.28,
+  "levels_V": [
+    -0.36,
+    -0.32,
+    -0.28
+  ],
+  "first_half_mean_V": -0.32980000000000004,
+  "second_half_mean_V": -0.33106,
+  "prediction_V": -0.33887500000000004,
+  "measured_minus_prediction_V": 0.008445000000000036,
+  "error_relative_to_abs_prediction_pct": 2.4920693471043998,
+  "scope_photo": "Not supplied for this point; previous settings assumed unchanged",
+  "limit": "Same-scope interpolation check only; near-zero relative error sensitive to offset and scope quantization; not dynamic amplitude accuracy or traceable calibration"
+}

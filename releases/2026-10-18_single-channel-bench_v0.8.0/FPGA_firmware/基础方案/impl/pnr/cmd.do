@@ -1,0 +1,17 @@
+-d R:\impl\gwsynthesis\g1_dac_stage1.vg
+-p GW2A-18C-PBGA256-8
+-pn GW2A-LV18PG256C8/I7
+-cst R:\constraints\g1_directplug.cst
+-cfg R:\impl\pnr\device.cfg
+-sdc R:\constraints\g1_stage1.sdc
+-bit
+-tr
+-ph
+-oc
+-tt
+-timing
+-cst_error
+-convert_sdp32_36_to_sdp16_18
+-correct_hold 1
+-route_maxfan 23
+-global_freq 100.000

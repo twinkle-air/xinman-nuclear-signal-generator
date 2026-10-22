@@ -1,0 +1,14 @@
+{
+  "spectrum_noise": {
+    "samples": 12000,
+    "events": 100,
+    "clips": 0,
+    "seed": 12345
+  },
+  "pileup_clip": {
+    "samples": 6000,
+    "events": 45,
+    "clips": 1206,
+    "seed": 77
+  }
+}

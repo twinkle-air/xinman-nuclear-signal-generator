@@ -1,0 +1,58 @@
+*** GOWIN Tcl Command Line Console  *** 
+Open project R:/g1_dac_spi.gprj finished
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'R:\rtl\g1_dac_spi.v'
+Compiling module 'g1_dac_spi'("R:\rtl\g1_dac_spi.v":3)
+Extracting RAM for identifier 'spectrum'("R:\rtl\g1_dac_spi.v":32)
+NOTE  (EX0101) : Current top module is "g1_dac_spi"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "R:\impl\gwsynthesis\g1_dac_spi.vg" completed
+[100%] Generate report file "R:\impl\gwsynthesis\g1_dac_spi_syn.rpt.html" completed
+GowinSynthesis finish
+Reading netlist file: "R:\impl\gwsynthesis\g1_dac_spi.vg"
+Parsing netlist file "R:\impl\gwsynthesis\g1_dac_spi.vg" completed
+Processing netlist completed
+Reading constraint file: "R:\constraints\g1_spi.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "R:\impl\pnr\g1_dac_spi.power.html" completed
+Generate file "R:\impl\pnr\g1_dac_spi.pin.html" completed
+Generate file "R:\impl\pnr\g1_dac_spi.rpt.html" completed
+Generate file "R:\impl\pnr\g1_dac_spi.rpt.txt" completed
+Generate file "R:\impl\pnr\g1_dac_spi.tr.html" completed
+Generate file "R:\impl\pnr\g1_dac_spi.tr" completed
+Generate file "R:\impl\pnr\g1_dac_spi.io.cst" completed
+Sun Oct 18 22:35:21 2026
+

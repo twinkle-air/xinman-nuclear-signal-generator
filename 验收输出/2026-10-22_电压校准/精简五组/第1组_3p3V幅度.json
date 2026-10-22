@@ -1,0 +1,44 @@
+{
+  "group": 1,
+  "file": "scope_csv_104_20.csv",
+  "sha256": "bc97f0bbc90d55a1489bafa88cddf6b9b7939d41ca42c1c5674eefac8d305481",
+  "samples": 4000,
+  "dt_s": 2e-07,
+  "time_column_constant": true,
+  "baseline_code": 96,
+  "amplitude_code": 133,
+  "period_us": 256,
+  "tau_us": 24,
+  "noise": 0,
+  "random": false,
+  "spectrum": false,
+  "pileup": false,
+  "pulses": [
+    {
+      "edge_index": 721,
+      "baseline_median_V": 0.8,
+      "min_first_2us_V": -2.46,
+      "amplitude_V": 3.26
+    },
+    {
+      "edge_index": 2001,
+      "baseline_median_V": 0.8,
+      "min_first_2us_V": -2.46,
+      "amplitude_V": 3.26
+    },
+    {
+      "edge_index": 3281,
+      "baseline_median_V": 0.8,
+      "min_first_2us_V": -2.46,
+      "amplitude_V": 3.26
+    }
+  ],
+  "mean_amplitude_V": 3.26,
+  "error_to_3p3V_pct": -1.2121212121212088,
+  "intervals_us": [
+    256.0,
+    256.0
+  ],
+  "scope": "CH2 DC 500mV/div, 50us/div, 5MSa/s,4K; photo trace within display",
+  "assessment": "Observed point error only; no uncertainty guard band, no traceable calibration claim; peak minimum contains noise-extreme bias"
+}

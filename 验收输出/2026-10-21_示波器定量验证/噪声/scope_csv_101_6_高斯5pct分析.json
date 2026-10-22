@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "file": "scope_csv_101_6.csv",
+    "sha256": "d6d0737124c2467139f2e115cd800051c9343becf991e9bcb6ab4af2f4f4f545",
+    "samples": 4000,
+    "dt_s": 2e-07,
+    "sample_rate_hz": 5000000.0,
+    "interpretation": "重复正数时间列按采样间隔解释（请核对示波器采样率）",
+    "time_scale": 1.0,
+    "voltage_scale": 1.0,
+    "probe": 1.0
+  },
+  "confirmed_config": {
+    "state": "RUN",
+    "baseline": 128,
+    "amplitude": 0,
+    "period_us": 2000,
+    "tau_us": 24,
+    "noise_mode": "gaussian",
+    "rms_percent": 5,
+    "random": 0,
+    "spectrum": 0,
+    "pileup": 0,
+    "clips": 0
+  },
+  "mean_v": 0.019325000000000002,
+  "ac_rms_v": 0.31203051833915224,
+  "min_v": -1.02,
+  "max_v": 1.06,
+  "peak_to_peak_v": 2.08,
+  "skewness": 0.058355773429715374,
+  "excess_kurtosis": 0.14763517046620356,
+  "lag1_0p2us": 0.7873224440212558,
+  "lag5_1us": -0.05277821569156198,
+  "baseline_reference": {
+    "metadata": {
+      "file": "scope_csv_101_5.csv",
+      "sha256": "a2776b84e71849f20835fa8bc199aa749d17d541cfaa9bfb91ea6250627d2371",
+      "samples": 4000,
+      "dt_s": 2e-07,
+      "sample_rate_hz": 5000000.0,
+      "interpretation": "重复正数时间列按采样间隔解释（请核对示波器采样率）",
+      "time_scale": 1.0,
+      "voltage_scale": 1.0,
+      "probe": 1.0
+    },
+    "ac_rms_v": 0.009983525179013672,
+    "conditions_confirmed": false
+  },
+  "conditional_quadrature_subtracted_rms_v": 0.31187076425981325,
+  "rough_voltage_scale_comparison": {
+    "V_per_code_from_prior84_code_pulses": 0.024444444444444442,
+    "extrapolated_255_code_span_v": 6.2333333333333325,
+    "expected_5percent_rms_v": 0.31166666666666665,
+    "measured_to_expected_error_percent": 0.11674385213440441,
+    "limits": "局部84码脉冲的电压比例粗估，非全量程校准；不含仪器不确定度，不据此判定噪声准确度"
+  },
+  "limits": [
+    "单帧4000点含约800个1μs更新区间，相邻点相关，不能当作4000独立样本",
+    "分布矩仅作描述，不能证明高斯性或白噪声带宽",
+    "方差扣除依赖零噪声组同运行配置、测量带宽和独立背景假设，尚缺参考组条件确认",
+    "截图计数率为数字事件计数；幅度0不代表生成了非零幅度脉冲"
+  ]
+}

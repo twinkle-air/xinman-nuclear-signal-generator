@@ -1,0 +1,21 @@
+{
+  "file": "scope_csv_104_14.csv",
+  "sha256": "ea834943b8f0612d94ab3b226c4766faaabb316ef2ccdf3e04ee4a303e75f3b3",
+  "samples": 4000,
+  "dt_s": 2e-07,
+  "time_column_constant": true,
+  "mean_V": 0.05089,
+  "median_V": 0.04,
+  "std_ac_V": 0.01805014958386772,
+  "min_V": 0.0,
+  "max_V": 0.08,
+  "first_half_mean_V": 0.05074,
+  "second_half_mean_V": 0.05104000000000001,
+  "baseline_code": 128,
+  "amplitude_code": 0,
+  "period_us": 256,
+  "parameters_evidence": "Continued from prior frame per procedure; no new activity screenshot",
+  "scope": "Photo confirms CH2 DC 1 V/div, 50 us/div, 5 MSa/s, 4K, flat trace inside display",
+  "delta_from_20mVdiv_V": 0.0480844,
+  "delta_from_initial_1Vdiv_V": -0.007870000000000009
+}

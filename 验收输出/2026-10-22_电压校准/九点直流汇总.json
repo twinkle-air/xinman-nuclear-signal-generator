@@ -1,0 +1,21 @@
+{
+  "points": 9,
+  "slope_V_per_code": -0.024689295922740547,
+  "intercept_V": 3.209168845230485,
+  "endpoint_span_V": 6.2999,
+  "max_abs_fit_residual_V": 0.014368384931645384,
+  "residuals_V": [
+    -0.010238845230484461,
+    -0.006361375702787608,
+    0.00814609382491005,
+    0.0029535633526073246,
+    0.009821032880304864,
+    0.0046085024080024795,
+    0.004695971935699816,
+    0.0007434414633973319,
+    -0.014368384931645384
+  ],
+  "strictly_decreasing_at_sampled_codes": true,
+  "scope_clipping_photo_pending": true,
+  "status": "Nine measured calibration nodes; independent validation pending; not all-code INL/DNL or traceable accuracy acceptance"
+}

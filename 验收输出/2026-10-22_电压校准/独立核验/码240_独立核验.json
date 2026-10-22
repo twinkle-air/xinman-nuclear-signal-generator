@@ -1,0 +1,23 @@
+{
+  "file": "scope_csv_104_11.csv",
+  "sha256": "d2bfa1839aabbf3ab96f1401cdcc85fb982a42a7640b1dc70915c12cdce587ef",
+  "role": "held-out validation; excluded from nine calibration nodes",
+  "dac_code": 240,
+  "amplitude_code": 0,
+  "noise": 0,
+  "random": false,
+  "spectrum": false,
+  "period_us": 2000,
+  "tau_us": 24,
+  "samples": 4000,
+  "dt_s": 2e-07,
+  "time_column_constant": true,
+  "mean_V": -2.7206399999999995,
+  "std_ac_V": 0.011814838128387474,
+  "min_V": -2.76,
+  "max_V": -2.68,
+  "prediction_V": -2.7233183870967737,
+  "measured_minus_prediction_V": 0.0026783870967741485,
+  "scope_photo": "Flat trace inside display without visible clipping; CH2 DC 1 V/div, 50 us/div, 5 MSa/s, 4K",
+  "limit": "Same-scope local interpolation validation only, not traceable absolute accuracy or dynamic pulse validation"
+}

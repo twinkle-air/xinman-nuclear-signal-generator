@@ -1,0 +1,15 @@
+
+****** xsim v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/nuclear_sim/xsim_script.tcl
+# xsim {nuclear_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS: nuclear V3 18540 checks; DAC clocks 116965
+$finish called at time : 116977050 ns : File "R:/tb/tb_nuclear.sv" Line 121
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 239.570 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Oct 18 22:46:08 2026...

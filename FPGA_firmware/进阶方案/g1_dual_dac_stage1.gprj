@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project><Template>FPGA</Template><Version>5</Version>
+<Device name="GW2A-18C" pn="GW2A-LV18PG256C8/I7">gw2a18c-011</Device>
+<FileList>
+<File path="rtl/g1_dual_dac_stage1.v" type="file.verilog" enable="1"/>
+<File path="rtl/dual_dac_test_core.v" type="file.verilog" enable="1"/>
+<File path="rtl/wave_source_14.v" type="file.verilog" enable="1"/>
+<File path="constraints/g1_h5_adapter.cst" type="file.cst" enable="1"/>
+<File path="constraints/g1_dual_stage1.sdc" type="file.sdc" enable="1"/>
+</FileList></Project>

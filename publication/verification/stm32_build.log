@@ -1,0 +1,118 @@
+[1/23] Building ASM object CMakeFiles/nucsignal_f405.elf.dir/startup/startup_stm32f405xx.s.obj
+[2/23] Building C object CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/misc.c.obj
+[3/23] Building C object CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_gpio.c.obj
+[4/23] Building C object CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_iwdg.c.obj
+[5/23] Building C object CMakeFiles/nucsignal_f405.elf.dir/vendor/LCD/lcd_init.c.obj
+[6/23] Building C object CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_flash.c.obj
+[7/23] Building C object CMakeFiles/nucsignal_f405.elf.dir/vendor/SYSTEM/delay.c.obj
+[8/23] Building C object CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_spi.c.obj
+[9/23] Building C object CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_usart.c.obj
+[10/23] Building C object CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_rcc.c.obj
+[11/23] Building C object CMakeFiles/nucsignal_f405.elf.dir/src/main.c.obj
+[12/23] Building C object CMakeFiles/nucsignal_f405.elf.dir/src/transport.c.obj
+[13/23] Building C object CMakeFiles/nucsignal_f405.elf.dir/src/board.c.obj
+[14/23] Building C object CMakeFiles/nucsignal_f405.elf.dir/vendor/CORE/system_stm32f4xx.c.obj
+C:/Users/Twinkle/Desktop/xinman-nuclear-signal-generator/stm32_firmware/vendor/CORE/system_stm32f4xx.c: In function 'SetSysClock':
+C:/Users/Twinkle/Desktop/xinman-nuclear-signal-generator/stm32_firmware/vendor/CORE/system_stm32f4xx.c:657:5: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+  657 |     while ((RCC->CFGR & (uint32_t)RCC_CFGR_SWS ) != RCC_CFGR_SWS_PLL);
+      |     ^~~~~
+C:/Users/Twinkle/Desktop/xinman-nuclear-signal-generator/stm32_firmware/vendor/CORE/system_stm32f4xx.c:658:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'
+  658 |     {
+      |     ^
+[15/23] Building C object CMakeFiles/nucsignal_f405.elf.dir/src/crc32.c.obj
+[16/23] Building C object CMakeFiles/nucsignal_f405.elf.dir/src/interrupts.c.obj
+[17/23] Building C object CMakeFiles/nucsignal_f405.elf.dir/src/ui.c.obj
+[18/23] Building C object CMakeFiles/nucsignal_f405.elf.dir/src/storage.c.obj
+[19/23] Building C object CMakeFiles/nucsignal_f405.elf.dir/vendor/LCD/lcd.c.obj
+In file included from C:/Users/Twinkle/Desktop/xinman-nuclear-signal-generator/stm32_firmware/vendor/LCD/lcd.c:3:
+C:/Users/Twinkle/Desktop/xinman-nuclear-signal-generator/stm32_firmware/vendor/LCD/lcdfont.h:409:1: warning: missing braces around initializer [-Wmissing-braces]
+  409 | {
+      | ^
+  410 |         "��", 0x10, 0x00, 0x10, 0x00, 0xFF, 0x01, 0x11, 0x01, 0x11, 0x01, 0xFF, 0x01, 0x11, 0x01, 0x11, 0x01,
+      |         {     {
+  411 |         0xFF, 0x01, 0x11, 0x04, 0x10, 0x04, 0xE0, 0x07, /*"��",3*/
+      |                                                       }}
+  412 |         "��", 0x00, 0x00, 0xFC, 0x01, 0x80, 0x00, 0x40, 0x00, 0x20, 0x00, 0x20, 0x00, 0xFF, 0x07, 0x20, 0x00,
+      |         {     {
+......
+  415 | };
+      | }}
+C:/Users/Twinkle/Desktop/xinman-nuclear-signal-generator/stm32_firmware/vendor/LCD/lcdfont.h:428:1: warning: missing braces around initializer [-Wmissing-braces]
+  428 | {
+      | ^
+  429 |         "�j", 0x00, 0x3C, 0xE9, 0x03, 0x4A, 0x22, 0x84, 0x14, 0x0A, 0x00, 0xC9, 0x3F, 0x08, 0x01, 0x08, 0x01,
+      |         {     {
+  430 |         0xEC, 0x7F, 0x8A, 0x00, 0x89, 0x1F, 0x48, 0x11, 0x48, 0x0A, 0x28, 0x04, 0x15, 0x1B, 0xC2, 0x60,
+      |                                                                                                       }}
+  431 |         "��", 0x00, 0x02, 0x22, 0x04, 0x14, 0x04, 0xC8, 0x7F, 0x54, 0x40, 0x32, 0x20, 0x11, 0x00, 0x10, 0x09,
+      |         {     {
+  432 |         0x18, 0x09, 0x14, 0x09, 0x12, 0x11, 0x91, 0x10, 0x90, 0x10, 0x90, 0x20, 0x4A, 0x20, 0x24, 0x40,
+      |                                                                                                       }}
+  433 |         "��", 0x80, 0x00, 0x80, 0x00, 0x80, 0x00, 0xFC, 0x1F, 0x84, 0x10, 0x84, 0x10, 0x84, 0x10, 0xFC, 0x1F,
+      |         {     {
+  434 |         0x84, 0x10, 0x84, 0x10, 0x84, 0x10, 0xFC, 0x1F, 0x84, 0x50, 0x80, 0x40, 0x80, 0x40, 0x00, 0x7F, /*"��",3*/
+      |                                                                                                       }}
+  435 |         "��", 0x00, 0x00, 0xFE, 0x1F, 0x00, 0x08, 0x00, 0x04, 0x00, 0x02, 0x80, 0x01, 0x80, 0x00, 0xFF, 0x7F,
+      |         {     {
+  436 |         0x80, 0x00, 0x80, 0x00, 0x80, 0x00, 0x80, 0x00, 0x80, 0x00, 0x80, 0x00, 0xA0, 0x00, 0x40, 0x00, /*"��",4*/
+  437 | };
+      | }}
+C:/Users/Twinkle/Desktop/xinman-nuclear-signal-generator/stm32_firmware/vendor/LCD/lcdfont.h:448:1: warning: missing braces around initializer [-Wmissing-braces]
+  448 | {
+      | ^
+  449 | 
+  450 |         "��", 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x18, 0x00, 0x00, 0x08, 0x00, 0x00, 0x08, 0x00, 0x00,
+      |         {     {
+......
+  454 |         0x18, 0x30, 0x00, 0xF0, 0x1F, 0x00, 0x00, 0x00, /*"��",3*/
+      |                                                       }}
+  455 | 
+  456 |         "��", 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x04, 0xF0, 0xFF, 0x0F, 0x00, 0x00, 0x06, 0x00,
+      |         {     {
+......
+  462 | };
+      | }}
+C:/Users/Twinkle/Desktop/xinman-nuclear-signal-generator/stm32_firmware/vendor/LCD/lcdfont.h:473:1: warning: missing braces around initializer [-Wmissing-braces]
+  473 | {
+      | ^
+......
+  476 |         "��", 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xC0, 0x00, 0x00, 0x00, 0xC0, 0x01, 0x00,
+      |         {     {
+......
+  483 |         0x00, 0xC0, 0x01, 0x38, 0x00, 0x80, 0xFF, 0x1F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, /*"��",3*/
+      |                                                                                                       }}
+  484 |         "��", 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x03,
+      |         {     {
+......
+  492 | };
+      | }}
+[20/23] Building C object CMakeFiles/nucsignal_f405.elf.dir/src/device.c.obj
+[21/23] Building C object CMakeFiles/nucsignal_f405.elf.dir/src/fpga_link.c.obj
+[22/23] Building C object CMakeFiles/nucsignal_f405.elf.dir/src/protocol.c.obj
+[23/23] Linking C executable nucsignal_f405.elf
+C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o): in function `_close_r':
+closer.c:(.text._close_r+0xc): warning: _close is not implemented and will always fail
+C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o): note: the message above does not take linker garbage collection into account
+C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fstatr.o): in function `_fstat_r':
+fstatr.c:(.text._fstat_r+0xe): warning: _fstat is not implemented and will always fail
+C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fstatr.o): note: the message above does not take linker garbage collection into account
+C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signalr.o): in function `_getpid_r':
+signalr.c:(.text._getpid_r+0x0): warning: _getpid is not implemented and will always fail
+C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signalr.o): note: the message above does not take linker garbage collection into account
+C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-isattyr.o): in function `_isatty_r':
+isattyr.c:(.text._isatty_r+0xc): warning: _isatty is not implemented and will always fail
+C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-isattyr.o): note: the message above does not take linker garbage collection into account
+C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signalr.o): in function `_kill_r':
+signalr.c:(.text._kill_r+0xe): warning: _kill is not implemented and will always fail
+C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signalr.o): note: the message above does not take linker garbage collection into account
+C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o): in function `_lseek_r':
+lseekr.c:(.text._lseek_r+0x10): warning: _lseek is not implemented and will always fail
+C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o): note: the message above does not take linker garbage collection into account
+C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-readr.o): in function `_read_r':
+readr.c:(.text._read_r+0x10): warning: _read is not implemented and will always fail
+C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-readr.o): note: the message above does not take linker garbage collection into account
+C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-writer.o): in function `_write_r':
+writer.c:(.text._write_r+0x10): warning: _write is not implemented and will always fail
+C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld.exe: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-writer.o): note: the message above does not take linker garbage collection into account
+   text	   data	    bss	    dec	    hex	filename
+  48640	    476	   9996	  59112	   e6e8	nucsignal_f405.elf

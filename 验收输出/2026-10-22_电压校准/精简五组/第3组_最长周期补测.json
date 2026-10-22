@@ -1,0 +1,25 @@
+{
+  "group": 3,
+  "role": "longest-period supplementary measurement",
+  "file": "scope_csv_104_23.csv",
+  "sha256": "5115752df1271135507d9c7726685d13bb61219733659a425cb4d650feac8344",
+  "samples": 4000,
+  "dt_s": 8e-06,
+  "duration_s": 0.031992,
+  "time_column_constant": true,
+  "edge_indexes": [
+    744,
+    1994,
+    3244
+  ],
+  "intervals_us": [
+    10000.0,
+    10000.0
+  ],
+  "mean_period_us": 10000.0,
+  "error_to_10000us_pct": 0.0,
+  "frequency_Hz": 100.0,
+  "scope": "Photo CH2 DC500mV/div,2ms/div,125kSa/s,4K",
+  "parameter_evidence": "Continued group3 settings per procedure; prior activity screenshot confirms period10000us,tau144.27us",
+  "limit": "Edge sample timing resolution 8us; no sub-sample timebase accuracy claim. Width result retained from earlier higher-rate frame."
+}

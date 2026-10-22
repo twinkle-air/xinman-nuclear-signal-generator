@@ -1,0 +1,154 @@
+[
+  {
+    "config": {
+      "baseline_code": 96,
+      "amplitude_code": 84,
+      "period_us": 20,
+      "tau_us": 2,
+      "nuclear": true,
+      "random_events": false,
+      "noise_peak_codes": 0,
+      "seed": 1,
+      "competition": true,
+      "noise_mode": "uniform",
+      "noise_rms_percent": 0,
+      "allow_pileup": false
+    },
+    "samples": 2000,
+    "events": 100,
+    "clips": 0
+  },
+  {
+    "config": {
+      "baseline_code": 96,
+      "amplitude_code": 84,
+      "period_us": 10,
+      "tau_us": 1,
+      "nuclear": true,
+      "random_events": false,
+      "noise_peak_codes": 0,
+      "seed": 1,
+      "competition": true,
+      "noise_mode": "uniform",
+      "noise_rms_percent": 0,
+      "allow_pileup": false
+    },
+    "samples": 2000,
+    "events": 200,
+    "clips": 0
+  },
+  {
+    "config": {
+      "baseline_code": 96,
+      "amplitude_code": 84,
+      "period_us": 1000,
+      "tau_us": 144.27,
+      "nuclear": true,
+      "random_events": false,
+      "noise_peak_codes": 0,
+      "seed": 1,
+      "competition": true,
+      "noise_mode": "uniform",
+      "noise_rms_percent": 0,
+      "allow_pileup": false
+    },
+    "samples": 3000,
+    "events": 3,
+    "clips": 0
+  },
+  {
+    "config": {
+      "baseline_code": 128,
+      "amplitude_code": 0,
+      "period_us": 1000,
+      "tau_us": 12,
+      "nuclear": true,
+      "random_events": false,
+      "noise_peak_codes": 0,
+      "seed": 1,
+      "competition": true,
+      "noise_mode": "gaussian",
+      "noise_rms_percent": 0,
+      "allow_pileup": false
+    },
+    "samples": 6000,
+    "events": 6,
+    "clips": 0
+  },
+  {
+    "config": {
+      "baseline_code": 128,
+      "amplitude_code": 0,
+      "period_us": 1000,
+      "tau_us": 12,
+      "nuclear": true,
+      "random_events": false,
+      "noise_peak_codes": 0,
+      "seed": 1,
+      "competition": true,
+      "noise_mode": "gaussian",
+      "noise_rms_percent": 1,
+      "allow_pileup": false
+    },
+    "samples": 6000,
+    "events": 6,
+    "clips": 0
+  },
+  {
+    "config": {
+      "baseline_code": 128,
+      "amplitude_code": 0,
+      "period_us": 1000,
+      "tau_us": 12,
+      "nuclear": true,
+      "random_events": false,
+      "noise_peak_codes": 0,
+      "seed": 1,
+      "competition": true,
+      "noise_mode": "gaussian",
+      "noise_rms_percent": 5,
+      "allow_pileup": false
+    },
+    "samples": 6000,
+    "events": 6,
+    "clips": 0
+  },
+  {
+    "config": {
+      "baseline_code": 128,
+      "amplitude_code": 0,
+      "period_us": 1000,
+      "tau_us": 12,
+      "nuclear": true,
+      "random_events": false,
+      "noise_peak_codes": 0,
+      "seed": 1,
+      "competition": true,
+      "noise_mode": "gaussian",
+      "noise_rms_percent": 20,
+      "allow_pileup": false
+    },
+    "samples": 6000,
+    "events": 6,
+    "clips": 55
+  },
+  {
+    "config": {
+      "baseline_code": 96,
+      "amplitude_code": 84,
+      "period_us": 128,
+      "tau_us": 145,
+      "nuclear": true,
+      "random_events": true,
+      "noise_peak_codes": 0,
+      "seed": 17,
+      "competition": true,
+      "noise_mode": "gaussian",
+      "noise_rms_percent": 20,
+      "allow_pileup": false
+    },
+    "samples": 6000,
+    "events": 54,
+    "clips": 1272
+  }
+]

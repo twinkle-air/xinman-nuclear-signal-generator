@@ -1,0 +1,762 @@
+[
+  {
+    "path": ".agents",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  },
+  {
+    "path": ".git",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  },
+  {
+    "path": "FPGA_firmware/基础方案/g1_dac_stage1.gprj.user",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "FPGA_firmware/基础方案/impl/pnr/g1_dac_stage1.binx",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "FPGA_firmware/基础方案/impl/pnr/g1_dac_stage1.db",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "FPGA_firmware/基础方案/核信号单通道_V3/g1_dac_spi.gprj.user",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "FPGA_firmware/基础方案/核信号单通道_V3/impl/pnr/g1_dac_spi.binx",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "FPGA_firmware/基础方案/核信号单通道_V3/impl/pnr/g1_dac_spi.db",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "FPGA_firmware/基础方案/核信号单通道_V4/g1_dac_spi.gprj.user",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "FPGA_firmware/基础方案/核信号单通道_V4/impl/pnr/g1_dac_spi.binx",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "FPGA_firmware/基础方案/核信号单通道_V4/impl/pnr/g1_dac_spi.db",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "FPGA_firmware/基础方案/通信联调/g1_dac_spi.gprj.user",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "FPGA_firmware/基础方案/通信联调/impl/pnr/g1_dac_spi.binx",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "FPGA_firmware/基础方案/通信联调/impl/pnr/g1_dac_spi.db",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "FPGA_firmware/基础方案/通信联调_时序诊断/g1_dac_spi.gprj.user",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "FPGA_firmware/基础方案/通信联调_时序诊断/impl/pnr/g1_dac_spi.binx",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "FPGA_firmware/基础方案/通信联调_时序诊断/impl/pnr/g1_dac_spi.db",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "FPGA_firmware/进阶方案/g1_dual_dac_stage1.gprj.user",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "FPGA_firmware/进阶方案/impl/pnr/g1_dual_dac_stage1.binx",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "FPGA_firmware/进阶方案/impl/pnr/g1_dual_dac_stage1.db",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "pc_app/.pytest_cache",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  },
+  {
+    "path": "pc_app/.test_n4_tmp",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  },
+  {
+    "path": "pc_app/.venv",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  },
+  {
+    "path": "pc_app/build",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  },
+  {
+    "path": "pc_app/build_040",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  },
+  {
+    "path": "pc_app/dist_release",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  },
+  {
+    "path": "pc_app/dist_release_040",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  },
+  {
+    "path": "pc_app/test-temp-freeze-fix",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  },
+  {
+    "path": "pc_app/__pycache__",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  },
+  {
+    "path": "pc_app/src/nucsignal_studio.egg-info",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  },
+  {
+    "path": "pc_app/src/nucsignal_app/__pycache__",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  },
+  {
+    "path": "pc_app/src/nucsignal_app/ui/__pycache__",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  },
+  {
+    "path": "pc_app/tests/__pycache__",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  },
+  {
+    "path": "releases/2026-10-18_single-channel-bench_v0.8.0/FPGA_firmware/基础方案/impl/pnr/g1_dac_stage1.binx",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "releases/2026-10-18_single-channel-bench_v0.8.0/FPGA_firmware/基础方案/impl/pnr/g1_dac_stage1.db",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "releases/2026-10-18_single-channel-bench_v0.8.0/FPGA_firmware/基础方案/通信联调/impl/pnr/g1_dac_spi.binx",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "releases/2026-10-18_single-channel-bench_v0.8.0/FPGA_firmware/基础方案/通信联调/impl/pnr/g1_dac_spi.db",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "releases/2026-10-18_single-channel-bench_v0.8.0/FPGA_firmware/基础方案/通信联调_时序诊断/impl/pnr/g1_dac_spi.binx",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "releases/2026-10-18_single-channel-bench_v0.8.0/FPGA_firmware/基础方案/通信联调_时序诊断/impl/pnr/g1_dac_spi.db",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "releases/2026-10-18_single-channel-bench_v0.8.0/pc_app/src/nucsignal_studio.egg-info",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  },
+  {
+    "path": "releases/2026-10-18_single-channel-bench_v0.8.0/stm32_firmware/build-bench/CMakeCache.txt",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "releases/accepted_V0.9.1_N3_before_N4_2026-10-19/pc_app/src/nucsignal_studio.egg-info",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  },
+  {
+    "path": "releases/accepted_V0.9.1_N3_before_N4_2026-10-19/pc_app/src/nucsignal_app/__pycache__",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  },
+  {
+    "path": "releases/accepted_V0.9.1_N3_before_N4_2026-10-19/pc_app/src/nucsignal_app/ui/__pycache__",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  },
+  {
+    "path": "releases/accepted_V0.9.1_N3_before_N4_2026-10-19/pc_app/tests/__pycache__",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  },
+  {
+    "path": "releases/N4_V0.10.0_2026-10-19/sources/pc_app/src/nucsignal_studio.egg-info",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  },
+  {
+    "path": "releases/N4_V0.10.0_2026-10-19/sources/pc_app/src/nucsignal_app/__pycache__",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  },
+  {
+    "path": "releases/N4_V0.10.0_2026-10-19/sources/pc_app/src/nucsignal_app/ui/__pycache__",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  },
+  {
+    "path": "releases/N4_V0.10.0_2026-10-19/sources/pc_app/tests/__pycache__",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  },
+  {
+    "path": "releases/N4_V0.10.0_2026-10-19/sources/stm32_firmware/tools/__pycache__",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  },
+  {
+    "path": "releases/nuclear_N3_candidate_2026-10-18/pc_app/dist_release",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  },
+  {
+    "path": "releases/nuclear_N3_candidate_2026-10-18/pc_app/src/nucsignal_studio.egg-info",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  },
+  {
+    "path": "stm32_firmware/.settings",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  },
+  {
+    "path": "stm32_firmware/build-bench/.ninja_deps",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-bench/.ninja_log",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-bench/build.ninja",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-bench/CMakeCache.txt",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-bench/CMakeFiles/4.4.0/CompilerIdC/CMakeCCompilerId.o",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-bench/CMakeFiles/nucsignal_f405.elf.dir/src/board.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-bench/CMakeFiles/nucsignal_f405.elf.dir/src/crc32.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-bench/CMakeFiles/nucsignal_f405.elf.dir/src/device.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-bench/CMakeFiles/nucsignal_f405.elf.dir/src/fpga_link.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-bench/CMakeFiles/nucsignal_f405.elf.dir/src/interrupts.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-bench/CMakeFiles/nucsignal_f405.elf.dir/src/main.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-bench/CMakeFiles/nucsignal_f405.elf.dir/src/protocol.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-bench/CMakeFiles/nucsignal_f405.elf.dir/src/storage.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-bench/CMakeFiles/nucsignal_f405.elf.dir/src/transport.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-bench/CMakeFiles/nucsignal_f405.elf.dir/src/ui.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-bench/CMakeFiles/nucsignal_f405.elf.dir/startup/startup_stm32f405xx.s.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-bench/CMakeFiles/nucsignal_f405.elf.dir/vendor/CORE/system_stm32f4xx.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-bench/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/misc.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-bench/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_flash.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-bench/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_gpio.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-bench/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_iwdg.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-bench/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_rcc.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-bench/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_spi.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-bench/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_usart.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-bench/CMakeFiles/nucsignal_f405.elf.dir/vendor/LCD/lcd.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-bench/CMakeFiles/nucsignal_f405.elf.dir/vendor/LCD/lcd_init.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-bench/CMakeFiles/nucsignal_f405.elf.dir/vendor/SYSTEM/delay.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-competition/.ninja_deps",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-competition/.ninja_log",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-competition/build.ninja",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-competition/CMakeCache.txt",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-competition/CMakeFiles/4.4.0/CompilerIdC/CMakeCCompilerId.o",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-competition/CMakeFiles/nucsignal_f405.elf.dir/src/board.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-competition/CMakeFiles/nucsignal_f405.elf.dir/src/crc32.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-competition/CMakeFiles/nucsignal_f405.elf.dir/src/device.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-competition/CMakeFiles/nucsignal_f405.elf.dir/src/fpga_link.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-competition/CMakeFiles/nucsignal_f405.elf.dir/src/interrupts.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-competition/CMakeFiles/nucsignal_f405.elf.dir/src/main.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-competition/CMakeFiles/nucsignal_f405.elf.dir/src/protocol.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-competition/CMakeFiles/nucsignal_f405.elf.dir/src/storage.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-competition/CMakeFiles/nucsignal_f405.elf.dir/src/transport.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-competition/CMakeFiles/nucsignal_f405.elf.dir/src/ui.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-competition/CMakeFiles/nucsignal_f405.elf.dir/startup/startup_stm32f405xx.s.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-competition/CMakeFiles/nucsignal_f405.elf.dir/vendor/CORE/system_stm32f4xx.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-competition/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/misc.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-competition/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_flash.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-competition/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_gpio.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-competition/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_iwdg.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-competition/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_rcc.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-competition/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_spi.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-competition/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_usart.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-competition/CMakeFiles/nucsignal_f405.elf.dir/vendor/LCD/lcd.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-competition/CMakeFiles/nucsignal_f405.elf.dir/vendor/LCD/lcd_init.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-competition/CMakeFiles/nucsignal_f405.elf.dir/vendor/SYSTEM/delay.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-debug/.ninja_deps",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-debug/.ninja_log",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-debug/build.ninja",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-debug/CMakeCache.txt",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-debug/CMakeFiles/4.3.1/CompilerIdC/CMakeCCompilerId.o",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-debug/CMakeFiles/nucsignal_f405.elf.dir/src/board.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-debug/CMakeFiles/nucsignal_f405.elf.dir/src/crc32.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-debug/CMakeFiles/nucsignal_f405.elf.dir/src/device.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-debug/CMakeFiles/nucsignal_f405.elf.dir/src/fpga_link.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-debug/CMakeFiles/nucsignal_f405.elf.dir/src/interrupts.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-debug/CMakeFiles/nucsignal_f405.elf.dir/src/main.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-debug/CMakeFiles/nucsignal_f405.elf.dir/src/protocol.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-debug/CMakeFiles/nucsignal_f405.elf.dir/src/storage.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-debug/CMakeFiles/nucsignal_f405.elf.dir/src/transport.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-debug/CMakeFiles/nucsignal_f405.elf.dir/src/ui.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-debug/CMakeFiles/nucsignal_f405.elf.dir/startup/startup_stm32f405xx.s.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-debug/CMakeFiles/nucsignal_f405.elf.dir/vendor/CORE/system_stm32f4xx.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-debug/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/misc.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-debug/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_flash.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-debug/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_gpio.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-debug/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_iwdg.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-debug/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_rcc.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-debug/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_spi.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-debug/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_usart.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-debug/CMakeFiles/nucsignal_f405.elf.dir/vendor/LCD/lcd.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-debug/CMakeFiles/nucsignal_f405.elf.dir/vendor/LCD/lcd_init.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-debug/CMakeFiles/nucsignal_f405.elf.dir/vendor/SYSTEM/delay.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-gcc/.ninja_deps",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-gcc/.ninja_log",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-gcc/build.ninja",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-gcc/CMakeCache.txt",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-gcc/CMakeFiles/4.4.0/CompilerIdC/CMakeCCompilerId.o",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-gcc/CMakeFiles/nucsignal_f405.elf.dir/src/board.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-gcc/CMakeFiles/nucsignal_f405.elf.dir/src/crc32.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-gcc/CMakeFiles/nucsignal_f405.elf.dir/src/device.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-gcc/CMakeFiles/nucsignal_f405.elf.dir/src/fpga_link.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-gcc/CMakeFiles/nucsignal_f405.elf.dir/src/interrupts.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-gcc/CMakeFiles/nucsignal_f405.elf.dir/src/main.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-gcc/CMakeFiles/nucsignal_f405.elf.dir/src/protocol.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-gcc/CMakeFiles/nucsignal_f405.elf.dir/src/storage.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-gcc/CMakeFiles/nucsignal_f405.elf.dir/src/transport.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-gcc/CMakeFiles/nucsignal_f405.elf.dir/src/ui.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-gcc/CMakeFiles/nucsignal_f405.elf.dir/startup/startup_stm32f405xx.s.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-gcc/CMakeFiles/nucsignal_f405.elf.dir/vendor/CORE/system_stm32f4xx.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-gcc/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/misc.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-gcc/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_flash.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-gcc/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_gpio.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-gcc/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_iwdg.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-gcc/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_rcc.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-gcc/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_spi.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-gcc/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_usart.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-gcc/CMakeFiles/nucsignal_f405.elf.dir/vendor/LCD/lcd.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-gcc/CMakeFiles/nucsignal_f405.elf.dir/vendor/LCD/lcd_init.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-gcc/CMakeFiles/nucsignal_f405.elf.dir/vendor/SYSTEM/delay.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-nuclear/.ninja_deps",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-nuclear/.ninja_log",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-nuclear/build.ninja",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-nuclear/CMakeCache.txt",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-nuclear/CMakeFiles/4.4.0/CompilerIdC/CMakeCCompilerId.o",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-nuclear/CMakeFiles/nucsignal_f405.elf.dir/src/board.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-nuclear/CMakeFiles/nucsignal_f405.elf.dir/src/crc32.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-nuclear/CMakeFiles/nucsignal_f405.elf.dir/src/device.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-nuclear/CMakeFiles/nucsignal_f405.elf.dir/src/fpga_link.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-nuclear/CMakeFiles/nucsignal_f405.elf.dir/src/interrupts.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-nuclear/CMakeFiles/nucsignal_f405.elf.dir/src/main.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-nuclear/CMakeFiles/nucsignal_f405.elf.dir/src/protocol.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-nuclear/CMakeFiles/nucsignal_f405.elf.dir/src/storage.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-nuclear/CMakeFiles/nucsignal_f405.elf.dir/src/transport.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-nuclear/CMakeFiles/nucsignal_f405.elf.dir/src/ui.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-nuclear/CMakeFiles/nucsignal_f405.elf.dir/startup/startup_stm32f405xx.s.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-nuclear/CMakeFiles/nucsignal_f405.elf.dir/vendor/CORE/system_stm32f4xx.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-nuclear/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/misc.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-nuclear/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_flash.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-nuclear/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_gpio.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-nuclear/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_iwdg.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-nuclear/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_rcc.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-nuclear/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_spi.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-nuclear/CMakeFiles/nucsignal_f405.elf.dir/vendor/FWLIB/src/stm32f4xx_usart.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-nuclear/CMakeFiles/nucsignal_f405.elf.dir/vendor/LCD/lcd.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-nuclear/CMakeFiles/nucsignal_f405.elf.dir/vendor/LCD/lcd_init.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/build-nuclear/CMakeFiles/nucsignal_f405.elf.dir/vendor/SYSTEM/delay.c.obj",
+    "reason": "regenerable intermediate or per-user state"
+  },
+  {
+    "path": "stm32_firmware/tools/__pycache__",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  },
+  {
+    "path": "tools/__pycache__",
+    "reason": "local dependency, cache, IDE state or regenerable build intermediates"
+  }
+]

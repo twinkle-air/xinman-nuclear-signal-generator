@@ -1,0 +1,43 @@
+{
+  "file": "scope_csv_104_18.csv",
+  "sha256": "ed27ef8d90f9e5f19fa89a88e3415087c361bd18fb36a8ba3eb7d211db29c474",
+  "samples": 4000,
+  "dt_s": 2e-07,
+  "time_column_constant": true,
+  "baseline_code": 128,
+  "amplitude_code": 4,
+  "period_us": 256,
+  "tau_us": 24,
+  "noise": 0,
+  "random": false,
+  "spectrum": false,
+  "pulses": [
+    {
+      "edge_index": 720,
+      "baseline_median_V": 0.0032,
+      "min_first_2us_V": -0.0976,
+      "amplitude_peak_first_2us_V": 0.1008
+    },
+    {
+      "edge_index": 2000,
+      "baseline_median_V": 0.0032,
+      "min_first_2us_V": -0.0984,
+      "amplitude_peak_first_2us_V": 0.1016
+    },
+    {
+      "edge_index": 3280,
+      "baseline_median_V": 0.0032,
+      "min_first_2us_V": -0.0976,
+      "amplitude_peak_first_2us_V": 0.1008
+    }
+  ],
+  "intervals_us": [
+    256.0,
+    256.0
+  ],
+  "mean_peak_amplitude_V": 0.10106666666666668,
+  "error_to_0p1V_pct": 1.0666666666666824,
+  "difference_from_first_frame_mean_V": 0.0005333333333333579,
+  "scope_setting": "DC X1 20mV/div per continued procedure, no new scope photo",
+  "limit": "Peak minimum includes noise extreme bias; same-instrument repeatability only, no uncertainty-qualified absolute accuracy acceptance"
+}

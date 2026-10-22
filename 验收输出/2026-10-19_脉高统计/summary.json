@@ -1,0 +1,162 @@
+{
+  "status": "RELATIVE_PULSE_HEIGHT_SCREENING_ONLY",
+  "config_user_confirmed": true,
+  "assumed_config": {
+    "baseline": 96,
+    "amplitude": 84,
+    "period_us": 256,
+    "tau_us": 48,
+    "random": false,
+    "noise": 0,
+    "reference": "99_9 spectrum OFF",
+    "spectrum": "99_10..14 Cs-137 ON"
+  },
+  "files": [
+    {
+      "file": "scope_csv_99_9.csv",
+      "sha256": "a4553ce5cb60f780a7d26d828fa69a1e92dcb49961ff9d3e803ac832953f8407",
+      "samples": 4000,
+      "dt_us": 4,
+      "duration_ms": 16,
+      "grid_phase": 2,
+      "complete_cycles": 62,
+      "min_V": -1.26,
+      "max_V": 0.86,
+      "baseline_fit_median_V": 0.8124085803067458,
+      "relative_height_median_codes": 83.99999999999999,
+      "relative_height_std_codes": 0.47085135181503773,
+      "residual_rms_median_V": 0.022853343327206867
+    },
+    {
+      "file": "scope_csv_99_10.csv",
+      "sha256": "f017828407066a2b19b024e352b224b1cfc977260fc754190d2b95b7c11f8841",
+      "samples": 4000,
+      "dt_us": 4,
+      "duration_ms": 16,
+      "grid_phase": 61,
+      "complete_cycles": 61,
+      "min_V": 0.1,
+      "max_V": 0.86,
+      "baseline_fit_median_V": 0.8139413997440132,
+      "relative_height_median_codes": 26.12455248684556,
+      "relative_height_std_codes": 10.313164036246766,
+      "residual_rms_median_V": 0.022831809626323498
+    },
+    {
+      "file": "scope_csv_99_11.csv",
+      "sha256": "306c81d4e8538b3c4979b2b426984f08211efef309124263a4c05c1e204e7ab0",
+      "samples": 4000,
+      "dt_us": 4,
+      "duration_ms": 16,
+      "grid_phase": 63,
+      "complete_cycles": 61,
+      "min_V": 0.12,
+      "max_V": 0.86,
+      "baseline_fit_median_V": 0.815773622338339,
+      "relative_height_median_codes": 26.550202600916585,
+      "relative_height_std_codes": 8.951468890296749,
+      "residual_rms_median_V": 0.02244986717301614
+    },
+    {
+      "file": "scope_csv_99_12.csv",
+      "sha256": "6c08a5d54e3dc40fe8e52344f41196b9c042de404b58debb3da221f0766844ae",
+      "samples": 4000,
+      "dt_us": 4,
+      "duration_ms": 16,
+      "grid_phase": 17,
+      "complete_cycles": 62,
+      "min_V": 0.08,
+      "max_V": 0.86,
+      "baseline_fit_median_V": 0.813763768042012,
+      "relative_height_median_codes": 27.873756851663927,
+      "relative_height_std_codes": 9.354682534221116,
+      "residual_rms_median_V": 0.022810042006831233
+    },
+    {
+      "file": "scope_csv_99_13.csv",
+      "sha256": "a3835cae10e22bc6af479bdcaedb839f11d42d40beb58a08fcd0e139cbe049e5",
+      "samples": 4000,
+      "dt_us": 4,
+      "duration_ms": 16,
+      "grid_phase": 60,
+      "complete_cycles": 61,
+      "min_V": 0.04,
+      "max_V": 0.86,
+      "baseline_fit_median_V": 0.8130663775011042,
+      "relative_height_median_codes": 27.366456723980146,
+      "relative_height_std_codes": 9.612089794669599,
+      "residual_rms_median_V": 0.022511036892840078
+    },
+    {
+      "file": "scope_csv_99_14.csv",
+      "sha256": "73a9a3d754f5d22c43b1e1019e2047c0407a5a87a26902b6f7aa842971162500",
+      "samples": 4000,
+      "dt_us": 4,
+      "duration_ms": 16,
+      "grid_phase": 27,
+      "complete_cycles": 62,
+      "min_V": 0.1,
+      "max_V": 0.86,
+      "baseline_fit_median_V": 0.8146519454101137,
+      "relative_height_median_codes": 26.738525043916685,
+      "relative_height_std_codes": 8.444841321929072,
+      "residual_rms_median_V": 0.022566984369655707
+    }
+  ],
+  "reference_tau_fit_us": 47.6,
+  "relative_scale_V_per_code": 0.024160330081668742,
+  "spectrum_cycles": 307,
+  "observed_quantiles": [
+    3.5330082493452957,
+    13.592995810223655,
+    26.992373208437527,
+    28.03751744990882,
+    29.60062255050022
+  ],
+  "expected_code_quantiles": [
+    2.0,
+    11.0,
+    27.0,
+    28.0,
+    29.0
+  ],
+  "peak_window_codes": [
+    23,
+    33
+  ],
+  "peak_window_count": 210,
+  "peak_window_median_codes": 27.621089765611966,
+  "expected_peak_window_probability": 0.6328125,
+  "coarse_bins": {
+    "observed": [
+      25,
+      45,
+      26,
+      1,
+      210,
+      0
+    ],
+    "expected_probabilities": [
+      0.1171875,
+      0.14453125,
+      0.1015625,
+      0.00390625,
+      0.6328125,
+      0.0
+    ],
+    "labels": [
+      "<5",
+      "5..12",
+      "12..20",
+      "20..23",
+      "23..33",
+      ">=33"
+    ]
+  },
+  "limitations": [
+    "4 us sample phase may differ between reference and spectrum captures.",
+    "OLS exponential is approximate; DAC quantization and analog response remain.",
+    "Grid extraction assumes fixed 256 us arrival; not a random-arrival test.",
+    "No calibrated energy conversion or FWHM accuracy claim."
+  ]
+}

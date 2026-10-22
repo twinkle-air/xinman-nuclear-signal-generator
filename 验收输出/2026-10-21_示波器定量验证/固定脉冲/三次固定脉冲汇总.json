@@ -1,0 +1,109 @@
+{
+  "config_confirmed_by_screenshot": {
+    "baseline": 96,
+    "amplitude": 84,
+    "period_us": 2000,
+    "tau_us": 24,
+    "noise": 0,
+    "random": 0,
+    "spectrum": 0,
+    "pileup": 0,
+    "pc_version": "0.10.2",
+    "firmware": "F405-N4.0.0"
+  },
+  "records": [
+    {
+      "file": "scope_csv_101_1.csv",
+      "metadata": {
+        "file": "scope_csv_101_1.csv",
+        "sha256": "be6d9e6c6ef6932dd934ebe8ca8f645c2647d2ce18a3ea6ddc4d3c583c1b06f2",
+        "samples": 4000,
+        "dt_s": 2e-07,
+        "sample_rate_hz": 5000000.0,
+        "interpretation": "重复正数时间列按采样间隔解释（请核对示波器采样率）",
+        "time_scale": 1.0,
+        "voltage_scale": 1.0,
+        "probe": 1.0
+      },
+      "detected_pulses": 1,
+      "baseline_v": 0.8,
+      "minimum_v": -1.26,
+      "amplitude_v": 2.06,
+      "tau_us": 23.442948031559222,
+      "tau_error_percent": -2.3210498685032444,
+      "fwhm_us": 16.948058252427188,
+      "fwhm_error_percent": 1.8786649728082416
+    },
+    {
+      "file": "scope_csv_101_3.csv",
+      "metadata": {
+        "file": "scope_csv_101_3.csv",
+        "sha256": "526971875637e678aff7895d87de017e2ec8ba10a93ab2b899682ac45bf74a9b",
+        "samples": 4000,
+        "dt_s": 2e-07,
+        "sample_rate_hz": 5000000.0,
+        "interpretation": "重复正数时间列按采样间隔解释（请核对示波器采样率）",
+        "time_scale": 1.0,
+        "voltage_scale": 1.0,
+        "probe": 1.0
+      },
+      "detected_pulses": 1,
+      "baseline_v": 0.8,
+      "minimum_v": -1.24,
+      "amplitude_v": 2.04,
+      "tau_us": 23.248971234641857,
+      "tau_error_percent": -3.1292865223255917,
+      "fwhm_us": 17.0,
+      "fwhm_error_percent": 2.190898729634916
+    },
+    {
+      "file": "scope_csv_101_4.csv",
+      "metadata": {
+        "file": "scope_csv_101_4.csv",
+        "sha256": "bd26b06556688bb82032850941c02bfecc5763dd8be36dbaa177ea95b331c840",
+        "samples": 4000,
+        "dt_s": 2e-07,
+        "sample_rate_hz": 5000000.0,
+        "interpretation": "重复正数时间列按采样间隔解释（请核对示波器采样率）",
+        "time_scale": 1.0,
+        "voltage_scale": 1.0,
+        "probe": 1.0
+      },
+      "detected_pulses": 1,
+      "baseline_v": 0.8,
+      "minimum_v": -1.26,
+      "amplitude_v": 2.06,
+      "tau_us": 23.510470497563436,
+      "tau_error_percent": -2.039706260152352,
+      "fwhm_us": 16.933333333333394,
+      "fwhm_error_percent": 1.7901501071661219
+    }
+  ],
+  "summary": {
+    "amplitude_v": {
+      "mean": 2.0533333333333332,
+      "sample_std": 0.011547005383792526,
+      "min": 2.04,
+      "max": 2.06
+    },
+    "tau_us": {
+      "mean": 23.400796587921505,
+      "sample_std": 0.13574985921793783,
+      "min": 23.248971234641857,
+      "max": 23.510470497563436
+    },
+    "fwhm_us": {
+      "mean": 16.960463861920193,
+      "sample_std": 0.035021928434608066,
+      "min": 16.933333333333394,
+      "max": 17.0
+    }
+  },
+  "method": "基线中位数减最低采样点求幅度；尾部20-80%对数线性回归独立估计τ；两侧半幅交点线性插值求FWHM；CSV附加倍率1",
+  "limits": [
+    "仅3个独立单脉冲，非长时间统计",
+    "幅度未建立独立电压目标及仪器校准，不能判定幅度准确度",
+    "单帧窗口小于周期，不能验证周期",
+    "幅度为极值法，受噪声和20mV量化影响"
+  ]
+}

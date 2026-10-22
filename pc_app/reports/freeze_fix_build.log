@@ -1,0 +1,133 @@
+....................................................                     [100%]
+52 passed in 8.03s
+1727 INFO: PyInstaller: 6.22.1, contrib hooks: 2026.6
+1727 INFO: Python: 3.11.15
+1760 INFO: Platform: Windows-10-10.0.26300-SP0
+1760 INFO: Python environment: C:\Users\Twinkle\Desktop\������\pc_app\.venv
+1761 INFO: wrote C:\Users\Twinkle\Desktop\������\pc_app\���źŹ���̨.spec
+1779 INFO: Removing temporary files and cleaning cache in C:\Users\Twinkle\AppData\Local\pyinstaller
+1846 INFO: Module search paths (PYTHONPATH):
+['C:\\Users\\Twinkle\\Desktop\\������\\pc_app',
+ 'C:\\Espressif\\tools\\python\\python311.zip',
+ 'C:\\Espressif\\tools\\python\\DLLs',
+ 'C:\\Espressif\\tools\\python\\Lib',
+ 'C:\\Espressif\\tools\\python',
+ 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv',
+ 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages',
+ 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\src',
+ 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app',
+ 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\src']
+2434 INFO: checking Analysis
+2434 INFO: Building Analysis because Analysis-00.toc is non existent
+2434 INFO: Looking for Python shared library...
+2434 INFO: Using Python shared library: C:\Espressif\tools\python\python311.dll
+2434 INFO: Running Analysis Analysis-00.toc
+2434 INFO: Target bytecode optimization level: 0
+2434 INFO: Initializing module dependency graph...
+2436 INFO: Initializing module graph hook caches...
+2559 INFO: Analyzing modules for base_library.zip ...
+4170 INFO: Processing standard module hook 'hook-heapq.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+4642 INFO: Processing standard module hook 'hook-encodings.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+7115 INFO: Processing standard module hook 'hook-math.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+7352 INFO: Processing standard module hook 'hook-pickle.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+11285 INFO: Caching module dependency graph...
+11317 INFO: Analyzing C:\Users\Twinkle\Desktop\������\pc_app\launcher.py
+11641 INFO: Processing standard module hook 'hook-PySide6.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+12105 INFO: Processing standard module hook 'hook-shiboken6.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+12226 INFO: Processing standard module hook 'hook-PySide6.QtNetwork.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+14806 INFO: Processing standard module hook 'hook-PySide6.QtCore.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+17755 INFO: Processing standard module hook 'hook-PySide6.QtWidgets.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+21008 INFO: Processing standard module hook 'hook-PySide6.QtGui.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+54864 INFO: Processing standard module hook 'hook-numpy.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+56607 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+56643 INFO: SetuptoolsInfo: initializing cached setuptools info...
+64500 INFO: Setuptools: 'typing_extensions' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.typing_extensions'!
+64547 INFO: Processing standard module hook 'hook-setuptools.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+64692 INFO: Processing standard module hook 'hook-platform.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+64729 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+64752 INFO: Processing pre-find-module-path hook 'hook-distutils.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_find_module_path'
+65545 INFO: Processing standard module hook 'hook-distutils.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+65627 INFO: Processing standard module hook 'hook-distutils.util.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+65884 INFO: Processing standard module hook 'hook-sysconfig.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+66019 INFO: Processing standard module hook 'hook-_osx_support.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+66152 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+66677 INFO: Processing standard module hook 'hook-_ctypes.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+66988 INFO: Processing pre-safe-import-module hook 'hook-jaraco.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+67009 INFO: Setuptools: 'jaraco' appears to be a full setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco'!
+67048 INFO: Processing standard module hook 'hook-setuptools._vendor.jaraco.text.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+67062 INFO: Processing pre-safe-import-module hook 'hook-importlib_resources.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+67120 INFO: Processing pre-safe-import-module hook 'hook-more_itertools.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+67142 INFO: Setuptools: 'more_itertools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.more_itertools'!
+68046 INFO: Processing pre-safe-import-module hook 'hook-backports.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+68077 INFO: Setuptools: 'backports' appears to be a full setuptools-vendored copy - creating alias to 'setuptools._vendor.backports'!
+68611 INFO: Processing pre-safe-import-module hook 'hook-importlib_metadata.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+68631 INFO: Setuptools: 'importlib_metadata' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.importlib_metadata'!
+68686 INFO: Processing standard module hook 'hook-setuptools._vendor.importlib_metadata.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+68717 INFO: Processing pre-safe-import-module hook 'hook-zipp.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+68735 INFO: Setuptools: 'zipp' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.zipp'!
+70083 INFO: Processing pre-safe-import-module hook 'hook-tomli.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+70101 INFO: Setuptools: 'tomli' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.tomli'!
+71336 INFO: Processing standard module hook 'hook-pkg_resources.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+72187 INFO: Processing standard module hook 'hook-xml.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+72219 INFO: Processing pre-safe-import-module hook 'hook-platformdirs.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+72239 INFO: Setuptools: 'platformdirs' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.platformdirs'!
+73135 INFO: Processing pre-safe-import-module hook 'hook-wheel.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+73165 INFO: Setuptools: 'wheel' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.wheel'!
+74587 INFO: Processing standard module hook 'hook-difflib.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+75178 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+79764 INFO: Processing standard module hook 'hook-webbrowser.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+84578 INFO: Processing standard module hook 'hook-openpyxl.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+86563 INFO: Processing standard module hook 'hook-xml.etree.cElementTree.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+88191 INFO: Processing standard module hook 'hook-PIL.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+88382 INFO: Processing standard module hook 'hook-PIL.Image.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+89660 INFO: Processing standard module hook 'hook-PIL.ImageFilter.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+92232 INFO: Processing standard module hook 'hook-PySide6.QtSvg.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+93634 INFO: Processing module hooks (post-graph stage)...
+94506 INFO: Processing standard module hook 'hook-PIL.SpiderImagePlugin.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+96366 INFO: Performing binary vs. data reclassification (130 entries)
+97291 INFO: Looking for ctypes DLLs
+97347 WARNING: Ignoring /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation imported from C:\Users\Twinkle\Desktop\������\pc_app\.venv\Lib\site-packages\serial\tools\list_ports_osx.py - only basenames are supported with ctypes imports!
+97347 WARNING: Ignoring /System/Library/Frameworks/IOKit.framework/IOKit imported from C:\Users\Twinkle\Desktop\������\pc_app\.venv\Lib\site-packages\serial\tools\list_ports_osx.py - only basenames are supported with ctypes imports!
+97396 INFO: Analyzing run-time hooks ...
+97400 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+97428 INFO: Including run-time hook 'pyi_rth_setuptools.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+97438 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+97452 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+97465 INFO: Including run-time hook 'pyi_rth_pkgres.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+97484 INFO: Including run-time hook 'pyi_rth_pyside6.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+97495 INFO: Processing pre-find-module-path hook 'hook-_pyi_rth_utils.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_find_module_path'
+97516 INFO: Processing standard module hook 'hook-_pyi_rth_utils.py' from 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+97555 INFO: Creating base_library.zip...
+97577 INFO: Looking for dynamic libraries
+100203 INFO: Extra DLL search directories (AddDllDirectory): ['C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\shiboken6', 'C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\numpy.libs']
+100203 INFO: Extra DLL search directories (PATH): ['C:\\Users\\Twinkle\\Desktop\\������\\pc_app\\.venv\\Lib\\site-packages\\PySide6']
+103486 INFO: Warnings written to C:\Users\Twinkle\Desktop\������\pc_app\build\���źŹ���̨\warn-���źŹ���̨.txt
+103559 INFO: Graph cross-reference written to C:\Users\Twinkle\Desktop\������\pc_app\build\���źŹ���̨\xref-���źŹ���̨.html
+103672 INFO: checking PYZ
+103673 INFO: Building PYZ because PYZ-00.toc is non existent
+103673 INFO: Building PYZ (ZlibArchive) C:\Users\Twinkle\Desktop\������\pc_app\build\���źŹ���̨\PYZ-00.pyz
+104284 INFO: Building PYZ (ZlibArchive) C:\Users\Twinkle\Desktop\������\pc_app\build\���źŹ���̨\PYZ-00.pyz completed successfully.
+104339 INFO: checking PKG
+104339 INFO: Building PKG because PKG-00.toc is non existent
+104339 INFO: Building PKG (CArchive) ���źŹ���̨.pkg
+127140 INFO: Building PKG (CArchive) ���źŹ���̨.pkg completed successfully.
+127151 INFO: Bootloader C:\Users\Twinkle\Desktop\������\pc_app\.venv\Lib\site-packages\PyInstaller\bootloader\Windows-64bit-intel\runw.exe
+127151 INFO: checking EXE
+127152 INFO: Building EXE because EXE-00.toc is non existent
+127152 INFO: Building EXE from EXE-00.toc
+127156 INFO: Copying bootloader EXE to C:\Users\Twinkle\Desktop\������\pc_app\dist_release\���źŹ���̨.exe
+127775 INFO: Copying icon to EXE
+128018 INFO: Copying 0 resources to EXE
+128018 INFO: Embedding manifest in EXE
+128250 INFO: Appending PKG archive to EXE
+128501 INFO: Fixing EXE headers
+129226 INFO: Building EXE from EXE-00.toc completed successfully.
+129239 INFO: Build complete! The results are available in: C:\Users\Twinkle\Desktop\������\pc_app\dist_release
+
+Version     : 0.10.1
+DeviceModes : 模拟, 单通道台架, USB CDC, ST-Link VCP
+Target      : C:\Users\Twinkle\Desktop\新漫杯\pc_app\dist_release\核信号工作台.exe
+Size        : 66834763
+SHA256      : B53FF42D156DBBD673832BFCC151FFF572E4D529A6CC4035D7DC0881993D8B5B
+Modified    : 2026/10/21 16:32:26
+

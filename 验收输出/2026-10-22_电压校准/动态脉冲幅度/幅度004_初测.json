@@ -1,0 +1,50 @@
+{
+  "file": "scope_csv_104_12.csv",
+  "sha256": "7737d8b5576fc63c8fb0e70c45caabb058ae318f35dae7d8ba64def377478e37",
+  "samples": 4000,
+  "dt_s": 2e-07,
+  "baseline_code": 128,
+  "amplitude_code": 4,
+  "period_us": 256,
+  "tau_us": 24,
+  "noise": 0,
+  "spectrum": false,
+  "random": false,
+  "scope": "CH2 DC 20 mV/div, 50 us/div, 5 MSa/s, 4K, trace inside display",
+  "pulses": [
+    {
+      "edge_index": 721,
+      "baseline_median_V": 0.0032,
+      "min_first_2us_V": -0.0968,
+      "amplitude_peak_first_2us_V": 0.09999999999999999,
+      "early_plateau_mean_1_to_5us_V": -0.08908,
+      "amplitude_early_plateau_V": 0.09228
+    },
+    {
+      "edge_index": 2001,
+      "baseline_median_V": 0.0032,
+      "min_first_2us_V": -0.0976,
+      "amplitude_peak_first_2us_V": 0.1008,
+      "early_plateau_mean_1_to_5us_V": -0.08936,
+      "amplitude_early_plateau_V": 0.09255999999999999
+    },
+    {
+      "edge_index": 3281,
+      "baseline_median_V": 0.0032,
+      "min_first_2us_V": -0.0976,
+      "amplitude_peak_first_2us_V": 0.1008,
+      "early_plateau_mean_1_to_5us_V": -0.08948000000000002,
+      "amplitude_early_plateau_V": 0.09268000000000001
+    }
+  ],
+  "intervals_us": [
+    256.0,
+    256.0
+  ],
+  "mean_peak_amplitude_V": 0.10053333333333332,
+  "error_to_0p1V_pct": 0.533333333333319,
+  "predicted_from_nine_DC_nodes_V": 0.09940875,
+  "prior_DC_code128_mean_V": 0.05876000000000001,
+  "current_baseline_median_V": 0.0032,
+  "status": "Initial dynamic amplitude measurement only; baseline changed versus prior 1V/div DC measurement; same-setting amplitude-zero check required. No uncertainty-qualified accuracy acceptance."
+}

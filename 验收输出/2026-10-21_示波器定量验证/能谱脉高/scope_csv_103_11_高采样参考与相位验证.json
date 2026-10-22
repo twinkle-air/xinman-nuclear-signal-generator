@@ -1,0 +1,171 @@
+{
+  "metadata": {
+    "file": "scope_csv_103_11.csv",
+    "sha256": "111e0bf0190deb3ad5dd21a7a06b32ac1e323a79e5d08e8df0ab5fe972b82e8c",
+    "samples": 4000,
+    "dt_s": 2e-07,
+    "sample_rate_hz": 5000000.0,
+    "interpretation": "重复正数时间列按采样间隔解释（请核对示波器采样率）",
+    "time_scale": 1.0,
+    "voltage_scale": 1.0,
+    "probe": 1.0
+  },
+  "configuration": "按采集指示为基线96/幅度84/周期256us/tau24us/能谱关闭/随机关闭/噪声0；本次未附活动参数截图",
+  "pulses": [
+    {
+      "leading_edge_index": 720,
+      "minimum_index": 720,
+      "baseline_v": 0.82,
+      "amplitude_v": 2.1,
+      "tau_us": 23.934151563574787,
+      "fwhm_us": 17.0
+    },
+    {
+      "leading_edge_index": 2000,
+      "minimum_index": 2000,
+      "baseline_v": 0.82,
+      "amplitude_v": 2.1,
+      "tau_us": 23.881327359830674,
+      "fwhm_us": 17.0
+    },
+    {
+      "leading_edge_index": 3280,
+      "minimum_index": 3280,
+      "baseline_v": 0.82,
+      "amplitude_v": 2.1,
+      "tau_us": 23.860815904644852,
+      "fwhm_us": 16.999999999999886
+    }
+  ],
+  "leading_edge_intervals_us": [
+    255.99999999999994,
+    256.00000000000006
+  ],
+  "mean_peak_amplitude_v": 2.1,
+  "mean_tau_us": 23.89209827601677,
+  "mean_fwhm_us": 16.99999999999996,
+  "fixed_tau_fit": {
+    "method": "fixed_period_known_tau_OLS",
+    "assumed_period_us": 256,
+    "assumed_tau_us": 24,
+    "phase_sample": 720,
+    "complete_cycles": 2,
+    "amplitudes_v": [
+      2.1432079376210575,
+      2.1366391110282037
+    ],
+    "mean_amplitude_v": 2.1399235243246304,
+    "median_residual_rms_v": 0.011266068785664777,
+    "warning": "拟合依赖人工确认的周期和τ；不适用于随机间隔、非指数或截顶数据。"
+  },
+  "offline_every20_samples_phase_sensitivity": [
+    {
+      "phase_0p2us": 0,
+      "effective_fitted_mean_v": 2.1009262915671982,
+      "cycles": 2
+    },
+    {
+      "phase_0p2us": 1,
+      "effective_fitted_mean_v": 2.1115691515793342,
+      "cycles": 2
+    },
+    {
+      "phase_0p2us": 2,
+      "effective_fitted_mean_v": 2.1099278959629792,
+      "cycles": 2
+    },
+    {
+      "phase_0p2us": 3,
+      "effective_fitted_mean_v": 2.1052184149062465,
+      "cycles": 2
+    },
+    {
+      "phase_0p2us": 4,
+      "effective_fitted_mean_v": 2.099077961524033,
+      "cycles": 2
+    },
+    {
+      "phase_0p2us": 5,
+      "effective_fitted_mean_v": 2.019645585320828,
+      "cycles": 2
+    },
+    {
+      "phase_0p2us": 6,
+      "effective_fitted_mean_v": 2.024920920099132,
+      "cycles": 2
+    },
+    {
+      "phase_0p2us": 7,
+      "effective_fitted_mean_v": 2.023371822616559,
+      "cycles": 2
+    },
+    {
+      "phase_0p2us": 8,
+      "effective_fitted_mean_v": 2.014629408847597,
+      "cycles": 2
+    },
+    {
+      "phase_0p2us": 9,
+      "effective_fitted_mean_v": 2.0203950982752215,
+      "cycles": 2
+    },
+    {
+      "phase_0p2us": 10,
+      "effective_fitted_mean_v": 1.924216896424958,
+      "cycles": 2
+    },
+    {
+      "phase_0p2us": 11,
+      "effective_fitted_mean_v": 1.9333928760119632,
+      "cycles": 2
+    },
+    {
+      "phase_0p2us": 12,
+      "effective_fitted_mean_v": 1.9446048299737548,
+      "cycles": 2
+    },
+    {
+      "phase_0p2us": 13,
+      "effective_fitted_mean_v": 1.9405165273858076,
+      "cycles": 2
+    },
+    {
+      "phase_0p2us": 14,
+      "effective_fitted_mean_v": 1.93884451302698,
+      "cycles": 2
+    },
+    {
+      "phase_0p2us": 15,
+      "effective_fitted_mean_v": 1.8606794298908862,
+      "cycles": 2
+    },
+    {
+      "phase_0p2us": 16,
+      "effective_fitted_mean_v": 1.8600859132768788,
+      "cycles": 2
+    },
+    {
+      "phase_0p2us": 17,
+      "effective_fitted_mean_v": 1.8590969027109288,
+      "cycles": 2
+    },
+    {
+      "phase_0p2us": 18,
+      "effective_fitted_mean_v": 1.8537314110426986,
+      "cycles": 2
+    },
+    {
+      "phase_0p2us": 19,
+      "effective_fitted_mean_v": 1.8585884270553232,
+      "cycles": 2
+    }
+  ],
+  "prior_low_rate_effective_fit_v": 1.9141027402892028,
+  "conclusions": [
+    "高采样率测得三个同幅固定脉冲，两个前沿间隔约256us",
+    "对同一实测记录离线每20点取1点，相位变化下等效拟合幅度区间包含此前1.914V结果，采样相位足以解释该差异",
+    "离线抽点并不完整模拟示波器硬件降采样滤波，不排除跨采集时刻的其他变化",
+    "不能反向以主峰对齐完成能量校准，也不据此宣称全谱峰位或分辨率精度通过"
+  ],
+  "analysis_note": "内置analyze_scope对少量几乎相等的间隔生成20箱时触发NumPy浮点分箱异常；本次改用独立前沿检测与逐脉冲计算。该运行时边界问题未在本轮改程序或重打包，保留供后续修复。"
+}

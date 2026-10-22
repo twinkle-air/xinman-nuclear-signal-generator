@@ -1,0 +1,22 @@
+{
+  "file": "scope_csv_104_15.csv",
+  "sha256": "c003aa79a0c583fb3c83ceaed4e6c6b6e0cc94c671c3500b079920658bf5eebf",
+  "samples": 4000,
+  "dt_s": 2e-07,
+  "time_column_constant": true,
+  "scope": "Photo confirms CH2 GND, 1 V/div, 50 us/div, 5 MSa/s, 4K, STOP capture",
+  "mean_V": 0.03548,
+  "median_V": 0.04,
+  "std_ac_V": 0.013250267921819546,
+  "min_V": 0.0,
+  "max_V": 0.08,
+  "levels_V": [
+    0.0,
+    0.04,
+    0.08
+  ],
+  "first_half_mean_V": 0.03544,
+  "second_half_mean_V": 0.035519999999999996,
+  "prior_DC_minus_GND_mean_V": 0.01541,
+  "limit": "GND coupling checks internal zero reference; not an independent physical shorted-input calibration. Do not retroactively subtract from all nine points without checking setting dependence and repeatability."
+}

@@ -1,0 +1,18 @@
+{
+  "file": "scope_csv_104_16.csv",
+  "sha256": "99a18a8a0c861506ed0bdd9b3ee414a8a14ad5ed58523d83c9adb7e4a41cccbc",
+  "samples": 4000,
+  "dt_s": 2e-07,
+  "time_column_constant": true,
+  "scope": "Photo confirms CH2 GND, 20 mV/div, 50 us/div, 5 MSa/s, 4K",
+  "mean_V": 0.0006422000000000001,
+  "median_V": 0.0008,
+  "std_ac_V": 0.0003218371637956064,
+  "min_V": 0.0,
+  "max_V": 0.0016,
+  "GND_1Vdiv_mean_V": 0.03548,
+  "GND_1Vdiv_minus_20mVdiv_V": 0.034837799999999995,
+  "DC_minus_GND_20mVdiv_V": 0.0021634000000000002,
+  "DC_minus_GND_1Vdiv_V": 0.01541,
+  "limit": "GND references do not fully reconcile DC readings across ranges; do not retroactively apply one offset to all calibration data. Need repeat DC at 20mV/div with unchanged position."
+}

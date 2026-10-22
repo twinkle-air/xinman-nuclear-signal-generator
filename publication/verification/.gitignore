@@ -1,0 +1,4 @@
+pytest-temp/
+stm32-build/
+fpga-build/
+*.exe

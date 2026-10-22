@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "file": "scope_csv_103_12.csv",
+    "sha256": "f4a2d92330aa06b1affb64d3578926139a6dab1e53544c89e29194ea830f40dc",
+    "samples": 4000,
+    "dt_s": 2e-07,
+    "sample_rate_hz": 5000000.0,
+    "interpretation": "重复正数时间列按采样间隔解释（请核对示波器采样率）",
+    "time_scale": 1.0,
+    "voltage_scale": 1.0,
+    "probe": 1.0
+  },
+  "confirmed_config": {
+    "baseline": 96,
+    "amplitude": 42,
+    "period_us": 256,
+    "tau_us": 24,
+    "random": 0,
+    "spectrum": 0,
+    "noise": 0,
+    "pileup": 0,
+    "clips_in_screenshot": 0
+  },
+  "pulses": [
+    {
+      "index": 720,
+      "baseline_v": 0.82,
+      "minimum_v": -0.24,
+      "amplitude_v": 1.06
+    },
+    {
+      "index": 2001,
+      "baseline_v": 0.82,
+      "minimum_v": -0.24,
+      "amplitude_v": 1.06
+    },
+    {
+      "index": 3282,
+      "baseline_v": 0.82,
+      "minimum_v": -0.24,
+      "amplitude_v": 1.06
+    }
+  ],
+  "mean_amplitude_v": 1.06,
+  "reference84_file": "scope_csv_103_11.csv",
+  "reference84_amplitude_v": 2.1,
+  "reference84_sha256": "111e0bf0190deb3ad5dd21a7a06b32ac1e323a79e5d08e8df0ab5fe972b82e8c",
+  "measured42_to84_ratio": 0.5047619047619047,
+  "ideal_ratio": 0.5,
+  "relative_deviation_from_half_percent": 0.952380952380949,
+  "limits": [
+    "三脉冲，幅度为基线中位数减最低采样点，受噪声及电压量化影响",
+    "比例偏差不是绝对电压准确度",
+    "84码配置按先前指示，缺该帧活动参数截图",
+    "不能据两个码值证明全量程线性"
+  ]
+}

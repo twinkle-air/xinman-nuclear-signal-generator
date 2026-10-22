@@ -1,0 +1,42 @@
+{
+  "source": {
+    "file": "scope_csv_101_1.csv",
+    "sha256": "be6d9e6c6ef6932dd934ebe8ca8f645c2647d2ce18a3ea6ddc4d3c583c1b06f2",
+    "samples": 4000,
+    "dt_s": 2e-07,
+    "sample_rate_hz": 5000000.0,
+    "interpretation": "重复正数时间列按采样间隔解释（请核对示波器采样率）",
+    "time_scale": 1.0,
+    "voltage_scale": 1.0,
+    "probe": 1.0
+  },
+  "assumed_config": {
+    "baseline_code": 96,
+    "amplitude_code": 84,
+    "period_us": 2000,
+    "tau_us": 24,
+    "random": false,
+    "spectrum": false,
+    "noise": 0,
+    "note": "按上一轮采集指示，待参数截图确认"
+  },
+  "baseline_median_v": 0.8,
+  "minimum_v": -1.26,
+  "amplitude_v": 2.06,
+  "negative_pulse_count": 1,
+  "tau_independent_logfit_20_80_us": 23.442948031559222,
+  "tau_relative_error_percent": -2.3210498685032444,
+  "log_fit_r2": 0.9978555438325335,
+  "half_decay_peak_to_first_half_us": 16.600000000000403,
+  "fwhm_linear_crossing_us": 16.948058252427188,
+  "ideal_tau_ln2_us": 16.635532333438686,
+  "fwhm_relative_error_percent": 1.8786649728082416,
+  "pre_pulse_ac_rms_v": 0.009808984126673607,
+  "voltage_quantization_v": 0.019999999999999907,
+  "limits": [
+    "仅一个脉冲，不能验证周期、重复稳定性、随机到达或能谱",
+    "幅度尚无独立电压目标及仪器不确定度，不能宣称幅度精度通过",
+    "CSV电压按已折算探头倍率处理，附加倍率1",
+    "基线RMS包含示波器和量化影响，不等于生成器本征噪声"
+  ]
+}

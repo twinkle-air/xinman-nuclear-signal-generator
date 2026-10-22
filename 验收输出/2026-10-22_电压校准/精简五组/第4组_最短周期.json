@@ -1,0 +1,60 @@
+{
+  "group": 4,
+  "file": "scope_csv_104_24.csv",
+  "sha256": "ce8a7992e2950a94fbc730d5cc240548ab81f2a57d17a2682424dfaf617709b6",
+  "samples": 4000,
+  "dt_s": 2e-08,
+  "duration_s": 7.998e-05,
+  "time_column_constant": true,
+  "baseline_code": 96,
+  "amplitude_code": 84,
+  "tau_us": 1.44,
+  "period_us_set": 10,
+  "noise": 0,
+  "random": false,
+  "spectrum": false,
+  "pileup": false,
+  "edge_indexes": [
+    1,
+    500,
+    1000,
+    1500,
+    2000,
+    2500,
+    3000,
+    3500
+  ],
+  "intervals_us": [
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0
+  ],
+  "mean_period_us": 10.0,
+  "frequency_Hz": 100000.0,
+  "scope": "Photo CH2 DC500mV/div,5us/div,50MSa/s,4K; visible pulses within display",
+  "limit": "Short record engineering frequency check; sample interval20ns, timebase uncertainty not assessed; not long-term stability acceptance",
+  "boundary_edge_excluded": [
+    1
+  ],
+  "edge_indexes_interior": [
+    500,
+    1000,
+    1500,
+    2000,
+    2500,
+    3000,
+    3500
+  ],
+  "raw_candidate_intervals_us": [
+    9.98,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0
+  ]
+}

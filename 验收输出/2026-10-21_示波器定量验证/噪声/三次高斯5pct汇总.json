@@ -1,0 +1,81 @@
+{
+  "records": [
+    {
+      "file": "scope_csv_101_6.csv",
+      "metadata": {
+        "file": "scope_csv_101_6.csv",
+        "sha256": "d6d0737124c2467139f2e115cd800051c9343becf991e9bcb6ab4af2f4f4f545",
+        "samples": 4000,
+        "dt_s": 2e-07,
+        "sample_rate_hz": 5000000.0,
+        "interpretation": "重复正数时间列按采样间隔解释（请核对示波器采样率）",
+        "time_scale": 1.0,
+        "voltage_scale": 1.0,
+        "probe": 1.0
+      },
+      "mean_v": 0.019325000000000002,
+      "rms_v": 0.31203051833915224,
+      "min_v": -1.02,
+      "max_v": 1.06,
+      "skewness": 0.058355773429715374,
+      "excess_kurtosis": 0.14763517046620356
+    },
+    {
+      "file": "scope_csv_101_7.csv",
+      "metadata": {
+        "file": "scope_csv_101_7.csv",
+        "sha256": "47846135c4d059aca86f75df11065b7911e8777c12b797699b34cd4044b5af8b",
+        "samples": 4000,
+        "dt_s": 2e-07,
+        "sample_rate_hz": 5000000.0,
+        "interpretation": "重复正数时间列按采样间隔解释（请核对示波器采样率）",
+        "time_scale": 1.0,
+        "voltage_scale": 1.0,
+        "probe": 1.0
+      },
+      "mean_v": 0.037425,
+      "rms_v": 0.3022129536849802,
+      "min_v": -1.02,
+      "max_v": 1.06,
+      "skewness": 0.07607384797259448,
+      "excess_kurtosis": 0.41363766190712514
+    },
+    {
+      "file": "scope_csv_101_8.csv",
+      "metadata": {
+        "file": "scope_csv_101_8.csv",
+        "sha256": "35ae317847f27b557117238d6d2cf20bf51b96f96354b19b161c4591226ffb4e",
+        "samples": 4000,
+        "dt_s": 2e-07,
+        "sample_rate_hz": 5000000.0,
+        "interpretation": "重复正数时间列按采样间隔解释（请核对示波器采样率）",
+        "time_scale": 1.0,
+        "voltage_scale": 1.0,
+        "probe": 1.0
+      },
+      "mean_v": 0.020964999999999998,
+      "rms_v": 0.3149034276964924,
+      "min_v": -1.02,
+      "max_v": 0.92,
+      "skewness": -0.0661106777175088,
+      "excess_kurtosis": -0.1821947006457112
+    }
+  ],
+  "rms_mean_v": 0.3097156332402083,
+  "rms_sample_std_v": 0.0066544009816963375,
+  "rms_cv_percent": 2.148551854512083,
+  "pooled_within_record_rms_v": 0.3097632873259838,
+  "conditional_background_subtracted_rms_v": 0.3096023633630725,
+  "reference_zero_noise_rms_v": 0.009983525179013672,
+  "user_confirmation": {
+    "zero_noise_101_5_run_baseline128_amp0_gaussian0": true,
+    "gaussian_edit_and_stop_no_freeze": true,
+    "source": "用户在提交101_7和101_8时回复“是的”，对应上轮两个确认问题"
+  },
+  "limits": [
+    "仅三次短帧；1μs更新使0.2μs相邻采样相关",
+    "统计描述不能证明全范围精度、高斯性或白噪声带宽",
+    "背景方差扣除需要背景不相关且采集条件一致，不作为本征噪声证明",
+    "此前84码电压比例只能用于粗估5%FS，没有完成全量程校准"
+  ]
+}

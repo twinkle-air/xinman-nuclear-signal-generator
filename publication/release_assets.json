@@ -1,0 +1,50 @@
+[
+  {
+    "source_path": "核信号工作台_V0.10.3.exe",
+    "bytes": 66835419,
+    "sha256": "fc92600cbbbd2f42cc24dc23096890ee2718599541f12d9eaa5c25b19b8cfb2c",
+    "asset_name": "fc92600cbbbd-核信号工作台_V0.10.3.exe"
+  },
+  {
+    "source_path": "releases/2026-10-18_single-channel-bench_v0.8.0.zip",
+    "bytes": 61772883,
+    "sha256": "ce2d0367e9475f92f213e921b6de4c6067adf7f66492e799b2dd561334a848bf",
+    "asset_name": "ce2d0367e947-2026-10-18_single-channel-bench_v0.8.0.zip"
+  },
+  {
+    "source_path": "releases/2026-10-18_single-channel-bench_v0.8.0/核信号工作台.exe",
+    "bytes": 60438009,
+    "sha256": "a754a30f6795df63305504984c06c478642c31f3a0460e529aa654e89e309de6",
+    "asset_name": "a754a30f6795-核信号工作台.exe"
+  },
+  {
+    "source_path": "releases/accepted_V0.9.1_N3_before_N4_2026-10-19/核信号工作台.exe",
+    "bytes": 60501814,
+    "sha256": "ef67a9bb177557697d1fbeb0464d7ba92e08eb6e4caf962c0144ffa3cc7a043b",
+    "asset_name": "ef67a9bb1775-核信号工作台.exe"
+  },
+  {
+    "source_path": "releases/N4_V0.10.0_2026-10-19/programs/核信号工作台.exe",
+    "bytes": 66833901,
+    "sha256": "3eeb1f8cda47110533cf0bc413f98397c6a37493dd078b7580764e7357464cc0",
+    "asset_name": "3eeb1f8cda47-核信号工作台.exe"
+  },
+  {
+    "source_path": "releases/nuclear_N3_candidate_2026-10-18/核信号工作台.exe",
+    "bytes": 60449725,
+    "sha256": "dc5494d87afefe7ed2c379fea1009f145c0432dd078b9d02ecfbe588ebe7de19",
+    "asset_name": "dc5494d87afe-核信号工作台.exe"
+  },
+  {
+    "source_path": "releases/pc_v0.8.2_before_nuclear/核信号工作台.exe",
+    "bytes": 60441818,
+    "sha256": "e8149a3a9f19d854b6905656cf4235108c95956114d661d6f17ffcdc56f331dc",
+    "asset_name": "e8149a3a9f19-核信号工作台.exe"
+  },
+  {
+    "source_path": "releases/pc_v0.9.0_before_poll_fix/核信号工作台.exe",
+    "bytes": 60449725,
+    "sha256": "dc5494d87afefe7ed2c379fea1009f145c0432dd078b9d02ecfbe588ebe7de19",
+    "asset_name": "dc5494d87afe-核信号工作台.exe"
+  }
+]

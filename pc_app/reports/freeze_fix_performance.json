@@ -1,0 +1,15 @@
+{
+  "20": {
+    "samples": 200,
+    "compute_ms": 6.51
+  },
+  "1000": {
+    "samples": 10000,
+    "compute_ms": 12.39
+  },
+  "10000": {
+    "samples": 60000,
+    "compute_ms": 83.27
+  },
+  "30_edits_dispatch_ms": 3.2
+}

@@ -1,0 +1,2884 @@
+//Copyright (C)2014-2024 Gowin Semiconductor Corporation.
+//All rights reserved.
+
+INTRODUCTION:
+The document contains two main sections: Timing Report Directory and Core Timing Report.
+
+============================================================
+Note:Timing Report Directory
+
+1. Timing Message
+2. Timing Summaries
+	2.1 STA Tool Run Summary
+	2.2 Clock Summary
+	2.3 Max Frequency Summary
+	2.4 Total Negative Slack Summary
+3. Timing Details
+	3.1 Path Slacks Table
+		3.1.1 Setup Paths Table
+		3.1.2 Hold Paths Table
+		3.1.3 Recovery Paths Table
+		3.1.4 Removal Paths Table
+	3.2 Minimum Pulse Width Table
+	3.3 Timing Report By Analysis Type
+		3.3.1 Setup Analysis Report
+		3.3.2 Hold Analysis Report
+		3.3.3 Recovery Analysis Report
+		3.3.4 Removal Analysis Report
+	3.4 Minimum Pulse Width Report
+	3.5 High Fanout Nets Report
+	3.6 Route Congestions Report
+	3.7 Timing Exceptions Report
+		3.7.1 Setup Analysis Report
+		3.7.2 Hold Analysis Report
+		3.7.3 Recovery Analysis Report
+		3.7.4 Recovery Analysis Report
+	3.8 Timing Constraints Report
+
+============================================================
+
+Note:Core Timing Report
+
+1. Timing Messages
+<Report Title>: Timing Analysis Report
+<Design File>: R:\impl\gwsynthesis\g1_dac_stage1.vg
+<Physical Constraints File>: R:\constraints\g1_directplug.cst
+<Timing Constraints File>: R:\constraints\g1_stage1.sdc
+<Tool Version>: V1.9.10.02
+<Part Number>: GW2A-LV18PG256C8/I7
+<Device>: GW2A-18
+<Device Version>: C
+<Created Time>: Sat Oct  3 21:50:42 2026
+
+
+2. Timing Summaries
+2.1 STA Tool Run Summary
+<Setup Delay Model>:Slow 0.95V 85C C8/I7
+<Hold Delay Model>:Fast 1.05V 0C C8/I7
+<Numbers of Paths Analyzed>:218
+<Numbers of Endpoints Analyzed>:220
+<Numbers of Falling Endpoints>:0
+<Numbers of Setup Violated Endpoints>:0
+<Numbers of Hold Violated Endpoints>:0
+
+2.2 Clock Summary
+  NO.   Clock Name   Type   Period   Frequency   Rise     Fall    Source   Master   Objects   
+ ===== ============ ====== ======== =========== ======= ======== ======== ======== ========== 
+  1     sys_clk      Base   20.000   50.000MHz   0.000   10.000                     sys_clk   
+
+2.3 Max Frequency Summary
+  NO.   Clock Name   Constraint    Actual Fmax    Level   Entity  
+ ===== ============ ============= ============== ======= ======== 
+  1     sys_clk      50.000(MHz)   154.820(MHz)   5       TOP     
+
+2.4 Total Negative Slack Summary
+  Clock Name   Analysis Type   EndPoints TNS   Number of EndPoints  
+ ============ =============== =============== ===================== 
+  sys_clk      setup           0.000           0                    
+  sys_clk      hold            0.000           0                    
+
+
+3. Timing Details
+3.1 Path Slacks Table
+3.1.1 Setup Paths Table
+<Report Command>:report_timing -setup -max_paths 25 -max_common_paths 1
+  Path Number   Path Slack          From Node                    To Node            From Clock     To Clock     Relation   Clock Skew   Data Delay  
+ ============= ============ ========================== =========================== ============= ============= ========== ============ ============ 
+  1             13.541       core/pulse_index_12_s0/Q   core/dac_data_1_s0/D        sys_clk:[R]   sys_clk:[R]   20.000     0.000        6.424       
+  2             13.764       core/pulse_index_2_s0/Q    core/dac_data_5_s0/D        sys_clk:[R]   sys_clk:[R]   20.000     0.000        6.201       
+  3             13.980       core/pulse_index_1_s0/Q    core/dac_data_0_s0/D        sys_clk:[R]   sys_clk:[R]   20.000     0.000        5.985       
+  4             13.991       core/pulse_index_2_s0/Q    core/dac_data_4_s0/D        sys_clk:[R]   sys_clk:[R]   20.000     0.000        5.974       
+  5             14.367       core/pulse_index_12_s0/Q   core/dac_data_3_s0/D        sys_clk:[R]   sys_clk:[R]   20.000     0.000        5.598       
+  6             14.447       core/pulse_index_12_s0/Q   core/dac_data_6_s0/D        sys_clk:[R]   sys_clk:[R]   20.000     0.000        5.518       
+  7             14.464       core/pulse_index_1_s0/Q    core/dac_data_2_s0/D        sys_clk:[R]   sys_clk:[R]   20.000     0.000        5.501       
+  8             14.730       core/pulse_index_12_s0/Q   core/dac_data_7_s0/D        sys_clk:[R]   sys_clk:[R]   20.000     0.000        5.235       
+  9             15.491       core/phase_7_s0/Q          core/dac_clk_s1/D           sys_clk:[R]   sys_clk:[R]   20.000     0.000        4.474       
+  10            15.674       core/phase_7_s0/Q          core/dac_data_0_s0/CE       sys_clk:[R]   sys_clk:[R]   20.000     0.000        4.291       
+  11            15.674       core/phase_7_s0/Q          core/dac_data_1_s0/CE       sys_clk:[R]   sys_clk:[R]   20.000     0.000        4.291       
+  12            15.684       core/phase_7_s0/Q          core/dac_clk_s1/CE          sys_clk:[R]   sys_clk:[R]   20.000     0.000        4.281       
+  13            15.781       core/pulse_index_12_s0/Q   core/pulse_index_8_s0/D     sys_clk:[R]   sys_clk:[R]   20.000     0.000        4.184       
+  14            15.781       core/pulse_index_12_s0/Q   core/pulse_index_9_s0/D     sys_clk:[R]   sys_clk:[R]   20.000     0.000        4.184       
+  15            15.792       core/pulse_index_12_s0/Q   core/pulse_index_10_s0/D    sys_clk:[R]   sys_clk:[R]   20.000     0.000        4.173       
+  16            15.830       core/pulse_index_12_s0/Q   core/pulse_index_3_s0/D     sys_clk:[R]   sys_clk:[R]   20.000     0.000        4.135       
+  17            15.845       core/phase_7_s0/Q          core/dac_data_4_s0/CE       sys_clk:[R]   sys_clk:[R]   20.000     0.000        4.120       
+  18            15.845       core/phase_7_s0/Q          core/dac_data_5_s0/CE       sys_clk:[R]   sys_clk:[R]   20.000     0.000        4.120       
+  19            15.979       core/pulse_index_12_s0/Q   core/pulse_index_6_s0/D     sys_clk:[R]   sys_clk:[R]   20.000     0.000        3.986       
+  20            16.041       core/phase_7_s0/Q          core/pulse_index_6_s0/CE    sys_clk:[R]   sys_clk:[R]   20.000     0.000        3.924       
+  21            16.041       core/phase_7_s0/Q          core/pulse_index_11_s0/CE   sys_clk:[R]   sys_clk:[R]   20.000     0.000        3.924       
+  22            16.056       core/pulse_index_12_s0/Q   core/pulse_index_11_s0/D    sys_clk:[R]   sys_clk:[R]   20.000     0.000        3.909       
+  23            16.061       core/phase_7_s0/Q          core/dac_data_6_s0/CE       sys_clk:[R]   sys_clk:[R]   20.000     0.000        3.904       
+  24            16.061       core/phase_7_s0/Q          core/dac_data_7_s0/CE       sys_clk:[R]   sys_clk:[R]   20.000     0.000        3.904       
+  25            16.093       core/phase_7_s0/Q          core/dac_data_2_s0/CE       sys_clk:[R]   sys_clk:[R]   20.000     0.000        3.872       
+
+3.1.2 Hold Paths Table
+<Report Command>:report_timing -hold -max_paths 25 -max_common_paths 1
+  Path Number   Path Slack          From Node                   To Node            From Clock     To Clock     Relation   Clock Skew   Data Delay  
+ ============= ============ ========================== ========================== ============= ============= ========== ============ ============ 
+  1             0.322        startup_8_s4/Q             startup_7_s0/CE            sys_clk:[R]   sys_clk:[R]   0.000      0.000        0.333       
+  2             0.424        startup_3_s0/Q             startup_3_s0/D             sys_clk:[R]   sys_clk:[R]   0.000      0.000        0.435       
+  3             0.424        startup_7_s0/Q             startup_7_s0/D             sys_clk:[R]   sys_clk:[R]   0.000      0.000        0.435       
+  4             0.425        core/phase_2_s0/Q          core/phase_2_s0/D          sys_clk:[R]   sys_clk:[R]   0.000      0.000        0.436       
+  5             0.425        core/phase_6_s0/Q          core/phase_6_s0/D          sys_clk:[R]   sys_clk:[R]   0.000      0.000        0.436       
+  6             0.425        core/phase_8_s0/Q          core/phase_8_s0/D          sys_clk:[R]   sys_clk:[R]   0.000      0.000        0.436       
+  7             0.425        core/phase_12_s0/Q         core/phase_12_s0/D         sys_clk:[R]   sys_clk:[R]   0.000      0.000        0.436       
+  8             0.425        core/phase_14_s0/Q         core/phase_14_s0/D         sys_clk:[R]   sys_clk:[R]   0.000      0.000        0.436       
+  9             0.425        startup_0_s2/Q             startup_0_s2/D             sys_clk:[R]   sys_clk:[R]   0.000      0.000        0.436       
+  10            0.425        debounce_count_0_s0/Q      debounce_count_0_s0/D      sys_clk:[R]   sys_clk:[R]   0.000      0.000        0.436       
+  11            0.425        debounce_count_2_s0/Q      debounce_count_2_s0/D      sys_clk:[R]   sys_clk:[R]   0.000      0.000        0.436       
+  12            0.425        debounce_count_6_s0/Q      debounce_count_6_s0/D      sys_clk:[R]   sys_clk:[R]   0.000      0.000        0.436       
+  13            0.425        debounce_count_8_s0/Q      debounce_count_8_s0/D      sys_clk:[R]   sys_clk:[R]   0.000      0.000        0.436       
+  14            0.425        debounce_count_12_s0/Q     debounce_count_12_s0/D     sys_clk:[R]   sys_clk:[R]   0.000      0.000        0.436       
+  15            0.425        debounce_count_14_s0/Q     debounce_count_14_s0/D     sys_clk:[R]   sys_clk:[R]   0.000      0.000        0.436       
+  16            0.425        debounce_count_18_s0/Q     debounce_count_18_s0/D     sys_clk:[R]   sys_clk:[R]   0.000      0.000        0.436       
+  17            0.427        core/pulse_index_6_s0/Q    core/pulse_index_6_s0/D    sys_clk:[R]   sys_clk:[R]   0.000      0.000        0.438       
+  18            0.427        core/pulse_index_12_s0/Q   core/pulse_index_12_s0/D   sys_clk:[R]   sys_clk:[R]   0.000      0.000        0.438       
+  19            0.427        core/pulse_index_13_s0/Q   core/pulse_index_13_s0/D   sys_clk:[R]   sys_clk:[R]   0.000      0.000        0.438       
+  20            0.427        core/ramp_3_s0/Q           core/ramp_3_s0/D           sys_clk:[R]   sys_clk:[R]   0.000      0.000        0.438       
+  21            0.427        core/ramp_5_s0/Q           core/ramp_5_s0/D           sys_clk:[R]   sys_clk:[R]   0.000      0.000        0.438       
+  22            0.428        core/pulse_index_1_s0/Q    core/pulse_index_1_s0/D    sys_clk:[R]   sys_clk:[R]   0.000      0.000        0.439       
+  23            0.428        core/pulse_index_8_s0/Q    core/pulse_index_8_s0/D    sys_clk:[R]   sys_clk:[R]   0.000      0.000        0.439       
+  24            0.428        core/ramp_1_s0/Q           core/ramp_1_s0/D           sys_clk:[R]   sys_clk:[R]   0.000      0.000        0.439       
+  25            0.428        core/phase_0_s0/Q          core/phase_0_s0/D          sys_clk:[R]   sys_clk:[R]   0.000      0.000        0.439       
+
+3.1.3 Recovery Paths Table
+<Report Command>:report_timing -recovery -max_paths 25 -max_common_paths 1
+Nothing to report!
+3.1.4 Removal Paths Table
+<Report Command>:report_timing -removal -max_paths 25 -max_common_paths 1
+Nothing to report!
+3.2 Minimum Pulse Width Table
+Report Command:report_min_pulse_width -nworst 10 -detail
+  Number   Slack   Actual Width   Required Width        Type          Clock           Objects         
+ ======== ======= ============== ================ ================= ========= ======================= 
+  1        7.315   8.315          1.000            Low Pulse Width   sys_clk   startup_7_s0           
+  2        7.315   8.315          1.000            Low Pulse Width   sys_clk   startup_5_s0           
+  3        7.315   8.315          1.000            Low Pulse Width   sys_clk   startup_1_s0           
+  4        7.315   8.315          1.000            Low Pulse Width   sys_clk   debounce_count_14_s0   
+  5        7.315   8.315          1.000            Low Pulse Width   sys_clk   key_sync_1_s1          
+  6        7.315   8.315          1.000            Low Pulse Width   sys_clk   core/ramp_7_s0         
+  7        7.315   8.315          1.000            Low Pulse Width   sys_clk   core/active_mode_0_s0  
+  8        7.315   8.315          1.000            Low Pulse Width   sys_clk   key_sync_0_s1          
+  9        7.315   8.315          1.000            Low Pulse Width   sys_clk   core/active_mode_1_s0  
+  10       7.315   8.315          1.000            Low Pulse Width   sys_clk   core/dac_data_0_s0     
+
+3.3 Timing Report By Analysis Type
+3.3.1 Setup Analysis Report
+Report Command:report_timing -setup -max_paths 25 -max_common_paths 1
+						Path1						
+Path Summary:
+Slack             : 13.541
+Data Arrival Time : 10.783
+Data Required Time: 24.324
+From              : pulse_index_12_s0
+To                : dac_data_1_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+    AT     DELAY   TYPE   RF   FANOUT       LOC                   NODE             
+ ======== ======= ====== ==== ======== ============== ============================ 
+  0.000    0.000                                       active clock edge time      
+  0.000    0.000                                       sys_clk                     
+  0.000    0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I              
+  2.088    2.088   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O              
+  4.359    2.271   tNET   RR   1        R27C30[0][A]   core/pulse_index_12_s0/CLK  
+  4.591    0.232   tC2Q   RF   4        R27C30[0][A]   core/pulse_index_12_s0/Q    
+  5.168    0.576   tNET   FF   1        R27C31[3][B]   core/n454_s10/I0            
+  5.723    0.555   tINS   FF   5        R27C31[3][B]   core/n454_s10/F             
+  6.550    0.827   tNET   FF   1        R26C28[1][B]   core/n457_s3/I0             
+  6.921    0.371   tINS   FF   3        R26C28[1][B]   core/n457_s3/F              
+  7.177    0.256   tNET   FF   1        R26C30[3][A]   core/n458_s4/I2             
+  7.747    0.570   tINS   FR   1        R26C30[3][A]   core/n458_s4/F              
+  7.919    0.172   tNET   RR   1        R25C30[3][B]   core/n458_s2/I3             
+  8.474    0.555   tINS   RF   1        R25C30[3][B]   core/n458_s2/F              
+  10.783   2.309   tNET   FF   1        IOL2[B]        core/dac_data_1_s0/D        
+
+Data Required Path:
+    AT     DELAY    TYPE   RF   FANOUT     LOC               NODE           
+ ======== ======== ====== ==== ======== ========== ======================== 
+  20.000   20.000                                   active clock edge time  
+  20.000   0.000                                    sys_clk                 
+  20.000   0.000    tCL    RR   1        IOR29[A]   sys_clk_ibuf/I          
+  22.088   2.088    tINS   RR   88       IOR29[A]   sys_clk_ibuf/O          
+  24.359   2.271    tNET   RR   1        IOL2[B]    core/dac_data_1_s0/CLK  
+  24.324   -0.035   tSu         1        IOL2[B]    core/dac_data_1_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Setup Relationship: 20.000
+Logic Level: 5
+Arrival Clock Path delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+Arrival Data Path Delay: (cell: 2.051 31.927%, 
+                    route: 4.141 64.462%, 
+                    tC2Q: 0.232 3.611%)
+Required Clock Path Delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+
+						Path2						
+Path Summary:
+Slack             : 13.764
+Data Arrival Time : 10.561
+Data Required Time: 24.324
+From              : pulse_index_2_s0
+To                : dac_data_5_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+    AT     DELAY   TYPE   RF   FANOUT       LOC                  NODE             
+ ======== ======= ====== ==== ======== ============== =========================== 
+  0.000    0.000                                       active clock edge time     
+  0.000    0.000                                       sys_clk                    
+  0.000    0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I             
+  2.088    2.088   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O             
+  4.359    2.271   tNET   RR   1        R27C31[1][B]   core/pulse_index_2_s0/CLK  
+  4.591    0.232   tC2Q   RF   26       R27C31[1][B]   core/pulse_index_2_s0/Q    
+  5.741    1.150   tNET   FF   1        R26C32[3][B]   core/n454_s13/I3           
+  6.311    0.570   tINS   FR   1        R26C32[3][B]   core/n454_s13/F            
+  6.312    0.001   tNET   RR   1        R26C32[3][A]   core/n454_s7/I0            
+  6.829    0.517   tINS   RF   2        R26C32[3][A]   core/n454_s7/F             
+  7.232    0.403   tNET   FF   1        R26C30[0][B]   core/n454_s3/I0            
+  7.603    0.371   tINS   FF   2        R26C30[0][B]   core/n454_s3/F             
+  8.263    0.660   tNET   FF   1        R25C27[3][A]   core/n454_s1/I1            
+  8.716    0.453   tINS   FF   1        R25C27[3][A]   core/n454_s1/F             
+  10.561   1.844   tNET   FF   1        IOL7[A]        core/dac_data_5_s0/D       
+
+Data Required Path:
+    AT     DELAY    TYPE   RF   FANOUT     LOC               NODE           
+ ======== ======== ====== ==== ======== ========== ======================== 
+  20.000   20.000                                   active clock edge time  
+  20.000   0.000                                    sys_clk                 
+  20.000   0.000    tCL    RR   1        IOR29[A]   sys_clk_ibuf/I          
+  22.088   2.088    tINS   RR   88       IOR29[A]   sys_clk_ibuf/O          
+  24.359   2.271    tNET   RR   1        IOL7[A]    core/dac_data_5_s0/CLK  
+  24.324   -0.035   tSu         1        IOL7[A]    core/dac_data_5_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Setup Relationship: 20.000
+Logic Level: 5
+Arrival Clock Path delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+Arrival Data Path Delay: (cell: 1.911 30.816%, 
+                    route: 4.058 65.443%, 
+                    tC2Q: 0.232 3.741%)
+Required Clock Path Delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+
+						Path3						
+Path Summary:
+Slack             : 13.980
+Data Arrival Time : 10.345
+Data Required Time: 24.324
+From              : pulse_index_1_s0
+To                : dac_data_0_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+    AT     DELAY   TYPE   RF   FANOUT       LOC                  NODE             
+ ======== ======= ====== ==== ======== ============== =========================== 
+  0.000    0.000                                       active clock edge time     
+  0.000    0.000                                       sys_clk                    
+  0.000    0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I             
+  2.088    2.088   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O             
+  4.359    2.271   tNET   RR   1        R27C31[1][A]   core/pulse_index_1_s0/CLK  
+  4.591    0.232   tC2Q   RF   22       R27C31[1][A]   core/pulse_index_1_s0/Q    
+  5.248    0.656   tNET   FF   1        R26C32[0][B]   core/n459_s12/I2           
+  5.710    0.462   tINS   FR   1        R26C32[0][B]   core/n459_s12/F            
+  5.711    0.001   tNET   RR   1        R26C32[1][A]   core/n459_s10/I2           
+  6.266    0.555   tINS   RF   1        R26C32[1][A]   core/n459_s10/F            
+  7.165    0.899   tNET   FF   1        R26C30[2][B]   core/n459_s5/I2            
+  7.735    0.570   tINS   FR   1        R26C30[2][B]   core/n459_s5/F             
+  7.907    0.172   tNET   RR   1        R26C29[0][A]   core/n459_s2/I2            
+  8.278    0.371   tINS   RF   1        R26C29[0][A]   core/n459_s2/F             
+  10.345   2.067   tNET   FF   1        IOL2[A]        core/dac_data_0_s0/D       
+
+Data Required Path:
+    AT     DELAY    TYPE   RF   FANOUT     LOC               NODE           
+ ======== ======== ====== ==== ======== ========== ======================== 
+  20.000   20.000                                   active clock edge time  
+  20.000   0.000                                    sys_clk                 
+  20.000   0.000    tCL    RR   1        IOR29[A]   sys_clk_ibuf/I          
+  22.088   2.088    tINS   RR   88       IOR29[A]   sys_clk_ibuf/O          
+  24.359   2.271    tNET   RR   1        IOL2[A]    core/dac_data_0_s0/CLK  
+  24.324   -0.035   tSu         1        IOL2[A]    core/dac_data_0_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Setup Relationship: 20.000
+Logic Level: 5
+Arrival Clock Path delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+Arrival Data Path Delay: (cell: 1.958 32.713%, 
+                    route: 3.795 63.411%, 
+                    tC2Q: 0.232 3.876%)
+Required Clock Path Delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+
+						Path4						
+Path Summary:
+Slack             : 13.991
+Data Arrival Time : 10.333
+Data Required Time: 24.324
+From              : pulse_index_2_s0
+To                : dac_data_4_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+    AT     DELAY   TYPE   RF   FANOUT       LOC                  NODE             
+ ======== ======= ====== ==== ======== ============== =========================== 
+  0.000    0.000                                       active clock edge time     
+  0.000    0.000                                       sys_clk                    
+  0.000    0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I             
+  2.088    2.088   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O             
+  4.359    2.271   tNET   RR   1        R27C31[1][B]   core/pulse_index_2_s0/CLK  
+  4.591    0.232   tC2Q   RF   26       R27C31[1][B]   core/pulse_index_2_s0/Q    
+  5.741    1.150   tNET   FF   1        R26C32[3][B]   core/n454_s13/I3           
+  6.311    0.570   tINS   FR   1        R26C32[3][B]   core/n454_s13/F            
+  6.312    0.001   tNET   RR   1        R26C32[3][A]   core/n454_s7/I0            
+  6.829    0.517   tINS   RF   2        R26C32[3][A]   core/n454_s7/F             
+  7.232    0.403   tNET   FF   1        R26C30[0][B]   core/n454_s3/I0            
+  7.603    0.371   tINS   FF   2        R26C30[0][B]   core/n454_s3/F             
+  7.778    0.175   tNET   FF   1        R25C30[2][B]   core/n455_s1/I0            
+  8.295    0.517   tINS   FF   1        R25C30[2][B]   core/n455_s1/F             
+  10.333   2.038   tNET   FF   1        IOL7[B]        core/dac_data_4_s0/D       
+
+Data Required Path:
+    AT     DELAY    TYPE   RF   FANOUT     LOC               NODE           
+ ======== ======== ====== ==== ======== ========== ======================== 
+  20.000   20.000                                   active clock edge time  
+  20.000   0.000                                    sys_clk                 
+  20.000   0.000    tCL    RR   1        IOR29[A]   sys_clk_ibuf/I          
+  22.088   2.088    tINS   RR   88       IOR29[A]   sys_clk_ibuf/O          
+  24.359   2.271    tNET   RR   1        IOL7[B]    core/dac_data_4_s0/CLK  
+  24.324   -0.035   tSu         1        IOL7[B]    core/dac_data_4_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Setup Relationship: 20.000
+Logic Level: 5
+Arrival Clock Path delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+Arrival Data Path Delay: (cell: 1.975 33.060%, 
+                    route: 3.767 63.057%, 
+                    tC2Q: 0.232 3.883%)
+Required Clock Path Delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+
+						Path5						
+Path Summary:
+Slack             : 14.367
+Data Arrival Time : 9.957
+Data Required Time: 24.324
+From              : pulse_index_12_s0
+To                : dac_data_3_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                   NODE             
+ ======= ======= ====== ==== ======== ============== ============================ 
+  0.000   0.000                                       active clock edge time      
+  0.000   0.000                                       sys_clk                     
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I              
+  2.088   2.088   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O              
+  4.359   2.271   tNET   RR   1        R27C30[0][A]   core/pulse_index_12_s0/CLK  
+  4.591   0.232   tC2Q   RF   4        R27C30[0][A]   core/pulse_index_12_s0/Q    
+  5.168   0.576   tNET   FF   1        R27C31[3][B]   core/n454_s10/I0            
+  5.723   0.555   tINS   FF   5        R27C31[3][B]   core/n454_s10/F             
+  6.550   0.827   tNET   FF   1        R26C28[1][B]   core/n457_s3/I0             
+  6.921   0.371   tINS   FF   3        R26C28[1][B]   core/n457_s3/F              
+  6.934   0.013   tNET   FF   1        R26C28[3][B]   core/n459_s3/I1             
+  7.504   0.570   tINS   FR   2        R26C28[3][B]   core/n459_s3/F              
+  7.506   0.003   tNET   RR   1        R26C28[2][B]   core/n456_s2/I2             
+  8.023   0.517   tINS   RF   1        R26C28[2][B]   core/n456_s2/F              
+  9.957   1.934   tNET   FF   1        IOL13[A]       core/dac_data_3_s0/D        
+
+Data Required Path:
+    AT     DELAY    TYPE   RF   FANOUT     LOC               NODE           
+ ======== ======== ====== ==== ======== ========== ======================== 
+  20.000   20.000                                   active clock edge time  
+  20.000   0.000                                    sys_clk                 
+  20.000   0.000    tCL    RR   1        IOR29[A]   sys_clk_ibuf/I          
+  22.088   2.088    tINS   RR   88       IOR29[A]   sys_clk_ibuf/O          
+  24.359   2.271    tNET   RR   1        IOL13[A]   core/dac_data_3_s0/CLK  
+  24.324   -0.035   tSu         1        IOL13[A]   core/dac_data_3_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Setup Relationship: 20.000
+Logic Level: 5
+Arrival Clock Path delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+Arrival Data Path Delay: (cell: 2.013 35.960%, 
+                    route: 3.353 59.895%, 
+                    tC2Q: 0.232 4.144%)
+Required Clock Path Delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+
+						Path6						
+Path Summary:
+Slack             : 14.447
+Data Arrival Time : 9.878
+Data Required Time: 24.324
+From              : pulse_index_12_s0
+To                : dac_data_6_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                   NODE             
+ ======= ======= ====== ==== ======== ============== ============================ 
+  0.000   0.000                                       active clock edge time      
+  0.000   0.000                                       sys_clk                     
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I              
+  2.088   2.088   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O              
+  4.359   2.271   tNET   RR   1        R27C30[0][A]   core/pulse_index_12_s0/CLK  
+  4.591   0.232   tC2Q   RF   4        R27C30[0][A]   core/pulse_index_12_s0/Q    
+  5.168   0.576   tNET   FF   1        R27C31[3][B]   core/n454_s10/I0            
+  5.723   0.555   tINS   FF   5        R27C31[3][B]   core/n454_s10/F             
+  6.550   0.827   tNET   FF   1        R26C28[1][A]   core/n452_s4/I1             
+  6.921   0.371   tINS   FF   5        R26C28[1][A]   core/n452_s4/F              
+  7.109   0.188   tNET   FF   1        R25C28[2][B]   core/n453_s3/I1             
+  7.679   0.570   tINS   FR   1        R25C28[2][B]   core/n453_s3/F              
+  7.851   0.172   tNET   RR   1        R25C27[2][A]   core/n453_s1/I2             
+  8.304   0.453   tINS   RF   1        R25C27[2][A]   core/n453_s1/F              
+  9.878   1.573   tNET   FF   1        IOL15[B]       core/dac_data_6_s0/D        
+
+Data Required Path:
+    AT     DELAY    TYPE   RF   FANOUT     LOC               NODE           
+ ======== ======== ====== ==== ======== ========== ======================== 
+  20.000   20.000                                   active clock edge time  
+  20.000   0.000                                    sys_clk                 
+  20.000   0.000    tCL    RR   1        IOR29[A]   sys_clk_ibuf/I          
+  22.088   2.088    tINS   RR   88       IOR29[A]   sys_clk_ibuf/O          
+  24.359   2.271    tNET   RR   1        IOL15[B]   core/dac_data_6_s0/CLK  
+  24.324   -0.035   tSu         1        IOL15[B]   core/dac_data_6_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Setup Relationship: 20.000
+Logic Level: 5
+Arrival Clock Path delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+Arrival Data Path Delay: (cell: 1.949 35.318%, 
+                    route: 3.337 60.478%, 
+                    tC2Q: 0.232 4.204%)
+Required Clock Path Delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+
+						Path7						
+Path Summary:
+Slack             : 14.464
+Data Arrival Time : 9.861
+Data Required Time: 24.324
+From              : pulse_index_1_s0
+To                : dac_data_2_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                  NODE             
+ ======= ======= ====== ==== ======== ============== =========================== 
+  0.000   0.000                                       active clock edge time     
+  0.000   0.000                                       sys_clk                    
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I             
+  2.088   2.088   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O             
+  4.359   2.271   tNET   RR   1        R27C31[1][A]   core/pulse_index_1_s0/CLK  
+  4.591   0.232   tC2Q   RF   22       R27C31[1][A]   core/pulse_index_1_s0/Q    
+  5.536   0.945   tNET   FF   1        R25C28[0][A]   core/n457_s8/I1            
+  6.085   0.549   tINS   FR   1        R25C28[0][A]   core/n457_s8/F             
+  6.086   0.001   tNET   RR   1        R25C28[0][B]   core/n457_s5/I3            
+  6.457   0.371   tINS   RF   1        R25C28[0][B]   core/n457_s5/F             
+  6.854   0.397   tNET   FF   1        R25C27[0][B]   core/n457_s4/I0            
+  7.403   0.549   tINS   FR   1        R25C27[0][B]   core/n457_s4/F             
+  7.576   0.172   tNET   RR   1        R26C27[2][A]   core/n457_s2/I1            
+  8.093   0.517   tINS   RF   1        R26C27[2][A]   core/n457_s2/F             
+  9.861   1.768   tNET   FF   1        IOL13[B]       core/dac_data_2_s0/D       
+
+Data Required Path:
+    AT     DELAY    TYPE   RF   FANOUT     LOC               NODE           
+ ======== ======== ====== ==== ======== ========== ======================== 
+  20.000   20.000                                   active clock edge time  
+  20.000   0.000                                    sys_clk                 
+  20.000   0.000    tCL    RR   1        IOR29[A]   sys_clk_ibuf/I          
+  22.088   2.088    tINS   RR   88       IOR29[A]   sys_clk_ibuf/O          
+  24.359   2.271    tNET   RR   1        IOL13[B]   core/dac_data_2_s0/CLK  
+  24.324   -0.035   tSu         1        IOL13[B]   core/dac_data_2_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Setup Relationship: 20.000
+Logic Level: 5
+Arrival Clock Path delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+Arrival Data Path Delay: (cell: 1.986 36.101%, 
+                    route: 3.283 59.682%, 
+                    tC2Q: 0.232 4.217%)
+Required Clock Path Delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+
+						Path8						
+Path Summary:
+Slack             : 14.730
+Data Arrival Time : 9.595
+Data Required Time: 24.324
+From              : pulse_index_12_s0
+To                : dac_data_7_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                   NODE             
+ ======= ======= ====== ==== ======== ============== ============================ 
+  0.000   0.000                                       active clock edge time      
+  0.000   0.000                                       sys_clk                     
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I              
+  2.088   2.088   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O              
+  4.359   2.271   tNET   RR   1        R27C30[0][A]   core/pulse_index_12_s0/CLK  
+  4.591   0.232   tC2Q   RF   4        R27C30[0][A]   core/pulse_index_12_s0/Q    
+  5.168   0.576   tNET   FF   1        R27C31[3][B]   core/n454_s10/I0            
+  5.723   0.555   tINS   FF   5        R27C31[3][B]   core/n454_s10/F             
+  6.550   0.827   tNET   FF   1        R26C28[1][A]   core/n452_s4/I1             
+  6.921   0.371   tINS   FF   5        R26C28[1][A]   core/n452_s4/F              
+  7.109   0.188   tNET   FF   1        R25C28[1][A]   core/n452_s1/I3             
+  7.480   0.371   tINS   FF   1        R25C28[1][A]   core/n452_s1/F              
+  7.484   0.004   tNET   FF   1        R25C28[1][B]   core/n452_s0/I0             
+  7.855   0.371   tINS   FF   1        R25C28[1][B]   core/n452_s0/F              
+  9.595   1.739   tNET   FF   1        IOL15[A]       core/dac_data_7_s0/D        
+
+Data Required Path:
+    AT     DELAY    TYPE   RF   FANOUT     LOC               NODE           
+ ======== ======== ====== ==== ======== ========== ======================== 
+  20.000   20.000                                   active clock edge time  
+  20.000   0.000                                    sys_clk                 
+  20.000   0.000    tCL    RR   1        IOR29[A]   sys_clk_ibuf/I          
+  22.088   2.088    tINS   RR   88       IOR29[A]   sys_clk_ibuf/O          
+  24.359   2.271    tNET   RR   1        IOL15[A]   core/dac_data_7_s0/CLK  
+  24.324   -0.035   tSu         1        IOL15[A]   core/dac_data_7_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Setup Relationship: 20.000
+Logic Level: 5
+Arrival Clock Path delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+Arrival Data Path Delay: (cell: 1.668 31.860%, 
+                    route: 3.335 63.709%, 
+                    tC2Q: 0.232 4.431%)
+Required Clock Path Delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+
+						Path9						
+Path Summary:
+Slack             : 15.491
+Data Arrival Time : 8.833
+Data Required Time: 24.324
+From              : phase_7_s0
+To                : dac_clk_s1
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  2.088   2.088   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  4.359   2.271   tNET   RR   1        R29C31[0][B]   core/phase_7_s0/CLK     
+  4.590   0.231   tC2Q   RR   2        R29C31[0][B]   core/phase_7_s0/Q       
+  4.764   0.174   tNET   RR   1        R29C32[2][A]   core/n42_s3/I0          
+  5.319   0.555   tINS   RF   2        R29C32[2][A]   core/n42_s3/F           
+  5.738   0.419   tNET   FF   1        R29C29[2][B]   core/n658_s2/I1         
+  6.200   0.462   tINS   FR   1        R29C29[2][B]   core/n658_s2/F          
+  6.201   0.001   tNET   RR   1        R29C29[1][A]   core/n658_s1/I0         
+  6.718   0.517   tINS   RF   3        R29C29[1][A]   core/n658_s1/F          
+  7.218   0.500   tNET   FF   1        R29C25[3][A]   core/n498_s2/I2         
+  7.773   0.555   tINS   FF   1        R29C25[3][A]   core/n498_s2/F          
+  8.833   1.060   tNET   FF   1        IOL27[B]       core/dac_clk_s1/D       
+
+Data Required Path:
+    AT     DELAY    TYPE   RF   FANOUT     LOC               NODE           
+ ======== ======== ====== ==== ======== ========== ======================== 
+  20.000   20.000                                   active clock edge time  
+  20.000   0.000                                    sys_clk                 
+  20.000   0.000    tCL    RR   1        IOR29[A]   sys_clk_ibuf/I          
+  22.088   2.088    tINS   RR   88       IOR29[A]   sys_clk_ibuf/O          
+  24.359   2.271    tNET   RR   1        IOL27[B]   core/dac_clk_s1/CLK     
+  24.324   -0.035   tSu         1        IOL27[B]   core/dac_clk_s1         
+
+Path Statistics:
+Clock Skew: 0.000
+Setup Relationship: 20.000
+Logic Level: 5
+Arrival Clock Path delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+Arrival Data Path Delay: (cell: 2.089 46.696%, 
+                    route: 2.154 48.141%, 
+                    tC2Q: 0.231 5.164%)
+Required Clock Path Delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+
+						Path10						
+Path Summary:
+Slack             : 15.674
+Data Arrival Time : 8.651
+Data Required Time: 24.324
+From              : phase_7_s0
+To                : dac_data_0_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  2.088   2.088   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  4.359   2.271   tNET   RR   1        R29C31[0][B]   core/phase_7_s0/CLK     
+  4.590   0.231   tC2Q   RR   2        R29C31[0][B]   core/phase_7_s0/Q       
+  4.764   0.174   tNET   RR   1        R29C32[2][A]   core/n42_s3/I0          
+  5.319   0.555   tINS   RF   2        R29C32[2][A]   core/n42_s3/F           
+  5.738   0.419   tNET   FF   1        R29C29[1][B]   core/n42_s1/I3          
+  6.200   0.462   tINS   FR   1        R29C29[1][B]   core/n42_s1/F           
+  6.201   0.001   tNET   RR   1        R29C29[2][A]   core/n42_s0/I2          
+  6.771   0.570   tINS   RR   12       R29C29[2][A]   core/n42_s0/F           
+  8.651   1.879   tNET   RR   1        IOL2[A]        core/dac_data_0_s0/CE   
+
+Data Required Path:
+    AT     DELAY    TYPE   RF   FANOUT     LOC               NODE           
+ ======== ======== ====== ==== ======== ========== ======================== 
+  20.000   20.000                                   active clock edge time  
+  20.000   0.000                                    sys_clk                 
+  20.000   0.000    tCL    RR   1        IOR29[A]   sys_clk_ibuf/I          
+  22.088   2.088    tINS   RR   88       IOR29[A]   sys_clk_ibuf/O          
+  24.359   2.271    tNET   RR   1        IOL2[A]    core/dac_data_0_s0/CLK  
+  24.324   -0.035   tSu         1        IOL2[A]    core/dac_data_0_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Setup Relationship: 20.000
+Logic Level: 4
+Arrival Clock Path delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+Arrival Data Path Delay: (cell: 1.587 36.982%, 
+                    route: 2.473 57.635%, 
+                    tC2Q: 0.231 5.383%)
+Required Clock Path Delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+
+						Path11						
+Path Summary:
+Slack             : 15.674
+Data Arrival Time : 8.651
+Data Required Time: 24.324
+From              : phase_7_s0
+To                : dac_data_1_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  2.088   2.088   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  4.359   2.271   tNET   RR   1        R29C31[0][B]   core/phase_7_s0/CLK     
+  4.590   0.231   tC2Q   RR   2        R29C31[0][B]   core/phase_7_s0/Q       
+  4.764   0.174   tNET   RR   1        R29C32[2][A]   core/n42_s3/I0          
+  5.319   0.555   tINS   RF   2        R29C32[2][A]   core/n42_s3/F           
+  5.738   0.419   tNET   FF   1        R29C29[1][B]   core/n42_s1/I3          
+  6.200   0.462   tINS   FR   1        R29C29[1][B]   core/n42_s1/F           
+  6.201   0.001   tNET   RR   1        R29C29[2][A]   core/n42_s0/I2          
+  6.771   0.570   tINS   RR   12       R29C29[2][A]   core/n42_s0/F           
+  8.651   1.879   tNET   RR   1        IOL2[B]        core/dac_data_1_s0/CE   
+
+Data Required Path:
+    AT     DELAY    TYPE   RF   FANOUT     LOC               NODE           
+ ======== ======== ====== ==== ======== ========== ======================== 
+  20.000   20.000                                   active clock edge time  
+  20.000   0.000                                    sys_clk                 
+  20.000   0.000    tCL    RR   1        IOR29[A]   sys_clk_ibuf/I          
+  22.088   2.088    tINS   RR   88       IOR29[A]   sys_clk_ibuf/O          
+  24.359   2.271    tNET   RR   1        IOL2[B]    core/dac_data_1_s0/CLK  
+  24.324   -0.035   tSu         1        IOL2[B]    core/dac_data_1_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Setup Relationship: 20.000
+Logic Level: 4
+Arrival Clock Path delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+Arrival Data Path Delay: (cell: 1.587 36.982%, 
+                    route: 2.473 57.635%, 
+                    tC2Q: 0.231 5.383%)
+Required Clock Path Delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+
+						Path12						
+Path Summary:
+Slack             : 15.684
+Data Arrival Time : 8.640
+Data Required Time: 24.324
+From              : phase_7_s0
+To                : dac_clk_s1
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  2.088   2.088   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  4.359   2.271   tNET   RR   1        R29C31[0][B]   core/phase_7_s0/CLK     
+  4.590   0.231   tC2Q   RR   2        R29C31[0][B]   core/phase_7_s0/Q       
+  4.764   0.174   tNET   RR   1        R29C32[2][A]   core/n42_s3/I0          
+  5.319   0.555   tINS   RF   2        R29C32[2][A]   core/n42_s3/F           
+  5.738   0.419   tNET   FF   1        R29C29[1][B]   core/n42_s1/I3          
+  6.200   0.462   tINS   FR   1        R29C29[1][B]   core/n42_s1/F           
+  6.201   0.001   tNET   RR   1        R29C29[2][A]   core/n42_s0/I2          
+  6.756   0.555   tINS   RF   12       R29C29[2][A]   core/n42_s0/F           
+  7.259   0.503   tNET   FF   1        R29C25[1][B]   core/dac_clk_s3/I3      
+  7.808   0.549   tINS   FR   1        R29C25[1][B]   core/dac_clk_s3/F       
+  8.640   0.832   tNET   RR   1        IOL27[B]       core/dac_clk_s1/CE      
+
+Data Required Path:
+    AT     DELAY    TYPE   RF   FANOUT     LOC               NODE           
+ ======== ======== ====== ==== ======== ========== ======================== 
+  20.000   20.000                                   active clock edge time  
+  20.000   0.000                                    sys_clk                 
+  20.000   0.000    tCL    RR   1        IOR29[A]   sys_clk_ibuf/I          
+  22.088   2.088    tINS   RR   88       IOR29[A]   sys_clk_ibuf/O          
+  24.359   2.271    tNET   RR   1        IOL27[B]   core/dac_clk_s1/CLK     
+  24.324   -0.035   tSu         1        IOL27[B]   core/dac_clk_s1         
+
+Path Statistics:
+Clock Skew: 0.000
+Setup Relationship: 20.000
+Logic Level: 5
+Arrival Clock Path delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+Arrival Data Path Delay: (cell: 2.121 49.543%, 
+                    route: 1.929 45.061%, 
+                    tC2Q: 0.231 5.396%)
+Required Clock Path Delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+
+						Path13						
+Path Summary:
+Slack             : 15.781
+Data Arrival Time : 8.544
+Data Required Time: 24.324
+From              : pulse_index_12_s0
+To                : pulse_index_8_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                   NODE             
+ ======= ======= ====== ==== ======== ============== ============================ 
+  0.000   0.000                                       active clock edge time      
+  0.000   0.000                                       sys_clk                     
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I              
+  2.088   2.088   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O              
+  4.359   2.271   tNET   RR   1        R27C30[0][A]   core/pulse_index_12_s0/CLK  
+  4.591   0.232   tC2Q   RF   4        R27C30[0][A]   core/pulse_index_12_s0/Q    
+  5.168   0.576   tNET   FF   1        R27C31[3][B]   core/n454_s10/I0            
+  5.723   0.555   tINS   FF   5        R27C31[3][B]   core/n454_s10/F             
+  6.290   0.567   tNET   FF   1        R26C31[0][A]   core/n422_s4/I0             
+  6.661   0.371   tINS   FF   1        R26C31[0][A]   core/n422_s4/F              
+  7.074   0.413   tNET   FF   1        R27C30[3][B]   core/n422_s3/I2             
+  7.527   0.453   tINS   FF   9        R27C30[3][B]   core/n422_s3/F              
+  7.974   0.447   tNET   FF   1        R26C32[0][A]   core/n417_s2/I2             
+  8.544   0.570   tINS   FR   1        R26C32[0][A]   core/n417_s2/F              
+  8.544   0.000   tNET   RR   1        R26C32[0][A]   core/pulse_index_8_s0/D     
+
+Data Required Path:
+    AT     DELAY    TYPE   RF   FANOUT       LOC                  NODE             
+ ======== ======== ====== ==== ======== ============== =========================== 
+  20.000   20.000                                       active clock edge time     
+  20.000   0.000                                        sys_clk                    
+  20.000   0.000    tCL    RR   1        IOR29[A]       sys_clk_ibuf/I             
+  22.088   2.088    tINS   RR   88       IOR29[A]       sys_clk_ibuf/O             
+  24.359   2.271    tNET   RR   1        R26C32[0][A]   core/pulse_index_8_s0/CLK  
+  24.324   -0.035   tSu         1        R26C32[0][A]   core/pulse_index_8_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Setup Relationship: 20.000
+Logic Level: 5
+Arrival Clock Path delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+Arrival Data Path Delay: (cell: 1.949 46.577%, 
+                    route: 2.003 47.878%, 
+                    tC2Q: 0.232 5.544%)
+Required Clock Path Delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+
+						Path14						
+Path Summary:
+Slack             : 15.781
+Data Arrival Time : 8.544
+Data Required Time: 24.324
+From              : pulse_index_12_s0
+To                : pulse_index_9_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                   NODE             
+ ======= ======= ====== ==== ======== ============== ============================ 
+  0.000   0.000                                       active clock edge time      
+  0.000   0.000                                       sys_clk                     
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I              
+  2.088   2.088   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O              
+  4.359   2.271   tNET   RR   1        R27C30[0][A]   core/pulse_index_12_s0/CLK  
+  4.591   0.232   tC2Q   RF   4        R27C30[0][A]   core/pulse_index_12_s0/Q    
+  5.168   0.576   tNET   FF   1        R27C31[3][B]   core/n454_s10/I0            
+  5.723   0.555   tINS   FF   5        R27C31[3][B]   core/n454_s10/F             
+  6.290   0.567   tNET   FF   1        R26C31[0][A]   core/n422_s4/I0             
+  6.661   0.371   tINS   FF   1        R26C31[0][A]   core/n422_s4/F              
+  7.074   0.413   tNET   FF   1        R27C30[3][B]   core/n422_s3/I2             
+  7.527   0.453   tINS   FF   9        R27C30[3][B]   core/n422_s3/F              
+  7.974   0.447   tNET   FF   1        R26C32[2][A]   core/n416_s2/I3             
+  8.544   0.570   tINS   FR   1        R26C32[2][A]   core/n416_s2/F              
+  8.544   0.000   tNET   RR   1        R26C32[2][A]   core/pulse_index_9_s0/D     
+
+Data Required Path:
+    AT     DELAY    TYPE   RF   FANOUT       LOC                  NODE             
+ ======== ======== ====== ==== ======== ============== =========================== 
+  20.000   20.000                                       active clock edge time     
+  20.000   0.000                                        sys_clk                    
+  20.000   0.000    tCL    RR   1        IOR29[A]       sys_clk_ibuf/I             
+  22.088   2.088    tINS   RR   88       IOR29[A]       sys_clk_ibuf/O             
+  24.359   2.271    tNET   RR   1        R26C32[2][A]   core/pulse_index_9_s0/CLK  
+  24.324   -0.035   tSu         1        R26C32[2][A]   core/pulse_index_9_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Setup Relationship: 20.000
+Logic Level: 5
+Arrival Clock Path delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+Arrival Data Path Delay: (cell: 1.949 46.577%, 
+                    route: 2.003 47.878%, 
+                    tC2Q: 0.232 5.544%)
+Required Clock Path Delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+
+						Path15						
+Path Summary:
+Slack             : 15.792
+Data Arrival Time : 8.532
+Data Required Time: 24.324
+From              : pulse_index_12_s0
+To                : pulse_index_10_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                   NODE             
+ ======= ======= ====== ==== ======== ============== ============================ 
+  0.000   0.000                                       active clock edge time      
+  0.000   0.000                                       sys_clk                     
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I              
+  2.088   2.088   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O              
+  4.359   2.271   tNET   RR   1        R27C30[0][A]   core/pulse_index_12_s0/CLK  
+  4.591   0.232   tC2Q   RF   4        R27C30[0][A]   core/pulse_index_12_s0/Q    
+  5.168   0.576   tNET   FF   1        R27C31[3][B]   core/n454_s10/I0            
+  5.723   0.555   tINS   FF   5        R27C31[3][B]   core/n454_s10/F             
+  6.290   0.567   tNET   FF   1        R26C31[0][A]   core/n422_s4/I0             
+  6.661   0.371   tINS   FF   1        R26C31[0][A]   core/n422_s4/F              
+  7.074   0.413   tNET   FF   1        R27C30[3][B]   core/n422_s3/I2             
+  7.527   0.453   tINS   FF   9        R27C30[3][B]   core/n422_s3/F              
+  7.962   0.435   tNET   FF   1        R26C31[2][B]   core/n415_s2/I3             
+  8.532   0.570   tINS   FR   1        R26C31[2][B]   core/n415_s2/F              
+  8.532   0.000   tNET   RR   1        R26C31[2][B]   core/pulse_index_10_s0/D    
+
+Data Required Path:
+    AT     DELAY    TYPE   RF   FANOUT       LOC                   NODE             
+ ======== ======== ====== ==== ======== ============== ============================ 
+  20.000   20.000                                       active clock edge time      
+  20.000   0.000                                        sys_clk                     
+  20.000   0.000    tCL    RR   1        IOR29[A]       sys_clk_ibuf/I              
+  22.088   2.088    tINS   RR   88       IOR29[A]       sys_clk_ibuf/O              
+  24.359   2.271    tNET   RR   1        R26C31[2][B]   core/pulse_index_10_s0/CLK  
+  24.324   -0.035   tSu         1        R26C31[2][B]   core/pulse_index_10_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Setup Relationship: 20.000
+Logic Level: 5
+Arrival Clock Path delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+Arrival Data Path Delay: (cell: 1.949 46.705%, 
+                    route: 1.992 47.735%, 
+                    tC2Q: 0.232 5.560%)
+Required Clock Path Delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+
+						Path16						
+Path Summary:
+Slack             : 15.830
+Data Arrival Time : 8.495
+Data Required Time: 24.324
+From              : pulse_index_12_s0
+To                : pulse_index_3_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                   NODE             
+ ======= ======= ====== ==== ======== ============== ============================ 
+  0.000   0.000                                       active clock edge time      
+  0.000   0.000                                       sys_clk                     
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I              
+  2.088   2.088   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O              
+  4.359   2.271   tNET   RR   1        R27C30[0][A]   core/pulse_index_12_s0/CLK  
+  4.591   0.232   tC2Q   RF   4        R27C30[0][A]   core/pulse_index_12_s0/Q    
+  5.168   0.576   tNET   FF   1        R27C31[3][B]   core/n454_s10/I0            
+  5.723   0.555   tINS   FF   5        R27C31[3][B]   core/n454_s10/F             
+  6.290   0.567   tNET   FF   1        R26C31[0][A]   core/n422_s4/I0             
+  6.661   0.371   tINS   FF   1        R26C31[0][A]   core/n422_s4/F              
+  7.074   0.413   tNET   FF   1        R27C30[3][B]   core/n422_s3/I2             
+  7.527   0.453   tINS   FF   9        R27C30[3][B]   core/n422_s3/F              
+  8.124   0.596   tNET   FF   1        R26C32[2][B]   core/n422_s2/I3             
+  8.495   0.371   tINS   FF   1        R26C32[2][B]   core/n422_s2/F              
+  8.495   0.000   tNET   FF   1        R26C32[2][B]   core/pulse_index_3_s0/D     
+
+Data Required Path:
+    AT     DELAY    TYPE   RF   FANOUT       LOC                  NODE             
+ ======== ======== ====== ==== ======== ============== =========================== 
+  20.000   20.000                                       active clock edge time     
+  20.000   0.000                                        sys_clk                    
+  20.000   0.000    tCL    RR   1        IOR29[A]       sys_clk_ibuf/I             
+  22.088   2.088    tINS   RR   88       IOR29[A]       sys_clk_ibuf/O             
+  24.359   2.271    tNET   RR   1        R26C32[2][B]   core/pulse_index_3_s0/CLK  
+  24.324   -0.035   tSu         1        R26C32[2][B]   core/pulse_index_3_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Setup Relationship: 20.000
+Logic Level: 5
+Arrival Clock Path delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+Arrival Data Path Delay: (cell: 1.750 42.319%, 
+                    route: 2.153 52.071%, 
+                    tC2Q: 0.232 5.610%)
+Required Clock Path Delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+
+						Path17						
+Path Summary:
+Slack             : 15.845
+Data Arrival Time : 8.479
+Data Required Time: 24.324
+From              : phase_7_s0
+To                : dac_data_4_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  2.088   2.088   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  4.359   2.271   tNET   RR   1        R29C31[0][B]   core/phase_7_s0/CLK     
+  4.590   0.231   tC2Q   RR   2        R29C31[0][B]   core/phase_7_s0/Q       
+  4.764   0.174   tNET   RR   1        R29C32[2][A]   core/n42_s3/I0          
+  5.319   0.555   tINS   RF   2        R29C32[2][A]   core/n42_s3/F           
+  5.738   0.419   tNET   FF   1        R29C29[1][B]   core/n42_s1/I3          
+  6.200   0.462   tINS   FR   1        R29C29[1][B]   core/n42_s1/F           
+  6.201   0.001   tNET   RR   1        R29C29[2][A]   core/n42_s0/I2          
+  6.771   0.570   tINS   RR   12       R29C29[2][A]   core/n42_s0/F           
+  8.479   1.708   tNET   RR   1        IOL7[B]        core/dac_data_4_s0/CE   
+
+Data Required Path:
+    AT     DELAY    TYPE   RF   FANOUT     LOC               NODE           
+ ======== ======== ====== ==== ======== ========== ======================== 
+  20.000   20.000                                   active clock edge time  
+  20.000   0.000                                    sys_clk                 
+  20.000   0.000    tCL    RR   1        IOR29[A]   sys_clk_ibuf/I          
+  22.088   2.088    tINS   RR   88       IOR29[A]   sys_clk_ibuf/O          
+  24.359   2.271    tNET   RR   1        IOL7[B]    core/dac_data_4_s0/CLK  
+  24.324   -0.035   tSu         1        IOL7[B]    core/dac_data_4_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Setup Relationship: 20.000
+Logic Level: 4
+Arrival Clock Path delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+Arrival Data Path Delay: (cell: 1.587 38.518%, 
+                    route: 2.302 55.875%, 
+                    tC2Q: 0.231 5.607%)
+Required Clock Path Delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+
+						Path18						
+Path Summary:
+Slack             : 15.845
+Data Arrival Time : 8.479
+Data Required Time: 24.324
+From              : phase_7_s0
+To                : dac_data_5_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  2.088   2.088   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  4.359   2.271   tNET   RR   1        R29C31[0][B]   core/phase_7_s0/CLK     
+  4.590   0.231   tC2Q   RR   2        R29C31[0][B]   core/phase_7_s0/Q       
+  4.764   0.174   tNET   RR   1        R29C32[2][A]   core/n42_s3/I0          
+  5.319   0.555   tINS   RF   2        R29C32[2][A]   core/n42_s3/F           
+  5.738   0.419   tNET   FF   1        R29C29[1][B]   core/n42_s1/I3          
+  6.200   0.462   tINS   FR   1        R29C29[1][B]   core/n42_s1/F           
+  6.201   0.001   tNET   RR   1        R29C29[2][A]   core/n42_s0/I2          
+  6.771   0.570   tINS   RR   12       R29C29[2][A]   core/n42_s0/F           
+  8.479   1.708   tNET   RR   1        IOL7[A]        core/dac_data_5_s0/CE   
+
+Data Required Path:
+    AT     DELAY    TYPE   RF   FANOUT     LOC               NODE           
+ ======== ======== ====== ==== ======== ========== ======================== 
+  20.000   20.000                                   active clock edge time  
+  20.000   0.000                                    sys_clk                 
+  20.000   0.000    tCL    RR   1        IOR29[A]   sys_clk_ibuf/I          
+  22.088   2.088    tINS   RR   88       IOR29[A]   sys_clk_ibuf/O          
+  24.359   2.271    tNET   RR   1        IOL7[A]    core/dac_data_5_s0/CLK  
+  24.324   -0.035   tSu         1        IOL7[A]    core/dac_data_5_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Setup Relationship: 20.000
+Logic Level: 4
+Arrival Clock Path delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+Arrival Data Path Delay: (cell: 1.587 38.518%, 
+                    route: 2.302 55.875%, 
+                    tC2Q: 0.231 5.607%)
+Required Clock Path Delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+
+						Path19						
+Path Summary:
+Slack             : 15.979
+Data Arrival Time : 8.345
+Data Required Time: 24.324
+From              : pulse_index_12_s0
+To                : pulse_index_6_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                   NODE             
+ ======= ======= ====== ==== ======== ============== ============================ 
+  0.000   0.000                                       active clock edge time      
+  0.000   0.000                                       sys_clk                     
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I              
+  2.088   2.088   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O              
+  4.359   2.271   tNET   RR   1        R27C30[0][A]   core/pulse_index_12_s0/CLK  
+  4.591   0.232   tC2Q   RF   4        R27C30[0][A]   core/pulse_index_12_s0/Q    
+  5.168   0.576   tNET   FF   1        R27C31[3][B]   core/n454_s10/I0            
+  5.723   0.555   tINS   FF   5        R27C31[3][B]   core/n454_s10/F             
+  6.290   0.567   tNET   FF   1        R26C31[0][A]   core/n422_s4/I0             
+  6.661   0.371   tINS   FF   1        R26C31[0][A]   core/n422_s4/F              
+  7.074   0.413   tNET   FF   1        R27C30[3][B]   core/n422_s3/I2             
+  7.527   0.453   tINS   FF   9        R27C30[3][B]   core/n422_s3/F              
+  7.796   0.269   tNET   FF   1        R27C32[1][A]   core/n419_s2/I3             
+  8.345   0.549   tINS   FR   1        R27C32[1][A]   core/n419_s2/F              
+  8.345   0.000   tNET   RR   1        R27C32[1][A]   core/pulse_index_6_s0/D     
+
+Data Required Path:
+    AT     DELAY    TYPE   RF   FANOUT       LOC                  NODE             
+ ======== ======== ====== ==== ======== ============== =========================== 
+  20.000   20.000                                       active clock edge time     
+  20.000   0.000                                        sys_clk                    
+  20.000   0.000    tCL    RR   1        IOR29[A]       sys_clk_ibuf/I             
+  22.088   2.088    tINS   RR   88       IOR29[A]       sys_clk_ibuf/O             
+  24.359   2.271    tNET   RR   1        R27C32[1][A]   core/pulse_index_6_s0/CLK  
+  24.324   -0.035   tSu         1        R27C32[1][A]   core/pulse_index_6_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Setup Relationship: 20.000
+Logic Level: 5
+Arrival Clock Path delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+Arrival Data Path Delay: (cell: 1.928 48.370%, 
+                    route: 1.826 45.809%, 
+                    tC2Q: 0.232 5.820%)
+Required Clock Path Delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+
+						Path20						
+Path Summary:
+Slack             : 16.041
+Data Arrival Time : 8.284
+Data Required Time: 24.324
+From              : phase_7_s0
+To                : pulse_index_6_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                  NODE             
+ ======= ======= ====== ==== ======== ============== =========================== 
+  0.000   0.000                                       active clock edge time     
+  0.000   0.000                                       sys_clk                    
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I             
+  2.088   2.088   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O             
+  4.359   2.271   tNET   RR   1        R29C31[0][B]   core/phase_7_s0/CLK        
+  4.590   0.231   tC2Q   RR   2        R29C31[0][B]   core/phase_7_s0/Q          
+  4.764   0.174   tNET   RR   1        R29C32[2][A]   core/n42_s3/I0             
+  5.319   0.555   tINS   RF   2        R29C32[2][A]   core/n42_s3/F              
+  5.738   0.419   tNET   FF   1        R29C29[1][B]   core/n42_s1/I3             
+  6.200   0.462   tINS   FR   1        R29C29[1][B]   core/n42_s1/F              
+  6.201   0.001   tNET   RR   1        R29C29[2][A]   core/n42_s0/I2             
+  6.756   0.555   tINS   RF   12       R29C29[2][A]   core/n42_s0/F              
+  7.183   0.426   tNET   FF   1        R26C29[3][A]   core/pulse_index_15_s2/I3  
+  7.732   0.549   tINS   FR   16       R26C29[3][A]   core/pulse_index_15_s2/F   
+  8.284   0.552   tNET   RR   1        R27C32[1][A]   core/pulse_index_6_s0/CE   
+
+Data Required Path:
+    AT     DELAY    TYPE   RF   FANOUT       LOC                  NODE             
+ ======== ======== ====== ==== ======== ============== =========================== 
+  20.000   20.000                                       active clock edge time     
+  20.000   0.000                                        sys_clk                    
+  20.000   0.000    tCL    RR   1        IOR29[A]       sys_clk_ibuf/I             
+  22.088   2.088    tINS   RR   88       IOR29[A]       sys_clk_ibuf/O             
+  24.359   2.271    tNET   RR   1        R27C32[1][A]   core/pulse_index_6_s0/CLK  
+  24.324   -0.035   tSu         1        R27C32[1][A]   core/pulse_index_6_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Setup Relationship: 20.000
+Logic Level: 5
+Arrival Clock Path delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+Arrival Data Path Delay: (cell: 2.121 54.047%, 
+                    route: 1.572 40.067%, 
+                    tC2Q: 0.231 5.886%)
+Required Clock Path Delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+
+						Path21						
+Path Summary:
+Slack             : 16.041
+Data Arrival Time : 8.284
+Data Required Time: 24.324
+From              : phase_7_s0
+To                : pulse_index_11_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                  NODE             
+ ======= ======= ====== ==== ======== ============== =========================== 
+  0.000   0.000                                       active clock edge time     
+  0.000   0.000                                       sys_clk                    
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I             
+  2.088   2.088   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O             
+  4.359   2.271   tNET   RR   1        R29C31[0][B]   core/phase_7_s0/CLK        
+  4.590   0.231   tC2Q   RR   2        R29C31[0][B]   core/phase_7_s0/Q          
+  4.764   0.174   tNET   RR   1        R29C32[2][A]   core/n42_s3/I0             
+  5.319   0.555   tINS   RF   2        R29C32[2][A]   core/n42_s3/F              
+  5.738   0.419   tNET   FF   1        R29C29[1][B]   core/n42_s1/I3             
+  6.200   0.462   tINS   FR   1        R29C29[1][B]   core/n42_s1/F              
+  6.201   0.001   tNET   RR   1        R29C29[2][A]   core/n42_s0/I2             
+  6.756   0.555   tINS   RF   12       R29C29[2][A]   core/n42_s0/F              
+  7.183   0.426   tNET   FF   1        R26C29[3][A]   core/pulse_index_15_s2/I3  
+  7.732   0.549   tINS   FR   16       R26C29[3][A]   core/pulse_index_15_s2/F   
+  8.284   0.552   tNET   RR   1        R26C30[1][B]   core/pulse_index_11_s0/CE  
+
+Data Required Path:
+    AT     DELAY    TYPE   RF   FANOUT       LOC                   NODE             
+ ======== ======== ====== ==== ======== ============== ============================ 
+  20.000   20.000                                       active clock edge time      
+  20.000   0.000                                        sys_clk                     
+  20.000   0.000    tCL    RR   1        IOR29[A]       sys_clk_ibuf/I              
+  22.088   2.088    tINS   RR   88       IOR29[A]       sys_clk_ibuf/O              
+  24.359   2.271    tNET   RR   1        R26C30[1][B]   core/pulse_index_11_s0/CLK  
+  24.324   -0.035   tSu         1        R26C30[1][B]   core/pulse_index_11_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Setup Relationship: 20.000
+Logic Level: 5
+Arrival Clock Path delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+Arrival Data Path Delay: (cell: 2.121 54.047%, 
+                    route: 1.572 40.067%, 
+                    tC2Q: 0.231 5.886%)
+Required Clock Path Delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+
+						Path22						
+Path Summary:
+Slack             : 16.056
+Data Arrival Time : 8.269
+Data Required Time: 24.324
+From              : pulse_index_12_s0
+To                : pulse_index_11_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                   NODE             
+ ======= ======= ====== ==== ======== ============== ============================ 
+  0.000   0.000                                       active clock edge time      
+  0.000   0.000                                       sys_clk                     
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I              
+  2.088   2.088   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O              
+  4.359   2.271   tNET   RR   1        R27C30[0][A]   core/pulse_index_12_s0/CLK  
+  4.591   0.232   tC2Q   RF   4        R27C30[0][A]   core/pulse_index_12_s0/Q    
+  5.168   0.576   tNET   FF   1        R27C31[3][B]   core/n454_s10/I0            
+  5.723   0.555   tINS   FF   5        R27C31[3][B]   core/n454_s10/F             
+  6.290   0.567   tNET   FF   1        R26C31[0][A]   core/n422_s4/I0             
+  6.661   0.371   tINS   FF   1        R26C31[0][A]   core/n422_s4/F              
+  7.074   0.413   tNET   FF   1        R27C30[3][B]   core/n422_s3/I2             
+  7.527   0.453   tINS   FF   9        R27C30[3][B]   core/n422_s3/F              
+  7.720   0.192   tNET   FF   1        R26C30[1][B]   core/n414_s2/I2             
+  8.269   0.549   tINS   FR   1        R26C30[1][B]   core/n414_s2/F              
+  8.269   0.000   tNET   RR   1        R26C30[1][B]   core/pulse_index_11_s0/D    
+
+Data Required Path:
+    AT     DELAY    TYPE   RF   FANOUT       LOC                   NODE             
+ ======== ======== ====== ==== ======== ============== ============================ 
+  20.000   20.000                                       active clock edge time      
+  20.000   0.000                                        sys_clk                     
+  20.000   0.000    tCL    RR   1        IOR29[A]       sys_clk_ibuf/I              
+  22.088   2.088    tINS   RR   88       IOR29[A]       sys_clk_ibuf/O              
+  24.359   2.271    tNET   RR   1        R26C30[1][B]   core/pulse_index_11_s0/CLK  
+  24.324   -0.035   tSu         1        R26C30[1][B]   core/pulse_index_11_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Setup Relationship: 20.000
+Logic Level: 5
+Arrival Clock Path delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+Arrival Data Path Delay: (cell: 1.928 49.319%, 
+                    route: 1.749 44.746%, 
+                    tC2Q: 0.232 5.935%)
+Required Clock Path Delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+
+						Path23						
+Path Summary:
+Slack             : 16.061
+Data Arrival Time : 8.264
+Data Required Time: 24.324
+From              : phase_7_s0
+To                : dac_data_6_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  2.088   2.088   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  4.359   2.271   tNET   RR   1        R29C31[0][B]   core/phase_7_s0/CLK     
+  4.590   0.231   tC2Q   RR   2        R29C31[0][B]   core/phase_7_s0/Q       
+  4.764   0.174   tNET   RR   1        R29C32[2][A]   core/n42_s3/I0          
+  5.319   0.555   tINS   RF   2        R29C32[2][A]   core/n42_s3/F           
+  5.738   0.419   tNET   FF   1        R29C29[1][B]   core/n42_s1/I3          
+  6.200   0.462   tINS   FR   1        R29C29[1][B]   core/n42_s1/F           
+  6.201   0.001   tNET   RR   1        R29C29[2][A]   core/n42_s0/I2          
+  6.771   0.570   tINS   RR   12       R29C29[2][A]   core/n42_s0/F           
+  8.264   1.493   tNET   RR   1        IOL15[B]       core/dac_data_6_s0/CE   
+
+Data Required Path:
+    AT     DELAY    TYPE   RF   FANOUT     LOC               NODE           
+ ======== ======== ====== ==== ======== ========== ======================== 
+  20.000   20.000                                   active clock edge time  
+  20.000   0.000                                    sys_clk                 
+  20.000   0.000    tCL    RR   1        IOR29[A]   sys_clk_ibuf/I          
+  22.088   2.088    tINS   RR   88       IOR29[A]   sys_clk_ibuf/O          
+  24.359   2.271    tNET   RR   1        IOL15[B]   core/dac_data_6_s0/CLK  
+  24.324   -0.035   tSu         1        IOL15[B]   core/dac_data_6_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Setup Relationship: 20.000
+Logic Level: 4
+Arrival Clock Path delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+Arrival Data Path Delay: (cell: 1.587 40.646%, 
+                    route: 2.086 53.437%, 
+                    tC2Q: 0.231 5.916%)
+Required Clock Path Delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+
+						Path24						
+Path Summary:
+Slack             : 16.061
+Data Arrival Time : 8.264
+Data Required Time: 24.324
+From              : phase_7_s0
+To                : dac_data_7_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  2.088   2.088   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  4.359   2.271   tNET   RR   1        R29C31[0][B]   core/phase_7_s0/CLK     
+  4.590   0.231   tC2Q   RR   2        R29C31[0][B]   core/phase_7_s0/Q       
+  4.764   0.174   tNET   RR   1        R29C32[2][A]   core/n42_s3/I0          
+  5.319   0.555   tINS   RF   2        R29C32[2][A]   core/n42_s3/F           
+  5.738   0.419   tNET   FF   1        R29C29[1][B]   core/n42_s1/I3          
+  6.200   0.462   tINS   FR   1        R29C29[1][B]   core/n42_s1/F           
+  6.201   0.001   tNET   RR   1        R29C29[2][A]   core/n42_s0/I2          
+  6.771   0.570   tINS   RR   12       R29C29[2][A]   core/n42_s0/F           
+  8.264   1.493   tNET   RR   1        IOL15[A]       core/dac_data_7_s0/CE   
+
+Data Required Path:
+    AT     DELAY    TYPE   RF   FANOUT     LOC               NODE           
+ ======== ======== ====== ==== ======== ========== ======================== 
+  20.000   20.000                                   active clock edge time  
+  20.000   0.000                                    sys_clk                 
+  20.000   0.000    tCL    RR   1        IOR29[A]   sys_clk_ibuf/I          
+  22.088   2.088    tINS   RR   88       IOR29[A]   sys_clk_ibuf/O          
+  24.359   2.271    tNET   RR   1        IOL15[A]   core/dac_data_7_s0/CLK  
+  24.324   -0.035   tSu         1        IOL15[A]   core/dac_data_7_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Setup Relationship: 20.000
+Logic Level: 4
+Arrival Clock Path delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+Arrival Data Path Delay: (cell: 1.587 40.646%, 
+                    route: 2.086 53.437%, 
+                    tC2Q: 0.231 5.916%)
+Required Clock Path Delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+
+						Path25						
+Path Summary:
+Slack             : 16.093
+Data Arrival Time : 8.232
+Data Required Time: 24.324
+From              : phase_7_s0
+To                : dac_data_2_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  2.088   2.088   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  4.359   2.271   tNET   RR   1        R29C31[0][B]   core/phase_7_s0/CLK     
+  4.590   0.231   tC2Q   RR   2        R29C31[0][B]   core/phase_7_s0/Q       
+  4.764   0.174   tNET   RR   1        R29C32[2][A]   core/n42_s3/I0          
+  5.319   0.555   tINS   RF   2        R29C32[2][A]   core/n42_s3/F           
+  5.738   0.419   tNET   FF   1        R29C29[1][B]   core/n42_s1/I3          
+  6.200   0.462   tINS   FR   1        R29C29[1][B]   core/n42_s1/F           
+  6.201   0.001   tNET   RR   1        R29C29[2][A]   core/n42_s0/I2          
+  6.771   0.570   tINS   RR   12       R29C29[2][A]   core/n42_s0/F           
+  8.232   1.460   tNET   RR   1        IOL13[B]       core/dac_data_2_s0/CE   
+
+Data Required Path:
+    AT     DELAY    TYPE   RF   FANOUT     LOC               NODE           
+ ======== ======== ====== ==== ======== ========== ======================== 
+  20.000   20.000                                   active clock edge time  
+  20.000   0.000                                    sys_clk                 
+  20.000   0.000    tCL    RR   1        IOR29[A]   sys_clk_ibuf/I          
+  22.088   2.088    tINS   RR   88       IOR29[A]   sys_clk_ibuf/O          
+  24.359   2.271    tNET   RR   1        IOL13[B]   core/dac_data_2_s0/CLK  
+  24.324   -0.035   tSu         1        IOL13[B]   core/dac_data_2_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Setup Relationship: 20.000
+Logic Level: 4
+Arrival Clock Path delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+Arrival Data Path Delay: (cell: 1.587 40.983%, 
+                    route: 2.054 53.052%, 
+                    tC2Q: 0.231 5.965%)
+Required Clock Path Delay: (cell: 2.088 47.897%, 
+                     route: 2.271 52.103%)
+
+3.3.2 Hold Analysis Report
+Report Command:report_timing -hold -max_paths 25 -max_common_paths 1
+						Path1						
+Path Summary:
+Slack             : 0.322
+Data Arrival Time : 3.236
+Data Required Time: 2.914
+From              : startup_8_s4
+To                : startup_7_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  2.903   1.511   tNET   RR   1        R30C27[1][A]   startup_8_s4/CLK        
+  3.105   0.202   tC2Q   RR   10       R30C27[1][A]   startup_8_s4/Q          
+  3.236   0.131   tNET   RR   1        R30C27[0][A]   startup_7_s0/CE         
+
+Data Required Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  2.903   1.511   tNET   RR   1        R30C27[0][A]   startup_7_s0/CLK        
+  2.914   0.011   tHld        1        R30C27[0][A]   startup_7_s0            
+
+Path Statistics:
+Clock Skew: 0.000
+Hold Relationship: 0.000
+Logic Level: 1
+Arrival Clock Path delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+Arrival Data Path Delay: (cell: 0.000 0.000%, 
+                    route: 0.131 39.314%, 
+                    tC2Q: 0.202 60.686%)
+Required Clock Path Delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+
+						Path2						
+Path Summary:
+Slack             : 0.424
+Data Arrival Time : 3.338
+Data Required Time: 2.914
+From              : startup_3_s0
+To                : startup_3_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  2.903   1.511   tNET   RR   1        R30C26[1][A]   startup_3_s0/CLK        
+  3.105   0.202   tC2Q   RR   1        R30C26[1][A]   startup_3_s0/Q          
+  3.106   0.001   tNET   RR   2        R30C26[1][A]   n15_s/I1                
+  3.338   0.232   tINS   RF   1        R30C26[1][A]   n15_s/SUM               
+  3.338   0.000   tNET   FF   1        R30C26[1][A]   startup_3_s0/D          
+
+Data Required Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  2.903   1.511   tNET   RR   1        R30C26[1][A]   startup_3_s0/CLK        
+  2.914   0.011   tHld        1        R30C26[1][A]   startup_3_s0            
+
+Path Statistics:
+Clock Skew: 0.000
+Hold Relationship: 0.000
+Logic Level: 2
+Arrival Clock Path delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+Arrival Data Path Delay: (cell: 0.232 53.306%, 
+                    route: 0.001 0.281%, 
+                    tC2Q: 0.202 46.413%)
+Required Clock Path Delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+
+						Path3						
+Path Summary:
+Slack             : 0.424
+Data Arrival Time : 3.338
+Data Required Time: 2.914
+From              : startup_7_s0
+To                : startup_7_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  2.903   1.511   tNET   RR   1        R30C27[0][A]   startup_7_s0/CLK        
+  3.105   0.202   tC2Q   RR   1        R30C27[0][A]   startup_7_s0/Q          
+  3.106   0.001   tNET   RR   2        R30C27[0][A]   n11_s/I1                
+  3.338   0.232   tINS   RF   1        R30C27[0][A]   n11_s/SUM               
+  3.338   0.000   tNET   FF   1        R30C27[0][A]   startup_7_s0/D          
+
+Data Required Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  2.903   1.511   tNET   RR   1        R30C27[0][A]   startup_7_s0/CLK        
+  2.914   0.011   tHld        1        R30C27[0][A]   startup_7_s0            
+
+Path Statistics:
+Clock Skew: 0.000
+Hold Relationship: 0.000
+Logic Level: 2
+Arrival Clock Path delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+Arrival Data Path Delay: (cell: 0.232 53.306%, 
+                    route: 0.001 0.281%, 
+                    tC2Q: 0.202 46.413%)
+Required Clock Path Delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+
+						Path4						
+Path Summary:
+Slack             : 0.425
+Data Arrival Time : 3.340
+Data Required Time: 2.914
+From              : phase_2_s0
+To                : phase_2_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  2.903   1.511   tNET   RR   1        R29C30[1][A]   core/phase_2_s0/CLK     
+  3.105   0.202   tC2Q   RR   2        R29C30[1][A]   core/phase_2_s0/Q       
+  3.108   0.002   tNET   RR   2        R29C30[1][A]   core/n23_s/I1           
+  3.340   0.232   tINS   RF   1        R29C30[1][A]   core/n23_s/SUM          
+  3.340   0.000   tNET   FF   1        R29C30[1][A]   core/phase_2_s0/D       
+
+Data Required Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  2.903   1.511   tNET   RR   1        R29C30[1][A]   core/phase_2_s0/CLK     
+  2.914   0.011   tHld        1        R29C30[1][A]   core/phase_2_s0         
+
+Path Statistics:
+Clock Skew: 0.000
+Hold Relationship: 0.000
+Logic Level: 2
+Arrival Clock Path delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+Arrival Data Path Delay: (cell: 0.232 53.157%, 
+                    route: 0.002 0.560%, 
+                    tC2Q: 0.202 46.283%)
+Required Clock Path Delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+
+						Path5						
+Path Summary:
+Slack             : 0.425
+Data Arrival Time : 3.340
+Data Required Time: 2.914
+From              : phase_6_s0
+To                : phase_6_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  2.903   1.511   tNET   RR   1        R29C31[0][A]   core/phase_6_s0/CLK     
+  3.105   0.202   tC2Q   RR   3        R29C31[0][A]   core/phase_6_s0/Q       
+  3.108   0.002   tNET   RR   2        R29C31[0][A]   core/n19_s/I1           
+  3.340   0.232   tINS   RF   1        R29C31[0][A]   core/n19_s/SUM          
+  3.340   0.000   tNET   FF   1        R29C31[0][A]   core/phase_6_s0/D       
+
+Data Required Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  2.903   1.511   tNET   RR   1        R29C31[0][A]   core/phase_6_s0/CLK     
+  2.914   0.011   tHld        1        R29C31[0][A]   core/phase_6_s0         
+
+Path Statistics:
+Clock Skew: 0.000
+Hold Relationship: 0.000
+Logic Level: 2
+Arrival Clock Path delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+Arrival Data Path Delay: (cell: 0.232 53.157%, 
+                    route: 0.002 0.560%, 
+                    tC2Q: 0.202 46.283%)
+Required Clock Path Delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+
+						Path6						
+Path Summary:
+Slack             : 0.425
+Data Arrival Time : 3.340
+Data Required Time: 2.914
+From              : phase_8_s0
+To                : phase_8_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  2.903   1.511   tNET   RR   1        R29C31[1][A]   core/phase_8_s0/CLK     
+  3.105   0.202   tC2Q   RR   2        R29C31[1][A]   core/phase_8_s0/Q       
+  3.108   0.002   tNET   RR   2        R29C31[1][A]   core/n17_s/I1           
+  3.340   0.232   tINS   RF   1        R29C31[1][A]   core/n17_s/SUM          
+  3.340   0.000   tNET   FF   1        R29C31[1][A]   core/phase_8_s0/D       
+
+Data Required Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  2.903   1.511   tNET   RR   1        R29C31[1][A]   core/phase_8_s0/CLK     
+  2.914   0.011   tHld        1        R29C31[1][A]   core/phase_8_s0         
+
+Path Statistics:
+Clock Skew: 0.000
+Hold Relationship: 0.000
+Logic Level: 2
+Arrival Clock Path delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+Arrival Data Path Delay: (cell: 0.232 53.157%, 
+                    route: 0.002 0.560%, 
+                    tC2Q: 0.202 46.283%)
+Required Clock Path Delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+
+						Path7						
+Path Summary:
+Slack             : 0.425
+Data Arrival Time : 3.340
+Data Required Time: 2.914
+From              : phase_12_s0
+To                : phase_12_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  2.903   1.511   tNET   RR   1        R29C32[0][A]   core/phase_12_s0/CLK    
+  3.105   0.202   tC2Q   RR   2        R29C32[0][A]   core/phase_12_s0/Q      
+  3.108   0.002   tNET   RR   2        R29C32[0][A]   core/n13_s/I1           
+  3.340   0.232   tINS   RF   1        R29C32[0][A]   core/n13_s/SUM          
+  3.340   0.000   tNET   FF   1        R29C32[0][A]   core/phase_12_s0/D      
+
+Data Required Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  2.903   1.511   tNET   RR   1        R29C32[0][A]   core/phase_12_s0/CLK    
+  2.914   0.011   tHld        1        R29C32[0][A]   core/phase_12_s0        
+
+Path Statistics:
+Clock Skew: 0.000
+Hold Relationship: 0.000
+Logic Level: 2
+Arrival Clock Path delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+Arrival Data Path Delay: (cell: 0.232 53.157%, 
+                    route: 0.002 0.560%, 
+                    tC2Q: 0.202 46.283%)
+Required Clock Path Delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+
+						Path8						
+Path Summary:
+Slack             : 0.425
+Data Arrival Time : 3.340
+Data Required Time: 2.914
+From              : phase_14_s0
+To                : phase_14_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  2.903   1.511   tNET   RR   1        R29C32[1][A]   core/phase_14_s0/CLK    
+  3.105   0.202   tC2Q   RR   2        R29C32[1][A]   core/phase_14_s0/Q      
+  3.108   0.002   tNET   RR   2        R29C32[1][A]   core/n11_s/I1           
+  3.340   0.232   tINS   RF   1        R29C32[1][A]   core/n11_s/SUM          
+  3.340   0.000   tNET   FF   1        R29C32[1][A]   core/phase_14_s0/D      
+
+Data Required Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  2.903   1.511   tNET   RR   1        R29C32[1][A]   core/phase_14_s0/CLK    
+  2.914   0.011   tHld        1        R29C32[1][A]   core/phase_14_s0        
+
+Path Statistics:
+Clock Skew: 0.000
+Hold Relationship: 0.000
+Logic Level: 2
+Arrival Clock Path delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+Arrival Data Path Delay: (cell: 0.232 53.157%, 
+                    route: 0.002 0.560%, 
+                    tC2Q: 0.202 46.283%)
+Required Clock Path Delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+
+						Path9						
+Path Summary:
+Slack             : 0.425
+Data Arrival Time : 3.340
+Data Required Time: 2.914
+From              : startup_0_s2
+To                : startup_0_s2
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  2.903   1.511   tNET   RR   1        R29C25[0][A]   startup_0_s2/CLK        
+  3.105   0.202   tC2Q   RR   2        R29C25[0][A]   startup_0_s2/Q          
+  3.108   0.002   tNET   RR   1        R29C25[0][A]   n18_s3/I0               
+  3.340   0.232   tINS   RF   1        R29C25[0][A]   n18_s3/F                
+  3.340   0.000   tNET   FF   1        R29C25[0][A]   startup_0_s2/D          
+
+Data Required Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  2.903   1.511   tNET   RR   1        R29C25[0][A]   startup_0_s2/CLK        
+  2.914   0.011   tHld        1        R29C25[0][A]   startup_0_s2            
+
+Path Statistics:
+Clock Skew: 0.000
+Hold Relationship: 0.000
+Logic Level: 2
+Arrival Clock Path delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+Arrival Data Path Delay: (cell: 0.232 53.157%, 
+                    route: 0.002 0.560%, 
+                    tC2Q: 0.202 46.283%)
+Required Clock Path Delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+
+						Path10						
+Path Summary:
+Slack             : 0.425
+Data Arrival Time : 3.340
+Data Required Time: 2.914
+From              : debounce_count_0_s0
+To                : debounce_count_0_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE            
+ ======= ======= ====== ==== ======== ============== ========================= 
+  0.000   0.000                                       active clock edge time   
+  0.000   0.000                                       sys_clk                  
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I           
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O           
+  2.903   1.511   tNET   RR   1        R29C25[1][A]   debounce_count_0_s0/CLK  
+  3.105   0.202   tC2Q   RR   3        R29C25[1][A]   debounce_count_0_s0/Q    
+  3.108   0.002   tNET   RR   1        R29C25[1][A]   n62_s2/I0                
+  3.340   0.232   tINS   RF   1        R29C25[1][A]   n62_s2/F                 
+  3.340   0.000   tNET   FF   1        R29C25[1][A]   debounce_count_0_s0/D    
+
+Data Required Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE            
+ ======= ======= ====== ==== ======== ============== ========================= 
+  0.000   0.000                                       active clock edge time   
+  0.000   0.000                                       sys_clk                  
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I           
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O           
+  2.903   1.511   tNET   RR   1        R29C25[1][A]   debounce_count_0_s0/CLK  
+  2.914   0.011   tHld        1        R29C25[1][A]   debounce_count_0_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Hold Relationship: 0.000
+Logic Level: 2
+Arrival Clock Path delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+Arrival Data Path Delay: (cell: 0.232 53.157%, 
+                    route: 0.002 0.560%, 
+                    tC2Q: 0.202 46.283%)
+Required Clock Path Delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+
+						Path11						
+Path Summary:
+Slack             : 0.425
+Data Arrival Time : 3.340
+Data Required Time: 2.914
+From              : debounce_count_2_s0
+To                : debounce_count_2_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE            
+ ======= ======= ====== ==== ======== ============== ========================= 
+  0.000   0.000                                       active clock edge time   
+  0.000   0.000                                       sys_clk                  
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I           
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O           
+  2.903   1.511   tNET   RR   1        R29C26[1][A]   debounce_count_2_s0/CLK  
+  3.105   0.202   tC2Q   RR   2        R29C26[1][A]   debounce_count_2_s0/Q    
+  3.108   0.002   tNET   RR   2        R29C26[1][A]   n60_s/I1                 
+  3.340   0.232   tINS   RF   1        R29C26[1][A]   n60_s/SUM                
+  3.340   0.000   tNET   FF   1        R29C26[1][A]   debounce_count_2_s0/D    
+
+Data Required Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE            
+ ======= ======= ====== ==== ======== ============== ========================= 
+  0.000   0.000                                       active clock edge time   
+  0.000   0.000                                       sys_clk                  
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I           
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O           
+  2.903   1.511   tNET   RR   1        R29C26[1][A]   debounce_count_2_s0/CLK  
+  2.914   0.011   tHld        1        R29C26[1][A]   debounce_count_2_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Hold Relationship: 0.000
+Logic Level: 2
+Arrival Clock Path delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+Arrival Data Path Delay: (cell: 0.232 53.157%, 
+                    route: 0.002 0.560%, 
+                    tC2Q: 0.202 46.283%)
+Required Clock Path Delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+
+						Path12						
+Path Summary:
+Slack             : 0.425
+Data Arrival Time : 3.340
+Data Required Time: 2.914
+From              : debounce_count_6_s0
+To                : debounce_count_6_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE            
+ ======= ======= ====== ==== ======== ============== ========================= 
+  0.000   0.000                                       active clock edge time   
+  0.000   0.000                                       sys_clk                  
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I           
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O           
+  2.903   1.511   tNET   RR   1        R29C27[0][A]   debounce_count_6_s0/CLK  
+  3.105   0.202   tC2Q   RR   2        R29C27[0][A]   debounce_count_6_s0/Q    
+  3.108   0.002   tNET   RR   2        R29C27[0][A]   n56_s/I1                 
+  3.340   0.232   tINS   RF   1        R29C27[0][A]   n56_s/SUM                
+  3.340   0.000   tNET   FF   1        R29C27[0][A]   debounce_count_6_s0/D    
+
+Data Required Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE            
+ ======= ======= ====== ==== ======== ============== ========================= 
+  0.000   0.000                                       active clock edge time   
+  0.000   0.000                                       sys_clk                  
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I           
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O           
+  2.903   1.511   tNET   RR   1        R29C27[0][A]   debounce_count_6_s0/CLK  
+  2.914   0.011   tHld        1        R29C27[0][A]   debounce_count_6_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Hold Relationship: 0.000
+Logic Level: 2
+Arrival Clock Path delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+Arrival Data Path Delay: (cell: 0.232 53.157%, 
+                    route: 0.002 0.560%, 
+                    tC2Q: 0.202 46.283%)
+Required Clock Path Delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+
+						Path13						
+Path Summary:
+Slack             : 0.425
+Data Arrival Time : 3.340
+Data Required Time: 2.914
+From              : debounce_count_8_s0
+To                : debounce_count_8_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE            
+ ======= ======= ====== ==== ======== ============== ========================= 
+  0.000   0.000                                       active clock edge time   
+  0.000   0.000                                       sys_clk                  
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I           
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O           
+  2.903   1.511   tNET   RR   1        R29C27[1][A]   debounce_count_8_s0/CLK  
+  3.105   0.202   tC2Q   RR   2        R29C27[1][A]   debounce_count_8_s0/Q    
+  3.108   0.002   tNET   RR   2        R29C27[1][A]   n54_s/I1                 
+  3.340   0.232   tINS   RF   1        R29C27[1][A]   n54_s/SUM                
+  3.340   0.000   tNET   FF   1        R29C27[1][A]   debounce_count_8_s0/D    
+
+Data Required Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE            
+ ======= ======= ====== ==== ======== ============== ========================= 
+  0.000   0.000                                       active clock edge time   
+  0.000   0.000                                       sys_clk                  
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I           
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O           
+  2.903   1.511   tNET   RR   1        R29C27[1][A]   debounce_count_8_s0/CLK  
+  2.914   0.011   tHld        1        R29C27[1][A]   debounce_count_8_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Hold Relationship: 0.000
+Logic Level: 2
+Arrival Clock Path delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+Arrival Data Path Delay: (cell: 0.232 53.157%, 
+                    route: 0.002 0.560%, 
+                    tC2Q: 0.202 46.283%)
+Required Clock Path Delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+
+						Path14						
+Path Summary:
+Slack             : 0.425
+Data Arrival Time : 3.340
+Data Required Time: 2.914
+From              : debounce_count_12_s0
+To                : debounce_count_12_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                  NODE            
+ ======= ======= ====== ==== ======== ============== ========================== 
+  0.000   0.000                                       active clock edge time    
+  0.000   0.000                                       sys_clk                   
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I            
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O            
+  2.903   1.511   tNET   RR   1        R29C28[0][A]   debounce_count_12_s0/CLK  
+  3.105   0.202   tC2Q   RR   2        R29C28[0][A]   debounce_count_12_s0/Q    
+  3.108   0.002   tNET   RR   2        R29C28[0][A]   n50_s/I1                  
+  3.340   0.232   tINS   RF   1        R29C28[0][A]   n50_s/SUM                 
+  3.340   0.000   tNET   FF   1        R29C28[0][A]   debounce_count_12_s0/D    
+
+Data Required Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                  NODE            
+ ======= ======= ====== ==== ======== ============== ========================== 
+  0.000   0.000                                       active clock edge time    
+  0.000   0.000                                       sys_clk                   
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I            
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O            
+  2.903   1.511   tNET   RR   1        R29C28[0][A]   debounce_count_12_s0/CLK  
+  2.914   0.011   tHld        1        R29C28[0][A]   debounce_count_12_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Hold Relationship: 0.000
+Logic Level: 2
+Arrival Clock Path delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+Arrival Data Path Delay: (cell: 0.232 53.157%, 
+                    route: 0.002 0.560%, 
+                    tC2Q: 0.202 46.283%)
+Required Clock Path Delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+
+						Path15						
+Path Summary:
+Slack             : 0.425
+Data Arrival Time : 3.340
+Data Required Time: 2.914
+From              : debounce_count_14_s0
+To                : debounce_count_14_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                  NODE            
+ ======= ======= ====== ==== ======== ============== ========================== 
+  0.000   0.000                                       active clock edge time    
+  0.000   0.000                                       sys_clk                   
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I            
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O            
+  2.903   1.511   tNET   RR   1        R29C28[1][A]   debounce_count_14_s0/CLK  
+  3.105   0.202   tC2Q   RR   2        R29C28[1][A]   debounce_count_14_s0/Q    
+  3.108   0.002   tNET   RR   2        R29C28[1][A]   n48_s/I1                  
+  3.340   0.232   tINS   RF   1        R29C28[1][A]   n48_s/SUM                 
+  3.340   0.000   tNET   FF   1        R29C28[1][A]   debounce_count_14_s0/D    
+
+Data Required Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                  NODE            
+ ======= ======= ====== ==== ======== ============== ========================== 
+  0.000   0.000                                       active clock edge time    
+  0.000   0.000                                       sys_clk                   
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I            
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O            
+  2.903   1.511   tNET   RR   1        R29C28[1][A]   debounce_count_14_s0/CLK  
+  2.914   0.011   tHld        1        R29C28[1][A]   debounce_count_14_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Hold Relationship: 0.000
+Logic Level: 2
+Arrival Clock Path delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+Arrival Data Path Delay: (cell: 0.232 53.157%, 
+                    route: 0.002 0.560%, 
+                    tC2Q: 0.202 46.283%)
+Required Clock Path Delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+
+						Path16						
+Path Summary:
+Slack             : 0.425
+Data Arrival Time : 3.340
+Data Required Time: 2.914
+From              : debounce_count_18_s0
+To                : debounce_count_18_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                  NODE            
+ ======= ======= ====== ==== ======== ============== ========================== 
+  0.000   0.000                                       active clock edge time    
+  0.000   0.000                                       sys_clk                   
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I            
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O            
+  2.903   1.511   tNET   RR   1        R29C29[0][A]   debounce_count_18_s0/CLK  
+  3.105   0.202   tC2Q   RR   2        R29C29[0][A]   debounce_count_18_s0/Q    
+  3.108   0.002   tNET   RR   2        R29C29[0][A]   n44_s/I1                  
+  3.340   0.232   tINS   RF   1        R29C29[0][A]   n44_s/SUM                 
+  3.340   0.000   tNET   FF   1        R29C29[0][A]   debounce_count_18_s0/D    
+
+Data Required Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                  NODE            
+ ======= ======= ====== ==== ======== ============== ========================== 
+  0.000   0.000                                       active clock edge time    
+  0.000   0.000                                       sys_clk                   
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I            
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O            
+  2.903   1.511   tNET   RR   1        R29C29[0][A]   debounce_count_18_s0/CLK  
+  2.914   0.011   tHld        1        R29C29[0][A]   debounce_count_18_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Hold Relationship: 0.000
+Logic Level: 2
+Arrival Clock Path delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+Arrival Data Path Delay: (cell: 0.232 53.157%, 
+                    route: 0.002 0.560%, 
+                    tC2Q: 0.202 46.283%)
+Required Clock Path Delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+
+						Path17						
+Path Summary:
+Slack             : 0.427
+Data Arrival Time : 3.341
+Data Required Time: 2.914
+From              : pulse_index_6_s0
+To                : pulse_index_6_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                  NODE             
+ ======= ======= ====== ==== ======== ============== =========================== 
+  0.000   0.000                                       active clock edge time     
+  0.000   0.000                                       sys_clk                    
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I             
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O             
+  2.903   1.511   tNET   RR   1        R27C32[1][A]   core/pulse_index_6_s0/CLK  
+  3.105   0.202   tC2Q   RR   5        R27C32[1][A]   core/pulse_index_6_s0/Q    
+  3.109   0.004   tNET   RR   1        R27C32[1][A]   core/n419_s2/I2            
+  3.341   0.232   tINS   RF   1        R27C32[1][A]   core/n419_s2/F             
+  3.341   0.000   tNET   FF   1        R27C32[1][A]   core/pulse_index_6_s0/D    
+
+Data Required Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                  NODE             
+ ======= ======= ====== ==== ======== ============== =========================== 
+  0.000   0.000                                       active clock edge time     
+  0.000   0.000                                       sys_clk                    
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I             
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O             
+  2.903   1.511   tNET   RR   1        R27C32[1][A]   core/pulse_index_6_s0/CLK  
+  2.914   0.011   tHld        1        R27C32[1][A]   core/pulse_index_6_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Hold Relationship: 0.000
+Logic Level: 2
+Arrival Clock Path delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+Arrival Data Path Delay: (cell: 0.232 53.008%, 
+                    route: 0.004 0.838%, 
+                    tC2Q: 0.202 46.154%)
+Required Clock Path Delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+
+						Path18						
+Path Summary:
+Slack             : 0.427
+Data Arrival Time : 3.341
+Data Required Time: 2.914
+From              : pulse_index_12_s0
+To                : pulse_index_12_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                   NODE             
+ ======= ======= ====== ==== ======== ============== ============================ 
+  0.000   0.000                                       active clock edge time      
+  0.000   0.000                                       sys_clk                     
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I              
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O              
+  2.903   1.511   tNET   RR   1        R27C30[0][A]   core/pulse_index_12_s0/CLK  
+  3.105   0.202   tC2Q   RR   4        R27C30[0][A]   core/pulse_index_12_s0/Q    
+  3.109   0.004   tNET   RR   1        R27C30[0][A]   core/n413_s2/I0             
+  3.341   0.232   tINS   RF   1        R27C30[0][A]   core/n413_s2/F              
+  3.341   0.000   tNET   FF   1        R27C30[0][A]   core/pulse_index_12_s0/D    
+
+Data Required Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                   NODE             
+ ======= ======= ====== ==== ======== ============== ============================ 
+  0.000   0.000                                       active clock edge time      
+  0.000   0.000                                       sys_clk                     
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I              
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O              
+  2.903   1.511   tNET   RR   1        R27C30[0][A]   core/pulse_index_12_s0/CLK  
+  2.914   0.011   tHld        1        R27C30[0][A]   core/pulse_index_12_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Hold Relationship: 0.000
+Logic Level: 2
+Arrival Clock Path delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+Arrival Data Path Delay: (cell: 0.232 53.008%, 
+                    route: 0.004 0.838%, 
+                    tC2Q: 0.202 46.154%)
+Required Clock Path Delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+
+						Path19						
+Path Summary:
+Slack             : 0.427
+Data Arrival Time : 3.341
+Data Required Time: 2.914
+From              : pulse_index_13_s0
+To                : pulse_index_13_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                   NODE             
+ ======= ======= ====== ==== ======== ============== ============================ 
+  0.000   0.000                                       active clock edge time      
+  0.000   0.000                                       sys_clk                     
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I              
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O              
+  2.903   1.511   tNET   RR   1        R27C30[1][A]   core/pulse_index_13_s0/CLK  
+  3.105   0.202   tC2Q   RR   4        R27C30[1][A]   core/pulse_index_13_s0/Q    
+  3.109   0.004   tNET   RR   1        R27C30[1][A]   core/n412_s2/I0             
+  3.341   0.232   tINS   RF   1        R27C30[1][A]   core/n412_s2/F              
+  3.341   0.000   tNET   FF   1        R27C30[1][A]   core/pulse_index_13_s0/D    
+
+Data Required Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                   NODE             
+ ======= ======= ====== ==== ======== ============== ============================ 
+  0.000   0.000                                       active clock edge time      
+  0.000   0.000                                       sys_clk                     
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I              
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O              
+  2.903   1.511   tNET   RR   1        R27C30[1][A]   core/pulse_index_13_s0/CLK  
+  2.914   0.011   tHld        1        R27C30[1][A]   core/pulse_index_13_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Hold Relationship: 0.000
+Logic Level: 2
+Arrival Clock Path delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+Arrival Data Path Delay: (cell: 0.232 53.008%, 
+                    route: 0.004 0.838%, 
+                    tC2Q: 0.202 46.154%)
+Required Clock Path Delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+
+						Path20						
+Path Summary:
+Slack             : 0.427
+Data Arrival Time : 3.341
+Data Required Time: 2.914
+From              : ramp_3_s0
+To                : ramp_3_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  2.903   1.511   tNET   RR   1        R27C29[1][A]   core/ramp_3_s0/CLK      
+  3.105   0.202   tC2Q   RR   3        R27C29[1][A]   core/ramp_3_s0/Q        
+  3.109   0.004   tNET   RR   1        R27C29[1][A]   core/n403_s2/I1         
+  3.341   0.232   tINS   RF   1        R27C29[1][A]   core/n403_s2/F          
+  3.341   0.000   tNET   FF   1        R27C29[1][A]   core/ramp_3_s0/D        
+
+Data Required Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  2.903   1.511   tNET   RR   1        R27C29[1][A]   core/ramp_3_s0/CLK      
+  2.914   0.011   tHld        1        R27C29[1][A]   core/ramp_3_s0          
+
+Path Statistics:
+Clock Skew: 0.000
+Hold Relationship: 0.000
+Logic Level: 2
+Arrival Clock Path delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+Arrival Data Path Delay: (cell: 0.232 53.008%, 
+                    route: 0.004 0.838%, 
+                    tC2Q: 0.202 46.154%)
+Required Clock Path Delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+
+						Path21						
+Path Summary:
+Slack             : 0.427
+Data Arrival Time : 3.341
+Data Required Time: 2.914
+From              : ramp_5_s0
+To                : ramp_5_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  2.903   1.511   tNET   RR   1        R26C29[1][A]   core/ramp_5_s0/CLK      
+  3.105   0.202   tC2Q   RR   4        R26C29[1][A]   core/ramp_5_s0/Q        
+  3.109   0.004   tNET   RR   1        R26C29[1][A]   core/n399_s2/I2         
+  3.341   0.232   tINS   RF   1        R26C29[1][A]   core/n399_s2/F          
+  3.341   0.000   tNET   FF   1        R26C29[1][A]   core/ramp_5_s0/D        
+
+Data Required Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  2.903   1.511   tNET   RR   1        R26C29[1][A]   core/ramp_5_s0/CLK      
+  2.914   0.011   tHld        1        R26C29[1][A]   core/ramp_5_s0          
+
+Path Statistics:
+Clock Skew: 0.000
+Hold Relationship: 0.000
+Logic Level: 2
+Arrival Clock Path delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+Arrival Data Path Delay: (cell: 0.232 53.008%, 
+                    route: 0.004 0.838%, 
+                    tC2Q: 0.202 46.154%)
+Required Clock Path Delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+
+						Path22						
+Path Summary:
+Slack             : 0.428
+Data Arrival Time : 3.342
+Data Required Time: 2.914
+From              : pulse_index_1_s0
+To                : pulse_index_1_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                  NODE             
+ ======= ======= ====== ==== ======== ============== =========================== 
+  0.000   0.000                                       active clock edge time     
+  0.000   0.000                                       sys_clk                    
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I             
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O             
+  2.903   1.511   tNET   RR   1        R27C31[1][A]   core/pulse_index_1_s0/CLK  
+  3.105   0.202   tC2Q   RR   22       R27C31[1][A]   core/pulse_index_1_s0/Q    
+  3.110   0.005   tNET   RR   1        R27C31[1][A]   core/n424_s2/I1            
+  3.342   0.232   tINS   RF   1        R27C31[1][A]   core/n424_s2/F             
+  3.342   0.000   tNET   FF   1        R27C31[1][A]   core/pulse_index_1_s0/D    
+
+Data Required Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                  NODE             
+ ======= ======= ====== ==== ======== ============== =========================== 
+  0.000   0.000                                       active clock edge time     
+  0.000   0.000                                       sys_clk                    
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I             
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O             
+  2.903   1.511   tNET   RR   1        R27C31[1][A]   core/pulse_index_1_s0/CLK  
+  2.914   0.011   tHld        1        R27C31[1][A]   core/pulse_index_1_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Hold Relationship: 0.000
+Logic Level: 2
+Arrival Clock Path delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+Arrival Data Path Delay: (cell: 0.232 52.861%, 
+                    route: 0.005 1.114%, 
+                    tC2Q: 0.202 46.025%)
+Required Clock Path Delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+
+						Path23						
+Path Summary:
+Slack             : 0.428
+Data Arrival Time : 3.342
+Data Required Time: 2.914
+From              : pulse_index_8_s0
+To                : pulse_index_8_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                  NODE             
+ ======= ======= ====== ==== ======== ============== =========================== 
+  0.000   0.000                                       active clock edge time     
+  0.000   0.000                                       sys_clk                    
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I             
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O             
+  2.903   1.511   tNET   RR   1        R26C32[0][A]   core/pulse_index_8_s0/CLK  
+  3.105   0.202   tC2Q   RR   6        R26C32[0][A]   core/pulse_index_8_s0/Q    
+  3.110   0.005   tNET   RR   1        R26C32[0][A]   core/n417_s2/I0            
+  3.342   0.232   tINS   RF   1        R26C32[0][A]   core/n417_s2/F             
+  3.342   0.000   tNET   FF   1        R26C32[0][A]   core/pulse_index_8_s0/D    
+
+Data Required Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                  NODE             
+ ======= ======= ====== ==== ======== ============== =========================== 
+  0.000   0.000                                       active clock edge time     
+  0.000   0.000                                       sys_clk                    
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I             
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O             
+  2.903   1.511   tNET   RR   1        R26C32[0][A]   core/pulse_index_8_s0/CLK  
+  2.914   0.011   tHld        1        R26C32[0][A]   core/pulse_index_8_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Hold Relationship: 0.000
+Logic Level: 2
+Arrival Clock Path delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+Arrival Data Path Delay: (cell: 0.232 52.861%, 
+                    route: 0.005 1.114%, 
+                    tC2Q: 0.202 46.025%)
+Required Clock Path Delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+
+						Path24						
+Path Summary:
+Slack             : 0.428
+Data Arrival Time : 3.342
+Data Required Time: 2.914
+From              : ramp_1_s0
+To                : ramp_1_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  2.903   1.511   tNET   RR   1        R27C29[0][A]   core/ramp_1_s0/CLK      
+  3.105   0.202   tC2Q   RR   5        R27C29[0][A]   core/ramp_1_s0/Q        
+  3.110   0.005   tNET   RR   1        R27C29[0][A]   core/n407_s2/I0         
+  3.342   0.232   tINS   RF   1        R27C29[0][A]   core/n407_s2/F          
+  3.342   0.000   tNET   FF   1        R27C29[0][A]   core/ramp_1_s0/D        
+
+Data Required Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  2.903   1.511   tNET   RR   1        R27C29[0][A]   core/ramp_1_s0/CLK      
+  2.914   0.011   tHld        1        R27C29[0][A]   core/ramp_1_s0          
+
+Path Statistics:
+Clock Skew: 0.000
+Hold Relationship: 0.000
+Logic Level: 2
+Arrival Clock Path delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+Arrival Data Path Delay: (cell: 0.232 52.861%, 
+                    route: 0.005 1.114%, 
+                    tC2Q: 0.202 46.025%)
+Required Clock Path Delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+
+						Path25						
+Path Summary:
+Slack             : 0.428
+Data Arrival Time : 3.342
+Data Required Time: 2.914
+From              : phase_0_s0
+To                : phase_0_s0
+Launch Clk        : sys_clk:[R]
+Latch Clk         : sys_clk:[R]
+
+Data Arrival Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  2.903   1.511   tNET   RR   1        R31C26[0][A]   core/phase_0_s0/CLK     
+  3.105   0.202   tC2Q   RR   4        R31C26[0][A]   core/phase_0_s0/Q       
+  3.110   0.005   tNET   RR   1        R31C26[0][A]   core/n25_s2/I0          
+  3.342   0.232   tINS   RF   1        R31C26[0][A]   core/n25_s2/F           
+  3.342   0.000   tNET   FF   1        R31C26[0][A]   core/phase_0_s0/D       
+
+Data Required Path:
+   AT     DELAY   TYPE   RF   FANOUT       LOC                 NODE           
+ ======= ======= ====== ==== ======== ============== ======================== 
+  0.000   0.000                                       active clock edge time  
+  0.000   0.000                                       sys_clk                 
+  0.000   0.000   tCL    RR   1        IOR29[A]       sys_clk_ibuf/I          
+  1.392   1.392   tINS   RR   88       IOR29[A]       sys_clk_ibuf/O          
+  2.903   1.511   tNET   RR   1        R31C26[0][A]   core/phase_0_s0/CLK     
+  2.914   0.011   tHld        1        R31C26[0][A]   core/phase_0_s0         
+
+Path Statistics:
+Clock Skew: 0.000
+Hold Relationship: 0.000
+Logic Level: 2
+Arrival Clock Path delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+Arrival Data Path Delay: (cell: 0.232 52.861%, 
+                    route: 0.005 1.114%, 
+                    tC2Q: 0.202 46.025%)
+Required Clock Path Delay: (cell: 1.392 47.946%, 
+                     route: 1.511 52.054%)
+
+3.3.3 Recovery Analysis Report
+Report Command:report_timing -recovery -max_paths 25 -max_common_paths 1
+No recovery paths to report!
+3.3.4 Removal Analysis Report
+Report Command:report_timing -removal -max_paths 25 -max_common_paths 1
+No removal paths to report!
+3.4 Minimum Pulse Width Report
+Report Command:report_min_pulse_width -nworst 10 -detail
+
+								MPW1
+MPW Summary:
+Slack:          7.315
+Actual Width:   8.315
+Required Width: 1.000
+Type:           Low Pulse Width
+Clock:          sys_clk
+Objects:        startup_7_s0
+
+Late clock Path:
+    AT     DELAY   TYPE   RF            NODE           
+ ======== ======= ====== ==== ======================== 
+  10.000   0.000               active clock edge time  
+  10.000   0.000               sys_clk                 
+  10.000   0.000   tCL    FF   sys_clk_ibuf/I          
+  12.314   2.314   tINS   FF   sys_clk_ibuf/O          
+  14.588   2.274   tNET   FF   startup_7_s0/CLK        
+
+Early clock Path:
+    AT     DELAY   TYPE   RF            NODE           
+ ======== ======= ====== ==== ======================== 
+  20.000   0.000               active clock edge time  
+  20.000   0.000               sys_clk                 
+  20.000   0.000   tCL    RR   sys_clk_ibuf/I          
+  21.392   1.392   tINS   RR   sys_clk_ibuf/O          
+  22.903   1.511   tNET   RR   startup_7_s0/CLK        
+
+								MPW2
+MPW Summary:
+Slack:          7.315
+Actual Width:   8.315
+Required Width: 1.000
+Type:           Low Pulse Width
+Clock:          sys_clk
+Objects:        startup_5_s0
+
+Late clock Path:
+    AT     DELAY   TYPE   RF            NODE           
+ ======== ======= ====== ==== ======================== 
+  10.000   0.000               active clock edge time  
+  10.000   0.000               sys_clk                 
+  10.000   0.000   tCL    FF   sys_clk_ibuf/I          
+  12.314   2.314   tINS   FF   sys_clk_ibuf/O          
+  14.588   2.274   tNET   FF   startup_5_s0/CLK        
+
+Early clock Path:
+    AT     DELAY   TYPE   RF            NODE           
+ ======== ======= ====== ==== ======================== 
+  20.000   0.000               active clock edge time  
+  20.000   0.000               sys_clk                 
+  20.000   0.000   tCL    RR   sys_clk_ibuf/I          
+  21.392   1.392   tINS   RR   sys_clk_ibuf/O          
+  22.903   1.511   tNET   RR   startup_5_s0/CLK        
+
+								MPW3
+MPW Summary:
+Slack:          7.315
+Actual Width:   8.315
+Required Width: 1.000
+Type:           Low Pulse Width
+Clock:          sys_clk
+Objects:        startup_1_s0
+
+Late clock Path:
+    AT     DELAY   TYPE   RF            NODE           
+ ======== ======= ====== ==== ======================== 
+  10.000   0.000               active clock edge time  
+  10.000   0.000               sys_clk                 
+  10.000   0.000   tCL    FF   sys_clk_ibuf/I          
+  12.314   2.314   tINS   FF   sys_clk_ibuf/O          
+  14.588   2.274   tNET   FF   startup_1_s0/CLK        
+
+Early clock Path:
+    AT     DELAY   TYPE   RF            NODE           
+ ======== ======= ====== ==== ======================== 
+  20.000   0.000               active clock edge time  
+  20.000   0.000               sys_clk                 
+  20.000   0.000   tCL    RR   sys_clk_ibuf/I          
+  21.392   1.392   tINS   RR   sys_clk_ibuf/O          
+  22.903   1.511   tNET   RR   startup_1_s0/CLK        
+
+								MPW4
+MPW Summary:
+Slack:          7.315
+Actual Width:   8.315
+Required Width: 1.000
+Type:           Low Pulse Width
+Clock:          sys_clk
+Objects:        debounce_count_14_s0
+
+Late clock Path:
+    AT     DELAY   TYPE   RF             NODE            
+ ======== ======= ====== ==== ========================== 
+  10.000   0.000               active clock edge time    
+  10.000   0.000               sys_clk                   
+  10.000   0.000   tCL    FF   sys_clk_ibuf/I            
+  12.314   2.314   tINS   FF   sys_clk_ibuf/O            
+  14.588   2.274   tNET   FF   debounce_count_14_s0/CLK  
+
+Early clock Path:
+    AT     DELAY   TYPE   RF             NODE            
+ ======== ======= ====== ==== ========================== 
+  20.000   0.000               active clock edge time    
+  20.000   0.000               sys_clk                   
+  20.000   0.000   tCL    RR   sys_clk_ibuf/I            
+  21.392   1.392   tINS   RR   sys_clk_ibuf/O            
+  22.903   1.511   tNET   RR   debounce_count_14_s0/CLK  
+
+								MPW5
+MPW Summary:
+Slack:          7.315
+Actual Width:   8.315
+Required Width: 1.000
+Type:           Low Pulse Width
+Clock:          sys_clk
+Objects:        key_sync_1_s1
+
+Late clock Path:
+    AT     DELAY   TYPE   RF            NODE           
+ ======== ======= ====== ==== ======================== 
+  10.000   0.000               active clock edge time  
+  10.000   0.000               sys_clk                 
+  10.000   0.000   tCL    FF   sys_clk_ibuf/I          
+  12.314   2.314   tINS   FF   sys_clk_ibuf/O          
+  14.588   2.274   tNET   FF   key_sync_1_s1/CLK       
+
+Early clock Path:
+    AT     DELAY   TYPE   RF            NODE           
+ ======== ======= ====== ==== ======================== 
+  20.000   0.000               active clock edge time  
+  20.000   0.000               sys_clk                 
+  20.000   0.000   tCL    RR   sys_clk_ibuf/I          
+  21.392   1.392   tINS   RR   sys_clk_ibuf/O          
+  22.903   1.511   tNET   RR   key_sync_1_s1/CLK       
+
+								MPW6
+MPW Summary:
+Slack:          7.315
+Actual Width:   8.315
+Required Width: 1.000
+Type:           Low Pulse Width
+Clock:          sys_clk
+Objects:        core/ramp_7_s0
+
+Late clock Path:
+    AT     DELAY   TYPE   RF            NODE           
+ ======== ======= ====== ==== ======================== 
+  10.000   0.000               active clock edge time  
+  10.000   0.000               sys_clk                 
+  10.000   0.000   tCL    FF   sys_clk_ibuf/I          
+  12.314   2.314   tINS   FF   sys_clk_ibuf/O          
+  14.588   2.274   tNET   FF   core/ramp_7_s0/CLK      
+
+Early clock Path:
+    AT     DELAY   TYPE   RF            NODE           
+ ======== ======= ====== ==== ======================== 
+  20.000   0.000               active clock edge time  
+  20.000   0.000               sys_clk                 
+  20.000   0.000   tCL    RR   sys_clk_ibuf/I          
+  21.392   1.392   tINS   RR   sys_clk_ibuf/O          
+  22.903   1.511   tNET   RR   core/ramp_7_s0/CLK      
+
+								MPW7
+MPW Summary:
+Slack:          7.315
+Actual Width:   8.315
+Required Width: 1.000
+Type:           Low Pulse Width
+Clock:          sys_clk
+Objects:        core/active_mode_0_s0
+
+Late clock Path:
+    AT     DELAY   TYPE   RF             NODE             
+ ======== ======= ====== ==== =========================== 
+  10.000   0.000               active clock edge time     
+  10.000   0.000               sys_clk                    
+  10.000   0.000   tCL    FF   sys_clk_ibuf/I             
+  12.314   2.314   tINS   FF   sys_clk_ibuf/O             
+  14.588   2.274   tNET   FF   core/active_mode_0_s0/CLK  
+
+Early clock Path:
+    AT     DELAY   TYPE   RF             NODE             
+ ======== ======= ====== ==== =========================== 
+  20.000   0.000               active clock edge time     
+  20.000   0.000               sys_clk                    
+  20.000   0.000   tCL    RR   sys_clk_ibuf/I             
+  21.392   1.392   tINS   RR   sys_clk_ibuf/O             
+  22.903   1.511   tNET   RR   core/active_mode_0_s0/CLK  
+
+								MPW8
+MPW Summary:
+Slack:          7.315
+Actual Width:   8.315
+Required Width: 1.000
+Type:           Low Pulse Width
+Clock:          sys_clk
+Objects:        key_sync_0_s1
+
+Late clock Path:
+    AT     DELAY   TYPE   RF            NODE           
+ ======== ======= ====== ==== ======================== 
+  10.000   0.000               active clock edge time  
+  10.000   0.000               sys_clk                 
+  10.000   0.000   tCL    FF   sys_clk_ibuf/I          
+  12.314   2.314   tINS   FF   sys_clk_ibuf/O          
+  14.588   2.274   tNET   FF   key_sync_0_s1/CLK       
+
+Early clock Path:
+    AT     DELAY   TYPE   RF            NODE           
+ ======== ======= ====== ==== ======================== 
+  20.000   0.000               active clock edge time  
+  20.000   0.000               sys_clk                 
+  20.000   0.000   tCL    RR   sys_clk_ibuf/I          
+  21.392   1.392   tINS   RR   sys_clk_ibuf/O          
+  22.903   1.511   tNET   RR   key_sync_0_s1/CLK       
+
+								MPW9
+MPW Summary:
+Slack:          7.315
+Actual Width:   8.315
+Required Width: 1.000
+Type:           Low Pulse Width
+Clock:          sys_clk
+Objects:        core/active_mode_1_s0
+
+Late clock Path:
+    AT     DELAY   TYPE   RF             NODE             
+ ======== ======= ====== ==== =========================== 
+  10.000   0.000               active clock edge time     
+  10.000   0.000               sys_clk                    
+  10.000   0.000   tCL    FF   sys_clk_ibuf/I             
+  12.314   2.314   tINS   FF   sys_clk_ibuf/O             
+  14.588   2.274   tNET   FF   core/active_mode_1_s0/CLK  
+
+Early clock Path:
+    AT     DELAY   TYPE   RF             NODE             
+ ======== ======= ====== ==== =========================== 
+  20.000   0.000               active clock edge time     
+  20.000   0.000               sys_clk                    
+  20.000   0.000   tCL    RR   sys_clk_ibuf/I             
+  21.392   1.392   tINS   RR   sys_clk_ibuf/O             
+  22.903   1.511   tNET   RR   core/active_mode_1_s0/CLK  
+
+								MPW10
+MPW Summary:
+Slack:          7.315
+Actual Width:   8.315
+Required Width: 1.000
+Type:           Low Pulse Width
+Clock:          sys_clk
+Objects:        core/dac_data_0_s0
+
+Late clock Path:
+    AT     DELAY   TYPE   RF            NODE           
+ ======== ======= ====== ==== ======================== 
+  10.000   0.000               active clock edge time  
+  10.000   0.000               sys_clk                 
+  10.000   0.000   tCL    FF   sys_clk_ibuf/I          
+  12.314   2.314   tINS   FF   sys_clk_ibuf/O          
+  14.588   2.274   tNET   FF   core/dac_data_0_s0/CLK  
+
+Early clock Path:
+    AT     DELAY   TYPE   RF            NODE           
+ ======== ======= ====== ==== ======================== 
+  20.000   0.000               active clock edge time  
+  20.000   0.000               sys_clk                 
+  20.000   0.000   tCL    RR   sys_clk_ibuf/I          
+  21.392   1.392   tINS   RR   sys_clk_ibuf/O          
+  22.903   1.511   tNET   RR   core/dac_data_0_s0/CLK  
+
+3.5 High Fanout Nets Report
+Report Command:report_high_fanout_nets -max_nets 10
+  FANOUT      NET NAME      WORST SLACK   MAX DELAY  
+ ======== ================ ============= =========== 
+  88       sys_clk_d        13.541        2.274      
+  41       reset            16.331        2.152      
+  30       pulse_index[3]   14.252        0.720      
+  28       pulse_index[4]   14.106        0.708      
+  26       pulse_index[2]   13.743        1.150      
+  24       pulse_index[0]   14.269        0.672      
+  23       n656_4           15.132        0.711      
+  22       pulse_index[1]   13.980        1.066      
+  20       n245_3           16.414        0.516      
+  16       n658_3           16.331        0.660      
+
+3.6 Route Congestions Report
+Report Command:report_route_congestion -max_grids 10
+  GRID LOC   ROUTE CONGESTIONS  
+ ========== =================== 
+  R27C29     0.819              
+  R27C31     0.792              
+  R29C28     0.792              
+  R29C31     0.792              
+  R29C27     0.778              
+  R30C26     0.764              
+  R29C26     0.653              
+  R26C32     0.639              
+  R27C30     0.639              
+  R29C30     0.611              
+
+3.7 Timing Exceptions Report
+3.7.1 Setup Analysis Report
+Report Command:report_exceptions -setup -max_paths 5 -max_common_paths 1
+No timing exceptions to report!
+
+3.7.2 Hold Analysis Report
+Report Command:report_exceptions -hold -max_paths 5 -max_common_paths 1
+No timing exceptions to report!
+
+3.7.3 Recovery Analysis Report
+Report Command:report_exceptions -recovery -max_paths 5 -max_common_paths 1
+No timing exceptions to report!
+
+3.7.4 Removal Analysis Report
+Report Command:report_exceptions -removal -max_paths 5 -max_common_paths 1
+No timing exceptions to report!
+
+3.8 Timing Constraints Report
+  SDC Command Type    State                            Detail Command                           
+ ================== ========= ================================================================= 
+  TC_CLOCK           Actived   create_clock -name sys_clk -period 20.000 [get_ports {sys_clk}]  
+  TC_FALSE_PATH      Actived   set_false_path -from [get_ports {key_n[0] key_n[1]}]             
+

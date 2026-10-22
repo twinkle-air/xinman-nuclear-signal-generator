@@ -1,0 +1,20 @@
+[
+ {
+  "InstFile" : "R:/FPGA_firmware/rtl/g1_dac_stage1.v",
+  "InstLine" : 2,
+  "InstName" : "g1_dac_stage1",
+  "ModuleFile" : "R:/FPGA_firmware/rtl/g1_dac_stage1.v",
+  "ModuleLine" : 2,
+  "ModuleName" : "g1_dac_stage1",
+  "SubInsts" : [
+   {
+    "InstFile" : "R:/FPGA_firmware/rtl/g1_dac_stage1.v",
+    "InstLine" : 32,
+    "InstName" : "core",
+    "ModuleFile" : "R:/FPGA_firmware/rtl/dac_test_core.v",
+    "ModuleLine" : 3,
+    "ModuleName" : "dac_test_core"
+   }
+  ]
+ }
+]

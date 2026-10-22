@@ -1,0 +1,41 @@
+{
+  "file": "scope_csv_104_19.csv",
+  "sha256": "7f4cb67c421c4380f03e9a48454ad71f34579a50fb1d0bcc3282ff42f85aa3b5",
+  "samples": 4000,
+  "dt_s": 2e-07,
+  "baseline_code": 128,
+  "amplitude_code": 8,
+  "period_us": 256,
+  "tau_us": 24,
+  "noise": 0,
+  "random": false,
+  "spectrum": false,
+  "pulses": [
+    {
+      "edge_index": 720,
+      "baseline_median_V": 0.002,
+      "min_first_2us_V": -0.196,
+      "amplitude_peak_first_2us_V": 0.198
+    },
+    {
+      "edge_index": 2000,
+      "baseline_median_V": 0.002,
+      "min_first_2us_V": -0.196,
+      "amplitude_peak_first_2us_V": 0.198
+    },
+    {
+      "edge_index": 3280,
+      "baseline_median_V": 0.002,
+      "min_first_2us_V": -0.196,
+      "amplitude_peak_first_2us_V": 0.198
+    }
+  ],
+  "mean_peak_amplitude_V": 0.19800000000000004,
+  "error_to_0p2V_pct": -0.9999999999999898,
+  "intervals_us": [
+    256.0,
+    256.0
+  ],
+  "scope": "CH2 DC 50mV/div 50us/div 5MSa/s 4K; photo shows visible pulses inside screen",
+  "limit": "Peak minimum contains noise-extreme bias; scope uncertainty unaccounted; not uncertainty-qualified accuracy acceptance"
+}

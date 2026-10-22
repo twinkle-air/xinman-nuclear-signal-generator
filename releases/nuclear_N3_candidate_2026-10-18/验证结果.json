@@ -1,0 +1,20 @@
+{
+  "status": "SOFTWARE_AND_RTL_VERIFIED_HARDWARE_PENDING",
+  "pc_version": "0.9.0",
+  "stm32_firmware": "F405-N3.0.0",
+  "fpga_version_register": "0x00030000",
+  "pc_tests": 39,
+  "stm32_n3_mock_checks": 101,
+  "stm32_b2_mock_regression_checks": 87,
+  "rtl_nuclear_checks": 18540,
+  "rtl_reference_samples": 18000,
+  "rtl_fixed_spi_checks": 162,
+  "rtl_fixed_dac_timing_checks": 22298,
+  "gowin_setup_violations": 0,
+  "gowin_hold_violations": 0,
+  "gowin_fmax_mhz": 70.615,
+  "serial_ports_opened": false,
+  "hardware_programmed": false,
+  "scope": "single channel, geometric arrivals at 1us, 256 quantile spectrum, bounded uniform noise, additive exponential pileup",
+  "source_copy_note": "Relevant modified source/test files are included; this candidate package is not a complete standalone toolchain or vendor-source bundle. Use the workspace for rebuilding."
+}

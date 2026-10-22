@@ -1,0 +1,31 @@
+Reading netlist file: "R:\impl\gwsynthesis\g1_dac_stage1.vg"
+Parsing netlist file "R:\impl\gwsynthesis\g1_dac_stage1.vg" completed
+Processing netlist completed
+Reading constraint file: "R:\constraints\g1_directplug.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "R:\impl\pnr\g1_dac_stage1.power.html" completed
+Generate file "R:\impl\pnr\g1_dac_stage1.pin.html" completed
+Generate file "R:\impl\pnr\g1_dac_stage1.rpt.html" completed
+Generate file "R:\impl\pnr\g1_dac_stage1.rpt.txt" completed
+Generate file "R:\impl\pnr\g1_dac_stage1.tr.html" completed
+Generate file "R:\impl\pnr\g1_dac_stage1.tr" completed
+Generate file "R:\impl\pnr\g1_dac_stage1.io.cst" completed
+Sat Oct  3 21:50:42 2026
+

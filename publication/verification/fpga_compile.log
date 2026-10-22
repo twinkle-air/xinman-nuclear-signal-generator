@@ -1,0 +1,47 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Twinkle/Desktop/xinman-nuclear-signal-generator/publication/verification/fpga-build/rtl/g1_dac_spi.v" into library work
+INFO: [VRFC 10-311] analyzing module g1_dac_spi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Twinkle/Desktop/xinman-nuclear-signal-generator/publication/verification/fpga-build/tb/tb_spi.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_spi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Twinkle/Desktop/xinman-nuclear-signal-generator/publication/verification/fpga-build/tb/tb_nuclear.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_nuclear
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Twinkle/Desktop/xinman-nuclear-signal-generator/publication/verification/fpga-build/tb/tb_competition.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_competition
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe tb_spi -s tb_spi_public 
+Multi-threading is on. Using 26 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.g1_dac_spi(WATCHDOG_CYCLES=50000...
+Compiling module work.tb_spi
+Built simulation snapshot tb_spi_public
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe tb_nuclear -s tb_nuclear_public 
+Multi-threading is on. Using 26 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.g1_dac_spi(WATCHDOG_CYCLES=12500...
+Compiling module work.tb_nuclear
+Built simulation snapshot tb_nuclear_public
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe tb_competition -s tb_competition_public 
+Multi-threading is on. Using 26 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.g1_dac_spi(WATCHDOG_CYCLES=12500...
+Compiling module work.tb_competition
+Built simulation snapshot tb_competition_public
